@@ -3,9 +3,9 @@ Blog Comments
 
 *Access Levels*    
 __Group:__ blogs     
-__Resource:__ blog_commentss
+__Resource:__ blog_comments
 
-List all blog Comments
+List all blog comments
 -------------------
 
 ```php
@@ -56,9 +56,16 @@ Status: 200 OK
 ```
 
 ```json
-{ "blog_comment" : 
+{ "blog_comment" :
 	{
-		"ADD DATA" : "ADD DATA",
+		"ID" : "464533",
+		"post_id" : "3524",
+		"name" : "Adam Strawson",
+		"email" : "adam@create.net",
+		"website" : "http://create.net",
+		"message" : "A great article, thanks for helping me solve my problem.",
+		"datestamp" : "2012-05-16 15:17:04",
+		"approved" : 1
 	}
 }
 ```
