@@ -17,8 +17,9 @@ GET 	https://api.create.net/blog/comments
 ```php
 GET 	https://api.create.net/blog/comments?post_id=2554
 ```
-
-@todo Add Inputs
+* *post_id* - ID of a blog post [int] 
+* *datetime_from* - Date and Time of from range [2010-04-07 18:08:14]
+* *datetime_to* - Date and Time of to range [2012-06-02 00:00:00]
 
 ### Response
 
@@ -29,7 +30,14 @@ Status: 200 OK
 ```json
 { "blog_comments":[
 	{
-		"ADD DATA" : "ADD DATA",
+		"ID" : "464533",
+		"post_id" : "3524",
+		"name" : "Adam Strawson",
+		"email" : "adam@create.net",
+		"website" : "http://create.net",
+		"message" : "A great article, thanks for helping me solve my problem.",
+		"datestamp" : "2012-05-16 15:17:04",
+		"approved" : 1
 	}
 ]}
 ```

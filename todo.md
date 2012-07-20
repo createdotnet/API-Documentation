@@ -27,7 +27,7 @@ content
 > ### blogs  
 > 
 > > __@DONE		- blog_posts__  
-> > @TODO		- blog_categories  
+> > __@DONE		- blog_categories__  
 > > @TODO		- blog_comments  
 >
 > @TODO	- guestbooks  
