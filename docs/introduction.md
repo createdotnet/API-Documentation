@@ -32,17 +32,65 @@ Content-Type: application/xml
 
 ## Access Levels
 
-Access to Create resources is limited by user permissions. The minimum required access level is specified for each resource. The access levels are as follows:
+Access to Create resources is limited by user permissions. Resources are split into groups, you can request access to a whole group, or individual resources within a group. The minimum required access level is specified for each resource. The access levels are as follows:
 
 ```ruby
-0 : No Access
-1 : Static Content, Read Only
-2 : Static Content, Full Access
-3 : Shop Content, Read Only
-4 : Shop Content, Full Access
-5 : All Content, Read Only
-6 : All Content, Full Access
+General
+	- Site Details
+		- Account Details
+		- Account Stats
+	- Domains
+		- Domains
+		- Mail Alias
+		- DNS
+	- Website Stats
+
+Content
+	- Pages
+	- Blogs
+		- Blog
+		- Blog Comments
+	- Guestbooks
+	- Custom forms
+	- Widgets
+	- Event calendars
+	- Html Fragments
+	- Enquires
+
+Shop
+	- Products & Categories
+		- Products
+		- Categories
+	- Stock Control
+	- Product Options
+	- Orders
+		- Orders
+		- Disptach Notes 
+		- Address Labels
+		- Order Status
+	- Postage & Tax
+	- Payment Gateways
+	- Shop Sale
+	- Customer Accounts
+	- Import/Export
+		- Import
+		- Export
+	- Downloadables
+	- Discount Codes
+	- Product Search
+	- Shop Reports
+		- Financial Reports
+		- Product Reports
 ```
+
+### Internal Access
+
+```ruby
+0 : Application
+1 : Admin
+2 : Reporting
+```
+
 
 ## Pagination
 
