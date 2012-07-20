@@ -35,52 +35,53 @@ Content-Type: application/xml
 Access to Create resources is limited by user permissions. Resources are split into groups, you can request access to a whole group, or individual resources within a group. The minimum required access level is specified for each resource. The access levels are as follows:
 
 ```ruby
-General
-	- Site Details
-		- Account Details
-		- Account Stats
-	- Domains
-		- Domains
-		- Mail Alias
-		- DNS
-	- Website Stats
+general
+	- site_details
+		- account_details
+		- account_stats
+	- domains
+		- domain_names
+		- mail_alias
+		- dns
+	- website_stats
 
-Content
-	- Pages
-	- Blogs
-		- Blog
-		- Blog Comments
-	- Guestbooks
-	- Custom forms
-	- Widgets
-	- Event calendars
-	- Html Fragments
-	- Enquires
+content
+	- pages
+	- blogs
+		- blog_posts
+		- blog_categories
+		- blog_comments
+	- guestbooks
+	- custom_forms
+	- widgets
+	- event_calendars
+	- html_fragments
+	- enquires
 
-Shop
-	- Products & Categories
-		- Products
-		- Categories
-	- Stock Control
-	- Product Options
-	- Orders
-		- Orders
-		- Disptach Notes 
-		- Address Labels
-		- Order Status
-	- Postage & Tax
-	- Payment Gateways
-	- Shop Sale
-	- Customer Accounts
-	- Import/Export
-		- Import
-		- Export
-	- Downloadables
-	- Discount Codes
-	- Product Search
-	- Shop Reports
-		- Financial Reports
-		- Product Reports
+shop
+	- products_and_categories
+		- products
+		- categories
+	- stock_control
+	- product_options
+	- orders_managment
+		- orders
+		- disptach_notes 
+		- address_labels
+		- order_status
+	- postage_and_tax
+	- payment_gateways
+	- shop_sale
+	- customer_accounts
+	- import_export
+		- import
+		- export
+	- downloadables
+	- discount_codes
+	- product_search
+	- shop_reports
+		- financial_reports
+		- product_reports
 ```
 
 ### Internal Access
