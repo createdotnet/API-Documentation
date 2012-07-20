@@ -28,7 +28,7 @@ content
 > 
 > > __@DONE		- blog_posts__  
 > > __@DONE		- blog_categories__  
-> > @TODO		- blog_comments  
+> > __@DONE		- blog_comments__  
 >
 > @TODO	- guestbooks  
 > @TODO	- custom_forms  
