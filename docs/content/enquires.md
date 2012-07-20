@@ -32,7 +32,7 @@ Status: 200 OK
 		"ID" : "355766",
 		"sender" : "adam@create.net",
 		"subject" : "Recent order",
-		"message" : "Thanks for the order, I'm impressed with the quality. Do you also have it in Blue?",
+		"message" : "Thanks for the order, I\'m impressed with the quality. Do you also have it in Blue?",
 		"datestamp" : "2012-05-16 15:17:04"
 	}
 ]}
@@ -57,7 +57,7 @@ Status: 200 OK
 		"ID" : "355766",
 		"sender" : "adam@create.net",
 		"subject" : "Recent order",
-		"message" : "Thanks for the order, I'm impressed with the quality. Do you also have it in Blue?",
+		"message" : "Thanks for the order, I\'m impressed with the quality. Do you also have it in Blue?",
 		"datestamp" : "2012-05-16 15:17:04"
 	}
 }
