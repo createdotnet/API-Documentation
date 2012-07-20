@@ -34,6 +34,6 @@ DELETE 	https://api.create.net/blog/posts/:id
 
 ### Response
 
-```http
+```console
 Status: 200 OK
 ```
