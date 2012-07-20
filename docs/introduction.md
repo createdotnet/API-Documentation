@@ -29,3 +29,25 @@ XML
 Accept: application/xml
 Content-Type: application/xml
 ```
+
+## Access Levels
+
+Access to Create resources is limited by user permissions. The minimum required access level is specified for each resource. The access levels are as follows:
+
+```ruby
+0 : No Access
+1 : Static Content, Read Only
+2 : Static Content, Full Access
+3 : Shop Content, Read Only
+4 : Shop Content, Full Access
+5 : All Content, Read Only
+6 : All Content, Full Access
+```
+
+## Pagination
+
+API requests that returns multiple items, such as listing one of the resources, will be paginated (default to 25 items per page). A client can retrieve a specific page by providing the page param. In order to alter the number of records returned per page, a client can provide the per_page param (limited to 100 items per page).
+
+```php
+GET		/orders?page=5&per_page=50
+```
