@@ -54,7 +54,6 @@ Status: 200 OK
 	}
 }
 ```
-```
 
 
 Delete a blog comment
