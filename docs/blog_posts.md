@@ -1,6 +1,9 @@
 # Blog Posts
 
-*Access Level:* blogs
+*Access Levels*
+
+__Group:__ blogs
+__Resource:__ blog_posts
 
 ## List all blog posts
 
