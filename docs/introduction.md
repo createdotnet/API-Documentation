@@ -14,7 +14,7 @@ Four HTTP verbs are used to access resources:
 
 ## About Request and Response Formats
 
-Requests and responses can be provided in either JSON or XML. Set the HTTP Accept header to specify the response format and the HTTP Content-Type header to specify the request format. If none is set, the default will be JSON.
+Requests and responses can be provided in either JSON or XML. Set the HTTP Accept header to specify the response format and the HTTP Content-Type header to specify the request format.
 
 JSON 
 
@@ -87,9 +87,9 @@ shop
 ### Internal Access
 
 ```ruby
-0 : Application
-1 : Admin
-2 : Reporting
+Application  
+Admin  
+Reporting
 ```
 
 
