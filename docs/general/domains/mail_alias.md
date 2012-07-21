@@ -101,8 +101,6 @@ PUT 	https://api.create.net/domain/mail_alias/:id
 
 ### Input
 
-ID, domain_id, alias, email
-
 * *alias* [string]
 * *email* Forwarding address [string]
 
