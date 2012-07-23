@@ -12,9 +12,9 @@ general
 >
 > ### domains  
 > 
-> > @TODO		domain_names  
-> > __@DONE		mail_alias__  
-> > @TODO		dns  
+> > @TODO -	domain_names  
+> > __@DONE -	mail_alias__  
+> > @TODO   - dns  
 >
 > @TODO	site_stats  
 > 
