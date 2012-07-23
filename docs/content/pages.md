@@ -5,7 +5,7 @@ Pages
 __Group:__ content
 __Resource:__ pages
 
-List all mail alias
+List all pages
 -------------------
 
 ```php
