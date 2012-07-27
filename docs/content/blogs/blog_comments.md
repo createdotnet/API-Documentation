@@ -9,13 +9,13 @@ List all blog comments
 -------------------
 
 ```php
-GET 	https://api.create.net/blog/comments
+GET 	https://api.create.net/blog_comments
 ```
 
 ### Input
 
 ```php
-GET 	https://api.create.net/blog/comments?post_id=2554
+GET 	https://api.create.net/blog_comments?post_id=2554
 ```
 * *post_id* - ID of a blog post [int] 
 * *datetime_from* - Date and Time of from range [2010-04-07 18:08:14]
@@ -46,7 +46,7 @@ Get a single blog comment
 -------------------------
 
 ```php
-GET 	https://api.create.net/blog/comments/:id
+GET 	https://api.create.net/blog_comments/:id
 ```
 
 ### Response
@@ -75,7 +75,7 @@ Delete a blog comment
 ------------------
 
 ```php
-DELETE 	https://api.create.net/blog/comments/:id
+DELETE 	https://api.create.net/blog_comments/:id
 ```
 
 ### Response

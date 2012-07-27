@@ -9,13 +9,13 @@ List all blog posts
 -------------------
 
 ```php
-GET 	https://api.create.net/blog/posts
+GET 	https://api.create.net/blog_posts
 ```
 
 ### Input
 
 ```php
-GET 	https://api.create.net/blog/posts?author=adam
+GET 	https://api.create.net/blog_posts?author=adam
 ```
 
 * *author* - Name of author [string]
@@ -49,7 +49,7 @@ Get a single blog post
 -----------------------
 
 ```php
-GET 	https://api.create.net/blog/posts/:id
+GET 	https://api.create.net/blog_posts/:id
 ```
 
 ### Response
@@ -78,7 +78,7 @@ Create a blog post
 ------------------
 
 ```php
-POST 	https://api.create.net/blog/posts
+POST 	https://api.create.net/blog_posts
 ```
 
 ### Input
@@ -96,7 +96,7 @@ POST 	https://api.create.net/blog/posts
 
 ```console
 Status: 201 Created
-Location: http://api.create.net/blog/posts/54648
+Location: http://api.create.net/blog_posts/54648
 ```
 
 ```json
@@ -119,7 +119,7 @@ Update a blog post
 ------------------
 
 ```php
-PUT 	https://api.create.net/blog/posts/:id
+PUT 	https://api.create.net/blog_posts/:id
 ```
 
 ### Input
@@ -142,7 +142,7 @@ Delete a blog post
 ------------------
 
 ```php
-DELETE 	https://api.create.net/blog/posts/:id
+DELETE 	https://api.create.net/blog_posts/:id
 ```
 
 ### Response

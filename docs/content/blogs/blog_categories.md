@@ -9,13 +9,13 @@ List all blog categories
 -------------------
 
 ```php
-GET 	https://api.create.net/blog/categories
+GET 	https://api.create.net/blog_categories
 ```
 
 ### Input
 
 ```php
-GET 	https://api.create.net/blog/categories
+GET 	https://api.create.net/blog_categories
 ```
 
 ### Response
@@ -37,7 +37,7 @@ Get a single blog category
 -------------------------
 
 ```php
-GET 	https://api.create.net/blog/categorys/:id
+GET 	https://api.create.net/blog_categorys/:id
 ```
 
 ### Response
@@ -59,7 +59,7 @@ Create a blog category
 ------------------
 
 ```php
-POST 	https://api.create.net/blog/categories
+POST 	https://api.create.net/blog_categories
 ```
 
 ### Input
@@ -70,7 +70,7 @@ POST 	https://api.create.net/blog/categories
 
 ```console
 Status: 201 Created
-Location: http://api.create.net/blog/categories/54648
+Location: http://api.create.net/blog_categories/54648
 ```
 
 ```json
@@ -86,7 +86,7 @@ Delete a blog comment
 ------------------
 
 ```php
-DELETE 	https://api.create.net/blog/categories/:id
+DELETE 	https://api.create.net/blog_categories/:id
 ```
 
 ### Response

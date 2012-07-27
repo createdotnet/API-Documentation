@@ -9,13 +9,13 @@ List all DNS records
 -------------------
 
 ```php
-GET 	https://api.create.net/domain/dns
+GET 	https://api.create.net/dns
 ```
 
 ### Input
 
 ```php
-GET 	https://api.create.net/domain/dns?domain_id=2672
+GET 	https://api.create.net/dns?domain_id=2672
 ```
 
 * *domain_id* - ID of domain [int]
@@ -40,7 +40,7 @@ Get a single DNS record
 -----------------------
 
 ```php
-GET 	https://api.create.net/domain/dns/:id
+GET 	https://api.create.net/dns/:id
 ```
 
 ### Response
@@ -62,7 +62,7 @@ Create a DNS record
 ------------------
 
 ```php
-POST 	https://api.create.net/domain/dns
+POST 	https://api.create.net/dns
 ```
 
 ### Input
@@ -73,7 +73,7 @@ POST 	https://api.create.net/domain/dns
 
 ```console
 Status: 201 Created
-Location: http://api.create.net/domain/dns/236
+Location: http://api.create.net/dns/236
 ```
 
 ```json
@@ -89,7 +89,7 @@ Update a DNS record
 ------------------
 
 ```php
-PUT 	https://api.create.net/domain/dns/:id
+PUT 	https://api.create.net/dns/:id
 ```
 
 ### Input
@@ -106,7 +106,7 @@ Delete a DNS record
 ------------------
 
 ```php
-DELETE 	https://api.create.net/domain/dns/:id
+DELETE 	https://api.create.net/dns/:id
 ```
 
 ### Response

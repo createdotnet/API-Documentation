@@ -9,7 +9,7 @@ List all domain names
 -------------------
 
 ```php
-GET 	https://api.create.net/domain/domain_names
+GET 	https://api.create.net/domain_names
 ```
 
 ### Input
@@ -35,7 +35,7 @@ Get a single domain name
 -----------------------
 
 ```php
-GET 	https://api.create.net/domain/domain_names/:id
+GET 	https://api.create.net/domain_names/:id
 ```
 
 ### Response
@@ -62,7 +62,7 @@ Update a domain name
 ------------------
 
 ```php
-PUT 	https://api.create.net/domain/domain_names/:id
+PUT 	https://api.create.net/domain_names/:id
 ```
 
 ### Input
@@ -79,7 +79,7 @@ Delete a domain name
 ------------------
 
 ```php
-DELETE 	https://api.create.net/domain/domain_names/:id
+DELETE 	https://api.create.net/domain_names/:id
 ```
 
 ### Response

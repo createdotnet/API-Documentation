@@ -16,8 +16,8 @@ general
 > > **@DONE -	mail_alias**  
 > > @TODO   - dns  
 >
-> @TODO	site_stats  
-> 
+> @TODO	- site_stats  
+> **@DONE - user_details**
 
 content
 =======

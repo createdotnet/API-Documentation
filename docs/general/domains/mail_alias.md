@@ -9,13 +9,13 @@ List all mail alias
 -------------------
 
 ```php
-GET 	https://api.create.net/domain/mail_alias
+GET 	https://api.create.net/mail_alias
 ```
 
 ### Input
 
 ```php
-GET 	https://api.create.net/domain/mail_alias?domain_id=2672
+GET 	https://api.create.net/mail_alias?domain_id=2672
 ```
 
 * *domain_id* - ID of domain [int]
@@ -41,7 +41,7 @@ Get a single mail alias
 -----------------------
 
 ```php
-GET 	https://api.create.net/domain/mail_alias/:id
+GET 	https://api.create.net/mail_alias/:id
 ```
 
 ### Response
@@ -65,7 +65,7 @@ Create a mail alias
 ------------------
 
 ```php
-POST 	https://api.create.net/domain/mail_alias
+POST 	https://api.create.net/mail_alias
 ```
 
 ### Input
@@ -78,7 +78,7 @@ POST 	https://api.create.net/domain/mail_alias
 
 ```console
 Status: 201 Created
-Location: http://api.create.net/domain/mail_alias/236
+Location: http://api.create.net/mail_alias/236
 ```
 
 ```json
@@ -96,7 +96,7 @@ Update a mail alias
 ------------------
 
 ```php
-PUT 	https://api.create.net/domain/mail_alias/:id
+PUT 	https://api.create.net/mail_alias/:id
 ```
 
 ### Input
@@ -114,7 +114,7 @@ Delete a mail alias
 ------------------
 
 ```php
-DELETE 	https://api.create.net/domain/mail_alias/:id
+DELETE 	https://api.create.net/mail_alias/:id
 ```
 
 ### Response
