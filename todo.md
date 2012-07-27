@@ -6,8 +6,8 @@ general
 
 > ### site_details  
 >
-> > **@DONE - account_details**
-> > @TODO		account_stats
+> > **@DONE - account_details**  
+> > @TODO		account_stats  
 >
 >
 > ### domains  
@@ -35,7 +35,7 @@ content
 > @TODO	- widgets  
 > @TODO	- event_calendars  
 > @TODO	- html_fragments  
-> __@DONE	- enquires__  
+> **@DONE	- enquires**  
 
 shop
 ====
