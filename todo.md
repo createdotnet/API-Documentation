@@ -7,7 +7,7 @@ general
 > ### site_details  
 >
 > > **@DONE - account_details**  
-> > @TODO		account_stats  
+> > @TODO		account_stats  [V2]
 >
 >
 > ### domains  
@@ -16,7 +16,7 @@ general
 > > **@DONE - mail_alias**  
 > > **@DONE - dns**  
 >
-> @TODO	- site_stats  
+> @TODO	- site_stats  [V2]
 > **@DONE - user_details**
 
 content
@@ -31,10 +31,10 @@ content
 > > __@DONE		- blog_comments__  
 >
 > **@DONE - guestbook**  
-> @TODO	- custom_forms  
-> @TODO	- widgets  
-> @TODO	- event_calendars  
-> @TODO	- html_fragments  
+> @TODO	- custom_forms [V2]  
+> @TODO	- widgets  [V2]
+> @TODO	- event_calendars  [V2]
+> @TODO	- html_fragments  [V2]
 > **@DONE	- enquires**  
 
 shop
@@ -42,7 +42,7 @@ shop
 
 > ### products_and_categories  
 >
-> > @TODO		- products  
+> > **@DONE		- products**  
 > > @TODO		- categories  
 >
 > @TODO	- stock_control  
