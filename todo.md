@@ -30,7 +30,7 @@ content
 > > __@DONE		- blog_categories__  
 > > __@DONE		- blog_comments__  
 >
-> @TODO	- guestbooks  
+> **@DONE - guestbook**  
 > @TODO	- custom_forms  
 > @TODO	- widgets  
 > @TODO	- event_calendars  
