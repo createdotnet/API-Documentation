@@ -6,14 +6,14 @@ general
 
 > ### site_details  
 >
-> > @TODO		account_details  
+> > **@DONE - account_details**
 > > @TODO		account_stats
 >
 >
 > ### domains  
 > 
-> > @TODO -	domain_names  
-> > **@DONE -	mail_alias**  
+> > **@DONE - domain_names**  
+> > **@DONE - mail_alias**  
 > > @TODO   - dns  
 >
 > @TODO	- site_stats  

@@ -25,8 +25,12 @@ Status: 200 OK
 ```json
 { "domain_names" :[ 
 	{
-		"ID" : "236",
-		"ADD DATA" : "ADD DATA"
+		"ID" : "228025",
+		"domain" : "beachfile2.co.uk",
+		"date_registered" : "2012-07-17",
+		"date_expire" : "2014-07-17",
+		"isprimary" : "1",
+		"isourdns" : "1"
 	}
 ]}
 ```
@@ -47,32 +51,14 @@ Status: 200 OK
 ```json
 { "domain_name" : 
 	{
-		"ID" : "236",
-		"ADD DATA" : "ADD DATA"
+		"ID" : "228025",
+		"domain" : "beachfile2.co.uk",
+		"date_registered" : "2012-07-17",
+		"date_expire" : "2014-07-17",
+		"isprimary" : "1",
+		"isourdns" : "1"
 	}
 }
-```
-
-Create a domain name
-------------------
-
-@TODO - Speak to Joel, is this possible?
-
-Update a domain name
-------------------
-
-```php
-PUT 	https://api.create.net/domain_names/:id
-```
-
-### Input
-
-@TODO
-
-### Response
-
-```console
-Status: 200 OK
 ```
 
 Delete a domain name
