@@ -15,10 +15,11 @@ GET 	https://api.create.net/dns
 ### Input
 
 ```php
-GET 	https://api.create.net/dns?domain_id=2672
+GET 	https://api.create.net/dns?domain_id=2672&type=MX
 ```
 
 * *domain_id* - ID of domain [int]
+* *type* - type of DNS record ['NS','MX','A','CNAME']
 @TODO
 
 ### Response
@@ -28,10 +29,16 @@ Status: 200 OK
 ```
 
 ```json
-{ "mail_alias" :[ 
+{ "dns" :[ 
 	{
-		"ID" : "236",
-		"ADD DATA" : "ADD DATA"
+		"id" : "242223",
+		"domain_id" : "226216",
+		"name" : "lifefloat.co.uk",
+		"type" : "MX",
+		"content" : "mail.create.net",
+		"ttl" : "900",
+		"prio" : "10",
+		"change_date: : "NULL"
 	}
 ]}
 ```
@@ -50,10 +57,16 @@ Status: 200 OK
 ```
 
 ```json
-{ "mail_alias" : 
+{ "dns" : 
 	{
-		"ID" : "236",
-		"ADD DATA" : "ADD DATA"
+		"id" : "242223",
+		"domain_id" : "226216",
+		"name" : "lifefloat.co.uk",
+		"type" : "MX",
+		"content" : "mail.create.net",
+		"ttl" : "900",
+		"prio" : "10",
+		"change_date: : "NULL"
 	}
 }
 ```
@@ -67,20 +80,29 @@ POST 	https://api.create.net/dns
 
 ### Input
 
-@TODO
+* *domain_id* Required [int]
+* *name* Required [string]
+* *type* Required ['NS','MX','A','CNAME']
+* *content* Required [string]
 
 ### Response
 
 ```console
 Status: 201 Created
-Location: http://api.create.net/dns/236
+Location: http://api.create.net/dns/242823
 ```
 
 ```json
-{ "mail_alias" : 
+{ "dns" : 
 	{
-		"ID" : "236",
-		"ADD DATA" : "ADD DATA"
+		"id" : "242823",
+		"domain_id" : "226216",
+		"name" : "www.lifefloat.co.uk",
+		"type" : "CNAME",
+		"content" : "lifefloat.co.uk",
+		"ttl" : "900",
+		"prio" : "0",
+		"change_date: : "NULL"
 	}
 }
 ```
@@ -94,7 +116,9 @@ PUT 	https://api.create.net/dns/:id
 
 ### Input
 
-@TODO
+* *name* Required [string]
+* *type* Required ['NS','MX','A','CNAME']
+* *content* Required [string]
 
 ### Response
 

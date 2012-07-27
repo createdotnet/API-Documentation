@@ -14,7 +14,7 @@ general
 > 
 > > **@DONE - domain_names**  
 > > **@DONE - mail_alias**  
-> > @TODO   - dns  
+> > **@DONE - dns**  
 >
 > @TODO	- site_stats  
 > **@DONE - user_details**
