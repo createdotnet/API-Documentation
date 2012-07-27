@@ -15,7 +15,7 @@ GET 	https://api.create.net/products
 ### Input
 
 ```php
-GET 	https://api.create.net/guestbook?category_id=123133
+GET 	https://api.create.net/products?category_id=123133
 ```
 * *category_id* [int]
 

@@ -43,7 +43,7 @@ shop
 > ### products_and_categories  
 >
 > > **@DONE		- products**  
-> > @TODO		- categories  
+> > **@DONE		- categories**  
 >
 > @TODO	- stock_control  
 > @TODO	- product_options  
