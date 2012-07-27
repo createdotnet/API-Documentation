@@ -62,11 +62,11 @@ shop
 >
 > ### import_export  
 >
-> > @TODO		- import [V2]  
-> > @TODO		- export [V2]  
+> > @TODO - import [V2]  
+> > @TODO - export [V2]  
 >
 > @TODO	- downloadables [V2]  
-> @TODO	- discount_codes  
+> **@DONE	- discount_codes**  
 > @TODO	- product_search [V2]  
 >
 > ### shop_reports  
