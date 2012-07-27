@@ -12,10 +12,6 @@ List all pages
 GET 	https://api.create.net/pages
 ```
 
-### Input
-
-@TODO
-
 ### Response
 
 ```console
@@ -25,8 +21,18 @@ Status: 200 OK
 ```json
 { "pages" :[ 
 	{
-		"ID" : "236",
-		"ADD DATA" : "ADD DATA"
+		"ID" : "2640116",
+		"pagetitle" : "Summer Festival",
+		"pagetype" : "standard",
+		"content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae libero ut odio consequat tempor...",
+		"titletag" : "Summer Festival",
+		"metakeys" : "summer,festival,fun,wahey",
+		"metadesc" : "A Summer Festival of fun",
+		"onmenu_YN" : "1",
+		"menutext" : "Summer Festival",
+		"pagefilename" : "summer-festival",
+		"menuorder" : "6:,
+		"parentid" : "0"
 	}
 ]}
 ```
@@ -47,8 +53,18 @@ Status: 200 OK
 ```json
 { "pages" : 
 	{
-		"ID" : "236",
-		"ADD DATA" : "ADD DATA"
+		"ID" : "2640116",
+		"pagetitle" : "Summer Festival",
+		"pagetype" : "standard",
+		"content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae libero ut odio consequat tempor...",
+		"titletag" : "Summer Festival",
+		"metakeys" : "summer,festival,fun,wahey",
+		"metadesc" : "A Summer Festival of fun",
+		"onmenu_YN" : "1",
+		"menutext" : "Summer Festival",
+		"pagefilename" : "summer-festival",
+		"menuorder" : "6:,
+		"parentid" : "0"
 	}
 }
 ```
@@ -62,7 +78,17 @@ POST 	https://api.create.net/pages
 
 ### Input
 
-@TODO
+* *pagetitle* [string]
+* *pagetype* ['standard', 'dynamic', 'homepage']
+* *content* [string]
+* *titletag* [string]
+* *metakeys* [string]
+* *metadesc* [string]
+* *onmenu_YN* [boolen]
+* *menutext* [string]
+* *pagefilename* [string]
+* *menuorder* [int]
+* *parentid* [int]
 
 ### Response
 
@@ -74,8 +100,18 @@ Location: http://api.create.net/pages/236
 ```json
 { "pages" : 
 	{
-		"ID" : "236",
-		"ADD DATA" : "ADD DATA"
+		"ID" : "2640116",
+		"pagetitle" : "Summer Festival",
+		"pagetype" : "standard",
+		"content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae libero ut odio consequat tempor...",
+		"titletag" : "Summer Festival",
+		"metakeys" : "summer,festival,fun,wahey",
+		"metadesc" : "A Summer Festival of fun",
+		"onmenu_YN" : "1",
+		"menutext" : "Summer Festival",
+		"pagefilename" : "summer-festival",
+		"menuorder" : "6:,
+		"parentid" : "0"
 	}
 }
 ```
@@ -89,7 +125,17 @@ PUT 	https://api.create.net/pages/:id
 
 ### Input
 
-@TODO
+* *pagetitle* [string]
+* *pagetype* ['standard', 'dynamic', 'homepage']
+* *content* [string]
+* *titletag* [string]
+* *metakeys* [string]
+* *metadesc* [string]
+* *onmenu_YN* [boolen]
+* *menutext* [string]
+* *pagefilename* [string]
+* *menuorder* [int]
+* *parentid* [int]
 
 ### Response
 

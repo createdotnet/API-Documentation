@@ -22,7 +22,7 @@ general
 content
 =======
 
-> @TODO	- pages  
+> **@DONE	- pages**  
 > 
 > ### blogs  
 > 
