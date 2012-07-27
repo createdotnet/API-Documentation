@@ -50,10 +50,10 @@ shop
 
 > ### orders_managment  
 >
-> > @TODO		- orders  
-> > @TODO		- disptach_notes   
-> > @TODO		- address_labels  
-> > @TODO		- order_status  
+> > **@DONE	- orders**
+> > @TODO - disptach_notes [V2]  
+> > @TODO - address_labels [V2]  
+> > @TODO - order_status [V2]  
 >
 > @TODO	- postage_and_tax [V2]  
 > @TODO	- payment_gateways [V2]  
