@@ -26,7 +26,7 @@ Status: 200 OK
 		"firstname" : "Adam",
 		"lastname" : "Strawson",
 		"email" : "adam@create.net",
-		"telephone" : "01243 65443"
+		"telephone" : "01243 65443",
 		"vat_number" : "NULL",
 		"signup_date" "2002-10-14"
 	}
