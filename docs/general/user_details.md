@@ -27,10 +27,11 @@ Status: 200 OK
 		"lastname" : "Strawson",
 		"email" : "adam@create.net",
 		"telephone" : "01243 65443"
-		"vat_number" : NULL,
+		"vat_number" : "",
 		"signup_date" "2002-10-14"
 	}
 ]}
+```
 
 Update account_details
 ------------------

@@ -76,7 +76,7 @@ POST 	https://api.create.net/discount_codes
 
 ```console
 Status: 201 Created
-Location: http://api.create.net/discount_codes/236
+Location: http://api.create.net/discount_codes/5890
 ```
 
 ```json

@@ -31,7 +31,7 @@ Status: 200 OK
 		"onmenu_YN" : "1",
 		"menutext" : "Summer Festival",
 		"pagefilename" : "summer-festival",
-		"menuorder" : "6:,
+		"menuorder" : "6",
 		"parentid" : "0"
 	}
 ]}
@@ -63,7 +63,7 @@ Status: 200 OK
 		"onmenu_YN" : "1",
 		"menutext" : "Summer Festival",
 		"pagefilename" : "summer-festival",
-		"menuorder" : "6:,
+		"menuorder" : "6",
 		"parentid" : "0"
 	}
 }
@@ -110,7 +110,7 @@ Location: http://api.create.net/pages/236
 		"onmenu_YN" : "1",
 		"menutext" : "Summer Festival",
 		"pagefilename" : "summer-festival",
-		"menuorder" : "6:,
+		"menuorder" : "6",
 		"parentid" : "0"
 	}
 }

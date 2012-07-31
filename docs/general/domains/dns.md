@@ -38,7 +38,7 @@ Status: 200 OK
 		"content" : "mail.create.net",
 		"ttl" : "900",
 		"prio" : "10",
-		"change_date: : "NULL"
+		"change_date: : ""
 	}
 ]}
 ```
@@ -66,7 +66,7 @@ Status: 200 OK
 		"content" : "mail.create.net",
 		"ttl" : "900",
 		"prio" : "10",
-		"change_date: : "NULL"
+		"change_date: : ""
 	}
 }
 ```
@@ -102,7 +102,7 @@ Location: http://api.create.net/dns/242823
 		"content" : "lifefloat.co.uk",
 		"ttl" : "900",
 		"prio" : "0",
-		"change_date: : "NULL"
+		"change_date: : ""
 	}
 }
 ```

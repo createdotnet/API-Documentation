@@ -38,6 +38,7 @@ Status: 200 OK
 		"payment_due_date" : "2014-06-12"
 	}
 }
+```
 
 Update account_details
 ------------------

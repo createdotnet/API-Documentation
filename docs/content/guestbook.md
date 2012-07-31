@@ -34,8 +34,8 @@ Status: 200 OK
 		"name" : "Adam",
 		"email" : "adam@create.net",
 		"website" : "lmgtfy.com",
-		"message" : "Thanks for the advice on the fabric colour, it matched perfectly."
-		"datestamp" : "2008-09-08 19:08:21"
+		"message" : "Thanks for the advice on the fabric colour, it matched perfectly.",
+		"datestamp" : "2008-09-08 19:08:21",
 		"approved" : "1"
 	}
 ]}
@@ -61,8 +61,8 @@ Status: 200 OK
 		"name" : "Adam",
 		"email" : "adam@create.net",
 		"website" : "lmgtfy.com",
-		"message" : "Thanks for the advice on the fabric colour, it matched perfectly."
-		"datestamp" : "2008-09-08 19:08:21"
+		"message" : "Thanks for the advice on the fabric colour, it matched perfectly.",
+		"datestamp" : "2008-09-08 19:08:21",
 		"approved" : "1"
 	}
 }

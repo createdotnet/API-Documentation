@@ -37,7 +37,7 @@ Status: 200 OK
 		"website" : "http://create.net",
 		"message" : "A great article, thanks for helping me solve my problem.",
 		"datestamp" : "2012-05-16 15:17:04",
-		"approved" : 1
+		"approved" : "1"
 	}
 ]}
 ```
@@ -65,7 +65,7 @@ Status: 200 OK
 		"website" : "http://create.net",
 		"message" : "A great article, thanks for helping me solve my problem.",
 		"datestamp" : "2012-05-16 15:17:04",
-		"approved" : 1
+		"approved" : "1"
 	}
 }
 ```
