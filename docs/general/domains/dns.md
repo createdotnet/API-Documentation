@@ -20,7 +20,6 @@ GET 	https://api.create.net/dns?domain_id=2672&type=MX
 
 * *domain_id* - ID of domain [int]
 * *type* - type of DNS record ['NS','MX','A','CNAME']
-@TODO
 
 ### Response
 
@@ -38,7 +37,7 @@ Status: 200 OK
 		"content" : "mail.create.net",
 		"ttl" : "900",
 		"prio" : "10",
-		"change_date: : ""
+		"change_date: : "0"
 	}
 ]}
 ```
@@ -66,7 +65,7 @@ Status: 200 OK
 		"content" : "mail.create.net",
 		"ttl" : "900",
 		"prio" : "10",
-		"change_date: : ""
+		"change_date: : "0"
 	}
 }
 ```
@@ -102,7 +101,7 @@ Location: http://api.create.net/dns/242823
 		"content" : "lifefloat.co.uk",
 		"ttl" : "900",
 		"prio" : "0",
-		"change_date: : ""
+		"change_date: : "0"
 	}
 }
 ```
