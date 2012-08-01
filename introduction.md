@@ -39,54 +39,52 @@ Content-Type: application/xml
 
 Access to our resources is limited by user permissions. Resources are split into groups, you can request access to a whole group, or individual resources within a group. The minimum required access level is specified for each resource. The access levels are as follows:
 
-```ruby
+```console
 general
-	- site_details
-		- account_details
-		- account_stats [Released later]  
-	- domains
-		- domain_names
-		- mail_alias
-		- dns
-	- website_stats [Released later]  
-
-content
-	- pages
-	- blogs
-		- blog_posts
-		- blog_categories
-		- blog_comments
-	- guestbooks
-	- custom_forms [Released later]  
-	- widgets [Released later]  
-	- event_calendars [Released later]  
-	- html_fragments [Released later]  
-	- enquires
-
+	site_details
+		account_details
+		account_stats  
+	domains
+		domain_names
+		mail_alias
+		dns
+	website_stats  
+content  
+	pages
+	blogs
+		blog_posts
+		blog_categories
+		blog_comments
+	guestbooks
+	custom_forms  
+	widgets  
+	event_calendars  
+	html_fragments  
+	enquires  
 shop
-	- products_and_categories
-		- products
-		- categories
-	- stock_control
-	- product_options
-	- orders_managment
-		- orders
-		- disptach_notes 
-		- address_labels
-		- order_status
-	- postage_and_tax [Released later]  
-	- payment_gateways [Released later]  
-	- shop_sale [Released later]  
-	- customer_accounts [Released later]  
-	- import_export
-		- import [Released later]  
-		- export [Released later]  
-	- downloadables [Released later]  
-	- discount_codes
-	- product_search [Released later]  
-	- shop_reports
-		- financial_reports [Released later]  
-		- product_reports [Released later]  
+	products_and_categories  
+		products  
+		categories  
+	stock_control  
+	product_options  
+	orders_managment  
+		orders  
+		disptach_notes  
+		address_labels  
+		order_status  
+	postage_and_tax  
+	payment_gateways  
+	shop_sale  
+	customer_accounts  
+	import_export  
+		import  
+		export  
+	downloadables  
+	discount_codes  
+	product_search  
+	shop_reports
+		financial_reports  
+		product_reports  
 ```
 
 ## Pagination
