@@ -1,3 +1,8 @@
+---
+layout: default
+title: Domain Names
+---
+
 Domain names
 =============
 
@@ -8,21 +13,17 @@ __Resource:__ domain_names
 List all domain names
 -------------------
 
-```php
+{% highlight php %}
 GET 	https://api.create.net/domain_names
-```
-
-### Input
-
-@TODO
+{% endhighlight %}
 
 ### Response
 
-```console
+{% highlight php %}
 Status: 200 OK
-```
+{% endhighlight %}
 
-```json
+{% highlight javascript %}
 { "domain_names" :[ 
 	{
 		"ID" : "228025",
@@ -33,22 +34,22 @@ Status: 200 OK
 		"isourdns" : "1"
 	}
 ]}
-```
+{% endhighlight %}
 
 Get a single domain name
 -----------------------
 
-```php
+{% highlight php %}
 GET 	https://api.create.net/domain_names/:id
-```
+{% endhighlight %}
 
 ### Response
 
-```console
+{% highlight php %}
 Status: 200 OK
-```
+{% endhighlight %}
 
-```json
+{% highlight javascript %}
 { "domain_name" : 
 	{
 		"ID" : "228025",
@@ -59,17 +60,17 @@ Status: 200 OK
 		"isourdns" : "1"
 	}
 }
-```
+{% endhighlight %}
 
 Delete a domain name
 ------------------
 
-```php
+{% highlight php %}
 DELETE 	https://api.create.net/domain_names/:id
-```
+{% endhighlight %}
 
 ### Response
 
-```console
+{% highlight php %}
 Status: 200 OK
-```
+{% endhighlight %}

@@ -1,3 +1,8 @@
+---
+layout: default
+title: Pages
+---
+
 Pages
 =============
 
@@ -8,17 +13,17 @@ __Resource:__ pages
 List all pages
 -------------------
 
-```php
+{% highlight php %}
 GET 	https://api.create.net/pages
-```
+{% endhighlight %}
 
 ### Response
 
-```console
+{% highlight php %}
 Status: 200 OK
-```
+{% endhighlight %}
 
-```json
+{% highlight javascript %}
 { "pages" :[ 
 	{
 		"ID" : "2640116",
@@ -35,22 +40,22 @@ Status: 200 OK
 		"parentid" : "0"
 	}
 ]}
-```
+{% endhighlight %}
 
 Get a page
 ----------
 
-```php
+{% highlight php %}
 GET 	https://api.create.net/pages/:id
-```
+{% endhighlight %}
 
 ### Response
 
-```console
+{% highlight php %}
 Status: 200 OK
-```
+{% endhighlight %}
 
-```json
+{% highlight javascript %}
 { "pages" : 
 	{
 		"ID" : "2640116",
@@ -67,37 +72,37 @@ Status: 200 OK
 		"parentid" : "0"
 	}
 }
-```
+{% endhighlight %}
 
 Create a page
 -------------
 
-```php
+{% highlight php %}
 POST 	https://api.create.net/pages
-```
+{% endhighlight %}
 
 ### Input
 
-* *pagetitle* [string]
-* *pagetype* ['standard', 'dynamic', 'homepage']
-* *content* [string]
-* *titletag* [string]
-* *metakeys* [string]
-* *metadesc* [string]
-* *onmenu_YN* [boolen]
-* *menutext* [string]
-* *pagefilename* [string]
-* *menuorder* [int]
-* *parentid* [int]
+* *pagetitle* string
+* *pagetype* standard, dynamic, homepage
+* *content* string
+* *titletag* string
+* *metakeys* string
+* *metadesc* string
+* *onmenu_YN* boolen
+* *menutext* string
+* *pagefilename* string
+* *menuorder* int
+* *parentid* int
 
 ### Response
 
-```console
+{% highlight php %}
 Status: 201 Created
 Location: http://api.create.net/pages/236
-```
+{% endhighlight %}
 
-```json
+{% highlight javascript %}
 { "pages" : 
 	{
 		"ID" : "2640116",
@@ -114,44 +119,44 @@ Location: http://api.create.net/pages/236
 		"parentid" : "0"
 	}
 }
-```
+{% endhighlight %}
 
 Update a page
 -------------
 
-```php
+{% highlight php %}
 PUT 	https://api.create.net/pages/:id
-```
+{% endhighlight %}
 
 ### Input
 
-* *pagetitle* [string]
-* *pagetype* ['standard', 'dynamic', 'homepage']
-* *content* [string]
-* *titletag* [string]
-* *metakeys* [string]
-* *metadesc* [string]
-* *onmenu_YN* [boolen]
-* *menutext* [string]
-* *pagefilename* [string]
-* *menuorder* [int]
-* *parentid* [int]
+* *pagetitle* string
+* *pagetype* standard, dynamic, homepage
+* *content* string
+* *titletag* string
+* *metakeys* string
+* *metadesc* string
+* *onmenu_YN* boolen
+* *menutext* string
+* *pagefilename* string
+* *menuorder* int
+* *parentid* int
 
 ### Response
 
-```console
+{% highlight php %}
 Status: 200 OK
-```
+{% endhighlight %}
 
 Delete a page
 -------------
 
-```php
+{% highlight php %}
 DELETE 	https://api.create.net/pages/:id
-```
+{% endhighlight %}
 
 ### Response
 
-```console
+{% highlight php %}
 Status: 200 OK
-```
+{% endhighlight %}

@@ -1,3 +1,8 @@
+---
+layout: default
+title: Blog Posts
+---
+
 Blog Posts
 =============
 
@@ -8,28 +13,28 @@ __Resource:__ blog_posts
 List all blog posts
 -------------------
 
-```php
+{% highlight php %}
 GET 	https://api.create.net/blog_posts
-```
+{% endhighlight %}
 
 ### Input
 
-```php
+{% highlight php %}
 GET 	https://api.create.net/blog_posts?author=adam
-```
+{% endhighlight %}
 
-* *author* - Name of author [string]
-* *datetime_from* - Date and Time of from range [2010-04-07 18:08:14]
-* *datetime_to* - Date and Time of to range [2012-06-02 00:00:00]
-* *category* - ID of category [int]
+* *author* string
+* *datetime_from* datetime
+* *datetime_to* datetime
+* *category* int
 
 ### Response
 
-```console
+{% highlight php %}
 Status: 200 OK
-```
+{% endhighlight %}
 
-```json
+{% highlight javascript %}
 { "blog_posts":[
 	{
 		"ID" : "3408",
@@ -43,22 +48,22 @@ Status: 200 OK
 		"meta_desc" : "cliff top walks in West Penwith and around Sennen Cove"
 	}
 ]}
-```
+{% endhighlight %}
 
 Get a single blog post
 -----------------------
 
-```php
+{% highlight php %}
 GET 	https://api.create.net/blog_posts/:id
-```
+{% endhighlight %}
 
 ### Response
 
-```console
+{% highlight php %}
 Status: 200 OK
-```
+{% endhighlight %}
 
-```json
+{% highlight javascript %}
 { "blog_post" : 
 	{
 		"ID" : "3528",
@@ -72,34 +77,33 @@ Status: 200 OK
 		"meta_desc" : "Great Pubs in West Penwith and around Sennen Cove"
 	}
 }
-```
+{% endhighlight %}
 
 Create a blog post
 ------------------
 
-```php
+{% highlight php %}
 POST 	https://api.create.net/blog_posts
-```
+{% endhighlight %}
 
 ### Input
 
-* *category_id* Optional [int]
-* *title* Required [string]
-* *post* Required [string]
-* *author* Optional [string]
-* *datetime* Optional, If not specifed, defaults to datetime of request. [2012-01-14 18:12:18]
-* *title_tag* Optional [string]
-* *meta_keys* Optional [string]
-* *meta_desc* Optional [string]
+* *category_id* Optional int
+* *title* Required string
+* *post* Required string
+* *author* Optional string
+* *title_tag* Optional string
+* *meta_keys* Optional string
+* *meta_desc* Optional string
 
 ### Response
 
-```console
+{% highlight php %}
 Status: 201 Created
 Location: http://api.create.net/blog_posts/54648
-```
+{% endhighlight %}
 
-```json
+{% highlight javascript %}
 { "blog_post" : 
 	{
 		"ID" : "3528",
@@ -113,40 +117,40 @@ Location: http://api.create.net/blog_posts/54648
 		"meta_desc" : "Great Pubs in West Penwith and around Sennen Cove"
 	}
 }
-```
+{% endhighlight %}
 
 Update a blog post
 ------------------
 
-```php
+{% highlight php %}
 PUT 	https://api.create.net/blog_posts/:id
-```
+{% endhighlight %}
 
 ### Input
 
-* *category_id* [int]
-* *title* [string]
-* *post* [string]
-* *author* [string]
-* *title_tag* [string]
-* *meta_keys* [string]
-* *meta_desc* [string]
+* *category_id* int
+* *title* string
+* *post* string
+* *author* string
+* *title_tag* string
+* *meta_keys* string
+* *meta_desc* string
 
 ### Response
 
-```console
+{% highlight php %}
 Status: 200 OK
-```
+{% endhighlight %}
 
 Delete a blog post
 ------------------
 
-```php
+{% highlight php %}
 DELETE 	https://api.create.net/blog_posts/:id
-```
+{% endhighlight %}
 
 ### Response
 
-```console
+{% highlight php %}
 Status: 200 OK
-```
+{% endhighlight %}

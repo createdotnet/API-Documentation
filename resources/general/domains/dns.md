@@ -1,3 +1,8 @@
+---
+layout: default
+title: DNS
+---
+
 DNS
 =============
 
@@ -8,26 +13,26 @@ __Resource:__ dns
 List all DNS records
 -------------------
 
-```php
+{% highlight php %}
 GET 	https://api.create.net/dns
-```
+{% endhighlight %}
 
 ### Input
 
-```php
+{% highlight php %}
 GET 	https://api.create.net/dns?domain_id=2672&type=MX
-```
+{% endhighlight %}
 
-* *domain_id* - ID of domain [int]
-* *type* - type of DNS record ['NS','MX','A','CNAME']
+* *domain_id* int
+* *type* NS, MX, A, CNAME
 
 ### Response
 
-```console
+{% highlight php %}
 Status: 200 OK
-```
+{% endhighlight %}
 
-```json
+{% highlight javascript %}
 { "dns" :[ 
 	{
 		"id" : "242223",
@@ -40,22 +45,22 @@ Status: 200 OK
 		"change_date" : "NULL"
 	}
 ]}
-```
+{% endhighlight %}
 
 Get a single DNS record
 -----------------------
 
-```php
+{% highlight php %}
 GET 	https://api.create.net/dns/:id
-```
+{% endhighlight %}
 
 ### Response
 
-```console
+{% highlight php %}
 Status: 200 OK
-```
+{% endhighlight %}
 
-```json
+{% highlight javascript %}
 { "dns" : 
 	{
 		"id" : "242223",
@@ -68,30 +73,30 @@ Status: 200 OK
 		"change_date" : "NULL"
 	}
 }
-```
+{% endhighlight %}
 
 Create a DNS record
 ------------------
 
-```php
+{% highlight php %}
 POST 	https://api.create.net/dns
-```
+{% endhighlight %}
 
 ### Input
 
-* *domain_id* Required [int]
-* *name* Required [string]
-* *type* Required ['NS','MX','A','CNAME']
-* *content* Required [string]
+* *domain_id* Required int
+* *name* Required string
+* *type* Required NS, MX, A, CNAME
+* *content* Required string
 
 ### Response
 
-```console
+{% highlight php %}
 Status: 201 Created
 Location: http://api.create.net/dns/242823
-```
+{% endhighlight %}
 
-```json
+{% highlight javascript %}
 { "dns" : 
 	{
 		"id" : "242823",
@@ -104,36 +109,36 @@ Location: http://api.create.net/dns/242823
 		"change_date" : "NULL"
 	}
 }
-```
+{% endhighlight %}
 
 Update a DNS record
 ------------------
 
-```php
+{% highlight php %}
 PUT 	https://api.create.net/dns/:id
-```
+{% endhighlight %}
 
 ### Input
 
-* *name* Required [string]
-* *type* Required ['NS','MX','A','CNAME']
-* *content* Required [string]
+* *name* string
+* *type* NS, MX, A, CNAME
+* *content* string
 
 ### Response
 
-```console
+{% highlight php %}
 Status: 200 OK
-```
+{% endhighlight %}
 
 Delete a DNS record
 ------------------
 
-```php
+{% highlight php %}
 DELETE 	https://api.create.net/dns/:id
-```
+{% endhighlight %}
 
 ### Response
 
-```console
+{% highlight php %}
 Status: 200 OK
-```
+{% endhighlight %}

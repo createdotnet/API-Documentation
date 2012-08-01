@@ -1,3 +1,8 @@
+---
+layout: default
+title: Create API Documentation
+---
+
 #Create. API Documentation
 
 This is our beta API, which gives you access to the majority of our customers resources within the application. We plan on releasing with most of the planned resources, but some will follow in a later release, this is outlined in the introduction.
@@ -10,6 +15,6 @@ Also, pull requests are welcome.
 
 If you have any questions, you can catch me at the following places:
 
-- Email: adam@create.net  
-- Twitter: @adamstrawson  
-- Campfire: https://createinternetltd.campfirenow.com/fbba7  
+- Email: [adam@create.net](mailto:adam@create.net)
+- Twitter: [@adamstrawson](https://twitter.com/adamstrawson)
+- Campfire: [https://createinternetltd.campfirenow.com/fbba7](https://createinternetltd.campfirenow.com/fbba7)  

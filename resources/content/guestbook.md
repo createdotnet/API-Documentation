@@ -1,3 +1,8 @@
+---
+layout: default
+title: Guestbook
+---
+
 Guestbook
 =============
 
@@ -8,26 +13,27 @@ __Resource:__ guestbook
 List all guestbook entries
 --------------------------
 
-```php
+{% highlight php %}
 GET 	https://api.create.net/guestbook
-```
+{% endhighlight %}
 
 ### Input
 
-```php
+{% highlight php %}
 GET 	https://api.create.net/guestbook?datetime_from=2010-04-07%2018:08:14
-```
-* *datetime_from* [2010-04-07 18:08:14]
-* *datetime_to* [2012-06-02 00:00:00]
-* *approved* [int]
+{% endhighlight %}
+
+* *datetime_from* datetime
+* *datetime_to* datetime
+* *approved* int
 
 ### Response
 
-```console
+{% highlight php %}
 Status: 200 OK
-```
+{% endhighlight %}
 
-```json
+{% highlight javascript %}
 { "guestbook" :[
 	{
 		"ID" : "1743",
@@ -39,22 +45,22 @@ Status: 200 OK
 		"approved" : "1"
 	}
 ]}
-```
+{% endhighlight %}
 
 Get a single guestbook entry
 ----------------------------
 
-```php
+{% highlight php %}
 GET 	https://api.create.net/guestbook/:id
-```
+{% endhighlight %}
 
 ### Response
 
-```console
+{% highlight php %}
 Status: 200 OK
-```
+{% endhighlight %}
 
-```json
+{% highlight javascript %}
 { "guestbook" :
 	{
 		"ID" : "1743",
@@ -66,18 +72,17 @@ Status: 200 OK
 		"approved" : "1"
 	}
 }
-```
-
+{% endhighlight %}
 
 Delete a guestbook entry
 ------------------------
 
-```php
+{% highlight php %}
 DELETE 	https://api.create.net/guestbook/:id
-```
+{% endhighlight %}
 
 ### Response
 
-```console
+{% highlight php %}
 Status: 200 OK
-```	
+{% endhighlight %}	
