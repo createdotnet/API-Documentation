@@ -1,3 +1,8 @@
+---
+layout: default
+title: Account Stats
+---
+
 Account stats
 =============
 
@@ -8,24 +13,21 @@ __Resource:__ account_status
 List account stats
 -------------------
 
-```php
+{% highlight php %}
 GET 	https://api.create.net/account_stats
-```
-
-### Inputs
-
-@TODO 
+{% endhighlight %}
 
 ### Response
 
-```console
+{% highlight php %}
 Status: 200 OK
-```
+{% endhighlight %}
 
-```json
+{% highlight json %}
 { "account_stats" :[ 
 	{
 		"ID" : "236",
 		"ADD DATA" : "ADD DATA"
 	}
 ]}
+{% endhighlight %}

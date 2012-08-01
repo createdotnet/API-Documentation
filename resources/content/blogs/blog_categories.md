@@ -1,3 +1,8 @@
+---
+layout: default
+title: Blog Categories
+---
+
 Blog Categories
 =============
 
@@ -8,89 +13,89 @@ __Resource:__ blog_categories
 List all blog categories
 -------------------
 
-```php
+{% highlight php %}
 GET 	https://api.create.net/blog_categories
-```
+{% endhighlight %}
 
 ### Input
 
-```php
+{% highlight php %}
 GET 	https://api.create.net/blog_categories
-```
+{% endhighlight %}
 
 ### Response
 
-```console
+{% highlight php %}
 Status: 200 OK
-```
+{% endhighlight %}
 
-```json
+{% highlight json %}
 { "blog_categories":[
 	{
 		"ID" : "26255",
 		"name" : "Holidays"
 	}
 ]}
-```
+{% endhighlight %}
 
 Get a single blog category
 -------------------------
 
-```php
+{% highlight php %}
 GET 	https://api.create.net/blog_categorys/:id
-```
+{% endhighlight %}
 
 ### Response
 
-```console
+{% highlight php %}
 Status: 200 OK
-```
+{% endhighlight %}
 
-```json
+{% highlight json %}
 { "blog_category" : 
 	{
 		"ID" : "26255",
 		"name" : "Holidays"
 	}
 }
-```
+{% endhighlight %}
 
 Create a blog category
 ------------------
 
-```php
+{% highlight php %}
 POST 	https://api.create.net/blog_categories
-```
+{% endhighlight %}
 
 ### Input
 
-* *name* Requried [string]
+* *name* Requried string
 
 ### Response
 
-```console
+{% highlight php %}
 Status: 201 Created
 Location: http://api.create.net/blog_categories/54648
-```
+{% endhighlight %}
 
-```json
+{% highlight json %}
 { "blog_post" : 
 	{
 		"ID" : "3528",
 		"name" : "Cats in hats",
 	}
 }
-```
+{% endhighlight %}
 
 Delete a blog comment
 ------------------
 
-```php
+{% highlight php %}
 DELETE 	https://api.create.net/blog_categories/:id
-```
+{% endhighlight %}
 
 ### Response
 
-```console
+{% highlight php %}
 Status: 200 OK
-```
+{% endhighlight %}

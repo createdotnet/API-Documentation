@@ -1,3 +1,8 @@
+---
+layout: default
+title: Email Forwarding
+---
+
 Domain mail alias
 =============
 
@@ -8,25 +13,25 @@ __Resource:__ mail_alias
 List all mail alias
 -------------------
 
-```php
+{% highlight php %}
 GET 	https://api.create.net/mail_alias
-```
+{% endhighlight %}
 
 ### Input
 
-```php
+{% highlight php %}
 GET 	https://api.create.net/mail_alias?domain_id=2672
-```
+{% endhighlight %}
 
-* *domain_id* - ID of domain [int]
+* *domain_id* - ID of domain int
 
 ### Response
 
-```console
+{% highlight php %}
 Status: 200 OK
-```
+{% endhighlight %}
 
-```json
+{% highlight json %}
 { "mail_alias" :[ 
 	{
 		"ID" : "236",
@@ -35,22 +40,22 @@ Status: 200 OK
 		"email" : "adam@create.net"
 	}
 ]}
-```
+{% endhighlight %}
 
 Get a single mail alias
 -----------------------
 
-```php
+{% highlight php %}
 GET 	https://api.create.net/mail_alias/:id
-```
+{% endhighlight %}
 
 ### Response
 
-```console
+{% highlight php %}
 Status: 200 OK
-```
+{% endhighlight %}
 
-```json
+{% highlight json %}
 { "mail_alias" : 
 	{
 		"ID" : "236",
@@ -59,29 +64,29 @@ Status: 200 OK
 		"email" : "adam@create.net"
 	}
 }
-```
+{% endhighlight %}
 
 Create a mail alias
 ------------------
 
-```php
+{% highlight php %}
 POST 	https://api.create.net/mail_alias
-```
+{% endhighlight %}
 
 ### Input
 
-* *domain_id* Required [int]
-* *alias* Required [string]
-* *email* Required [string]
+* *domain_id* Required int
+* *alias* Required string
+* *email* Required string
 
 ### Response
 
-```console
+{% highlight php %}
 Status: 201 Created
 Location: http://api.create.net/mail_alias/236
-```
+{% endhighlight %}
 
-```json
+{% highlight json %}
 { "mail_alias" : 
 	{
 		"ID" : "236",
@@ -90,35 +95,35 @@ Location: http://api.create.net/mail_alias/236
 		"email" : "adam@create.net"
 	}
 }
-```
+{% endhighlight %}
 
 Update a mail alias
 ------------------
 
-```php
+{% highlight php %}
 PUT 	https://api.create.net/mail_alias/:id
-```
+{% endhighlight %}
 
 ### Input
 
-* *alias* [string]
-* *email* Forwarding address [string]
+* *alias* string
+* *email* Forwarding address string
 
 ### Response
 
-```console
+{% highlight php %}
 Status: 200 OK
-```
+{% endhighlight %}
 
 Delete a mail alias
 ------------------
 
-```php
+{% highlight php %}
 DELETE 	https://api.create.net/mail_alias/:id
-```
+{% endhighlight %}
 
 ### Response
 
-```console
+{% highlight php %}
 Status: 200 OK
-```
+{% endhighlight %}

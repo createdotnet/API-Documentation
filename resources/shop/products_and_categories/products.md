@@ -1,3 +1,8 @@
+---
+layout: default
+title: Products
+---
+
 Products
 =============
 
@@ -8,24 +13,24 @@ __Resource:__ products
 List all products
 -------------------
 
-```php
+{% highlight php %}
 GET 	https://api.create.net/products
-```
+{% endhighlight %}
 
 ### Input
 
-```php
+{% highlight php %}
 GET 	https://api.create.net/products?category_id=123133
-```
-* *category_id* [int]
+{% endhighlight %}
+* *category_id* int
 
 ### Response
 
-```console
+{% highlight php %}
 Status: 200 OK
-```
+{% endhighlight %}
 
-```json
+{% highlight json %}
 { "products" :[ 
 	{
 		"ID" : "898440",
@@ -45,22 +50,22 @@ Status: 200 OK
 		"trade_price" : "0.00"
 	}
 ]}
-```
+{% endhighlight %}
 
 Get a product
 ----------
 
-```php
+{% highlight php %}
 GET 	https://api.create.net/products/:id
-```
+{% endhighlight %}
 
 ### Response
 
-```console
+{% highlight php %}
 Status: 200 OK
-```
+{% endhighlight %}
 
-```json
+{% highlight json %}
 { "products" : 
 	{
 		"ID" : "898440",
@@ -80,41 +85,41 @@ Status: 200 OK
 		"trade_price" : "0.00"
 	}
 }
-```
+{% endhighlight %}
 
 Create a product
 -------------
 
-```php
+{% highlight php %}
 POST 	https://api.create.net/products
-```
+{% endhighlight %}
 
 ### Input
 
-* *parentcat_INC* [int]
-* *title* [string]
-* *shortdesc* [string]
-* *longdesc* [string]
-* *price* [int]
-* *sku* [int]
-* *weight* [int]
-* *stock_number* [int]
-* *titletag* [string]
-* *metakeys* [string]
-* *metadesc* [string]
-* *was_price* [int]
-* *rrp* [int]
-* *trade_price* [int]
+* *parentcat_INC* int
+* *title* string
+* *shortdesc* string
+* *longdesc* string
+* *price* int
+* *sku* int
+* *weight* int
+* *stock_number* int
+* *titletag* string
+* *metakeys* string
+* *metadesc* string
+* *was_price* int
+* *rrp* int
+* *trade_price* int
 
 
 ### Response
 
-```console
+{% highlight php %}
 Status: 201 Created
 Location: http://api.create.net/products/2455436
-```
+{% endhighlight %}
 
-```json
+{% highlight json %}
 { "products" : 
 	{
 		"ID" : "898440",
@@ -134,47 +139,47 @@ Location: http://api.create.net/products/2455436
 		"trade_price" : "0.00"
 	}
 }
-```
+{% endhighlight %}
 
 Update a product
 -------------
 
-```php
+{% highlight php %}
 PUT 	https://api.create.net/products/:id
-```
+{% endhighlight %}
 
 ### Input
 
-* *parentcat_INC* [int]
-* *title* [string]
-* *shortdesc* [string]
-* *longdesc* [string]
-* *price* [int]
-* *sku* [int]
-* *weight* [int]
-* *stock_number* [int]
-* *titletag* [string]
-* *metakeys* [string]
-* *metadesc* [string]
-* *was_price* [int]
-* *rrp* [int]
-* *trade_price* [int]
+* *parentcat_INC* int
+* *title* string
+* *shortdesc* string
+* *longdesc* string
+* *price* int
+* *sku* int
+* *weight* int
+* *stock_number* int
+* *titletag* string
+* *metakeys* string
+* *metadesc* string
+* *was_price* int
+* *rrp* int
+* *trade_price* int
 
 ### Response
 
-```console
+{% highlight php %}
 Status: 200 OK
-```
+{% endhighlight %}
 
 Delete a product
 -------------
 
-```php
+{% highlight php %}
 DELETE 	https://api.create.net/products/:id
-```
+{% endhighlight %}
 
 ### Response
 
-```console
+{% highlight php %}
 Status: 200 OK
-```
+{% endhighlight %}

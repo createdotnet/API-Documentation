@@ -1,3 +1,8 @@
+---
+layout: default
+title: Orders
+---
+
 Orders
 =============
 
@@ -8,27 +13,27 @@ __Resource:__ orders
 List all orders
 -------------------
 
-```php
+{% highlight php %}
 GET 	https://api.create.net/orders
-```
+{% endhighlight %}
 
 ### Input
 
-```php
+{% highlight php %}
 GET 	https://api.create.net/orders?datetime_from=2010-04-07%2018:08:14
-```
-* *datetime_from* [2010-04-07 18:08:14]
-* *datetime_to* [2012-06-02 00:00:00]
-* *status* [int]
-* *customer_id* [int]
+{% endhighlight %}
+* *datetime_from* 2010-04-07 18:08:14
+* *datetime_to* 2012-06-02 00:00:00
+* *status* int
+* *customer_id* int
 
 ### Response
 
-```console
+{% highlight php %}
 Status: 200 OK
-```
+{% endhighlight %}
 
-```json
+{% highlight json %}
 { "orders" :[
 	{
 		"ID" : "42050",
@@ -73,22 +78,22 @@ Status: 200 OK
 		"referrer" : "smithssweets.co.uk"
 	}
 ]}
-```
+{% endhighlight %}
 
 Get a single orders
 -------------------------
 
-```php
+{% highlight php %}
 GET 	https://api.create.net/orders/:id
-```
+{% endhighlight %}
 
 ### Response
 
-```console
+{% highlight php %}
 Status: 200 OK
-```
+{% endhighlight %}
 
-```json
+{% highlight json %}
 { "orders" :
 	{
 		"ID" : "42050",
@@ -133,4 +138,4 @@ Status: 200 OK
 		"referrer" : "smithssweets.co.uk"
 	}
 }
-```
+{% endhighlight %}

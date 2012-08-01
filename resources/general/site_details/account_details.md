@@ -1,3 +1,8 @@
+---
+layout: default
+title: Account Details
+---
+
 Account details
 =============
 
@@ -8,17 +13,17 @@ __Resource:__ account_details
 List account details
 -------------------
 
-```php
+{% highlight php %}
 GET 	https://api.create.net/account_details
-```
+{% endhighlight %}
 
 ### Response
 
-```console
+{% highlight php %}
 Status: 200 OK
-```
+{% endhighlight %}
 
-```json
+{% highlight json %}
 { "account_details" :
 	{
 		"ID" : "73663",
@@ -38,30 +43,30 @@ Status: 200 OK
 		"payment_due_date" : "2014-06-12"
 	}
 }
-```
+{% endhighlight %}
 
 Update account_details
 ------------------
 
-```php
+{% highlight php %}
 PUT 	https://api.create.net/account_details
-```
+{% endhighlight %}
 
 ### Input
 
-* *company_name* [string]
-* *site_name* [string]
-* *address1* [string]
-* *address2* [string]
-* *town* [string]
-* *county [string]
-* *postcode [string]
-* *country [string]
-* *telephone [string]
-* *email [string]
+* *company_name* string  
+* *site_name* string  
+* *address1* string
+* *address2* string  
+* *town* string  
+* *county* string  
+* *postcode* string  
+* *country* string  
+* *telephone* string  
+* *email* string  
 
 ### Response
 
-```console
+{% highlight php %}
 Status: 200 OK
-```
+{% endhighlight %}

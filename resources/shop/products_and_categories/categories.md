@@ -1,3 +1,8 @@
+---
+layout: default
+title: Categories
+---
+
 Categories
 =============
 
@@ -8,24 +13,24 @@ __Resource:__ categories
 List all categories
 -------------------
 
-```php
+{% highlight php %}
 GET 	https://api.create.net/categories
-```
+{% endhighlight %}
 
 ### Input
 
-```php
+{% highlight php %}
 GET 	https://api.create.net/categories?parent_category=222608
-```
-* *parent_category* [int]
+{% endhighlight %}
+* *parent_category* int
 
 ### Response
 
-```console
+{% highlight php %}
 Status: 200 OK
-```
+{% endhighlight %}
 
-```json
+{% highlight json %}
 { "categories" :[ 
 	{
 		"ID" : "271099",
@@ -36,22 +41,22 @@ Status: 200 OK
 		"metakeys" : "hiking, clothing, gear"
 	}
 ]}
-```
+{% endhighlight %}
 
 Get a category
 ----------
 
-```php
+{% highlight php %}
 GET 	https://api.create.net/categories/:id
-```
+{% endhighlight %}
 
 ### Response
 
-```console
+{% highlight php %}
 Status: 200 OK
-```
+{% endhighlight %}
 
-```json
+{% highlight json %}
 { "categories" : 
 	{
 		"ID" : "271099",
@@ -62,31 +67,31 @@ Status: 200 OK
 		"metakeys" : "hiking, clothing, gear"
 	}
 }
-```
+{% endhighlight %}
 
 Create a category
 -------------
 
-```php
+{% highlight php %}
 POST 	https://api.create.net/categories
-```
+{% endhighlight %}
 
 ### Input
 
-* *parentcat_INC* [int]
-* *title* [string]
-* *titletag* [string]
-* *metakeys* [string]
-* *metadesc* [string]
+* *parentcat_INC* int
+* *title* string
+* *titletag* string
+* *metakeys* string
+* *metadesc* string
 
 ### Response
 
-```console
+{% highlight php %}
 Status: 201 Created
 Location: http://api.create.net/categories/2455436
-```
+{% endhighlight %}
 
-```json
+{% highlight json %}
 { "categories" : 
 	{
 		"ID" : "271099",
@@ -97,38 +102,38 @@ Location: http://api.create.net/categories/2455436
 		"metakeys" : "hiking, clothing, gear"
 	}
 }
-```
+{% endhighlight %}
 
 Update a categories
 -------------
 
-```php
+{% highlight php %}
 PUT 	https://api.create.net/categories/:id
-```
+{% endhighlight %}
 
 ### Input
 
-* *parentcat_INC* [int]
-* *title* [string]
-* *titletag* [string]
-* *metakeys* [string]
-* *metadesc* [string]
+* *parentcat_INC* int
+* *title* string
+* *titletag* string
+* *metakeys* string
+* *metadesc* string
 
 ### Response
 
-```console
+{% highlight php %}
 Status: 200 OK
-```
+{% endhighlight %}
 
 Delete a category
 -------------
 
-```php
+{% highlight php %}
 DELETE 	https://api.create.net/categories/:id
-```
+{% endhighlight %}
 
 ### Response
 
-```console
+{% highlight php %}
 Status: 200 OK
-```
+{% endhighlight %}

@@ -1,3 +1,8 @@
+---
+layout: default
+title: Blog Comments
+---
+
 Blog Comments
 =============
 
@@ -8,26 +13,26 @@ __Resource:__ blog_comments
 List all blog comments
 -------------------
 
-```php
+{% highlight php %}
 GET 	https://api.create.net/blog_comments
-```
+{% endhighlight %}
 
 ### Input
 
-```php
+{% highlight php %}
 GET 	https://api.create.net/blog_comments?post_id=2554
-```
-* *post_id* - ID of a blog post [int] 
-* *datetime_from* - Date and Time of from range [2010-04-07 18:08:14]
-* *datetime_to* - Date and Time of to range [2012-06-02 00:00:00]
+{% endhighlight %}
+* *post_id* - ID of a blog post int 
+* *datetime_from* - Date and Time of from range 2010-04-07 18:08:14
+* *datetime_to* - Date and Time of to range 2012-06-02 00:00:00
 
 ### Response
 
-```console
+{% highlight php %}
 Status: 200 OK
-```
+{% endhighlight %}
 
-```json
+{% highlight json %}
 { "blog_comments":[
 	{
 		"ID" : "464533",
@@ -40,22 +45,22 @@ Status: 200 OK
 		"approved" : "1"
 	}
 ]}
-```
+{% endhighlight %}
 
 Get a single blog comment
 -------------------------
 
-```php
+{% highlight php %}
 GET 	https://api.create.net/blog_comments/:id
-```
+{% endhighlight %}
 
 ### Response
 
-```console
+{% highlight php %}
 Status: 200 OK
-```
+{% endhighlight %}
 
-```json
+{% highlight json %}
 { "blog_comment" :
 	{
 		"ID" : "464533",
@@ -68,18 +73,18 @@ Status: 200 OK
 		"approved" : "1"
 	}
 }
-```
+{% endhighlight %}
 
 
 Delete a blog comment
 ------------------
 
-```php
+{% highlight php %}
 DELETE 	https://api.create.net/blog_comments/:id
-```
+{% endhighlight %}
 
 ### Response
 
-```console
+{% highlight php %}
 Status: 200 OK
-```
+{% endhighlight %}
