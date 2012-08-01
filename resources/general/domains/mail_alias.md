@@ -31,7 +31,7 @@ GET 	https://api.create.net/mail_alias?domain_id=2672
 Status: 200 OK
 {% endhighlight %}
 
-{% highlight json %}
+{% highlight javascript %}
 { "mail_alias" :[ 
 	{
 		"ID" : "236",
@@ -55,7 +55,7 @@ GET 	https://api.create.net/mail_alias/:id
 Status: 200 OK
 {% endhighlight %}
 
-{% highlight json %}
+{% highlight javascript %}
 { "mail_alias" : 
 	{
 		"ID" : "236",
@@ -86,7 +86,7 @@ Status: 201 Created
 Location: http://api.create.net/mail_alias/236
 {% endhighlight %}
 
-{% highlight json %}
+{% highlight javascript %}
 { "mail_alias" : 
 	{
 		"ID" : "236",

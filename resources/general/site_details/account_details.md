@@ -23,7 +23,7 @@ GET 	https://api.create.net/account_details
 Status: 200 OK
 {% endhighlight %}
 
-{% highlight json %}
+{% highlight javascript %}
 { "account_details" :
 	{
 		"ID" : "73663",

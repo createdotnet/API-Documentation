@@ -22,6 +22,7 @@ GET 	https://api.create.net/products
 {% highlight php %}
 GET 	https://api.create.net/products?category_id=123133
 {% endhighlight %}
+
 * *category_id* int
 
 ### Response
@@ -30,7 +31,7 @@ GET 	https://api.create.net/products?category_id=123133
 Status: 200 OK
 {% endhighlight %}
 
-{% highlight json %}
+{% highlight javascript %}
 { "products" :[ 
 	{
 		"ID" : "898440",
@@ -65,7 +66,7 @@ GET 	https://api.create.net/products/:id
 Status: 200 OK
 {% endhighlight %}
 
-{% highlight json %}
+{% highlight javascript %}
 { "products" : 
 	{
 		"ID" : "898440",
@@ -119,7 +120,7 @@ Status: 201 Created
 Location: http://api.create.net/products/2455436
 {% endhighlight %}
 
-{% highlight json %}
+{% highlight javascript %}
 { "products" : 
 	{
 		"ID" : "898440",

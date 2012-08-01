@@ -22,8 +22,8 @@ GET 	https://api.create.net/orders
 {% highlight php %}
 GET 	https://api.create.net/orders?datetime_from=2010-04-07%2018:08:14
 {% endhighlight %}
-* *datetime_from* 2010-04-07 18:08:14
-* *datetime_to* 2012-06-02 00:00:00
+* *datetime_from* datetime
+* *datetime_to* datetime
 * *status* int
 * *customer_id* int
 
@@ -33,7 +33,7 @@ GET 	https://api.create.net/orders?datetime_from=2010-04-07%2018:08:14
 Status: 200 OK
 {% endhighlight %}
 
-{% highlight json %}
+{% highlight javascript %}
 { "orders" :[
 	{
 		"ID" : "42050",
@@ -93,7 +93,7 @@ GET 	https://api.create.net/orders/:id
 Status: 200 OK
 {% endhighlight %}
 
-{% highlight json %}
+{% highlight javascript %}
 { "orders" :
 	{
 		"ID" : "42050",

@@ -29,7 +29,7 @@ GET 	https://api.create.net/blog_categories
 Status: 200 OK
 {% endhighlight %}
 
-{% highlight json %}
+{% highlight javascript %}
 { "blog_categories":[
 	{
 		"ID" : "26255",
@@ -51,7 +51,7 @@ GET 	https://api.create.net/blog_categorys/:id
 Status: 200 OK
 {% endhighlight %}
 
-{% highlight json %}
+{% highlight javascript %}
 { "blog_category" : 
 	{
 		"ID" : "26255",
@@ -78,7 +78,7 @@ Status: 201 Created
 Location: http://api.create.net/blog_categories/54648
 {% endhighlight %}
 
-{% highlight json %}
+{% highlight javascript %}
 { "blog_post" : 
 	{
 		"ID" : "3528",

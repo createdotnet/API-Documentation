@@ -23,7 +23,7 @@ GET 	https://api.create.net/discount_codes
 Status: 200 OK
 {% endhighlight %}
 
-{% highlight json %}
+{% highlight javascript %}
 { "discount_codes" :[ 
 	{
 		"ID" : "5890",
@@ -49,7 +49,7 @@ GET 	https://api.create.net/discount_codes/:id
 Status: 200 OK
 {% endhighlight %}
 
-{% highlight json %}
+{% highlight javascript %}
 { "discount_codes" : 
 	{
 		"ID" : "5890",
@@ -73,9 +73,9 @@ POST 	https://api.create.net/discount_codes
 
 * *name* string
 * *code* string
-* *type* 'percent', 'amount'
+* *type* percent, amount
 * *amount* int
-* *expiry* 0000-00-00
+* *expiry* date
 
 ### Response
 
@@ -84,7 +84,7 @@ Status: 201 Created
 Location: http://api.create.net/discount_codes/5890
 {% endhighlight %}
 
-{% highlight json %}
+{% highlight javascript %}
 { "discount_codes" : 
 	{
 		"ID" : "5890",
@@ -108,9 +108,9 @@ PUT 	https://api.create.net/discount_codes/:id
 
 * *name* string
 * *code* string
-* *type* 'percent', 'amount'
+* *type* percent, amount
 * *amount* int
-* *expiry* 0000-00-00
+* *expiry* date
 
 ### Response
 

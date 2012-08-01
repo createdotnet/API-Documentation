@@ -23,10 +23,10 @@ GET 	https://api.create.net/blog_posts
 GET 	https://api.create.net/blog_posts?author=adam
 {% endhighlight %}
 
-* *author* - Name of author string
-* *datetime_from* - Date and Time of from range 2010-04-07 18:08:14
-* *datetime_to* - Date and Time of to range 2012-06-02 00:00:00
-* *category* - ID of category int
+* *author* string
+* *datetime_from* datetime
+* *datetime_to* datetime
+* *category* int
 
 ### Response
 
@@ -34,7 +34,7 @@ GET 	https://api.create.net/blog_posts?author=adam
 Status: 200 OK
 {% endhighlight %}
 
-{% highlight json %}
+{% highlight javascript %}
 { "blog_posts":[
 	{
 		"ID" : "3408",
@@ -63,7 +63,7 @@ GET 	https://api.create.net/blog_posts/:id
 Status: 200 OK
 {% endhighlight %}
 
-{% highlight json %}
+{% highlight javascript %}
 { "blog_post" : 
 	{
 		"ID" : "3528",
@@ -92,7 +92,6 @@ POST 	https://api.create.net/blog_posts
 * *title* Required string
 * *post* Required string
 * *author* Optional string
-* *datetime* Optional, If not specifed, defaults to datetime of request. 2012-01-14 18:12:18
 * *title_tag* Optional string
 * *meta_keys* Optional string
 * *meta_desc* Optional string
@@ -104,7 +103,7 @@ Status: 201 Created
 Location: http://api.create.net/blog_posts/54648
 {% endhighlight %}
 
-{% highlight json %}
+{% highlight javascript %}
 { "blog_post" : 
 	{
 		"ID" : "3528",

@@ -23,8 +23,8 @@ GET 	https://api.create.net/dns
 GET 	https://api.create.net/dns?domain_id=2672&type=MX
 {% endhighlight %}
 
-* *domain_id* - ID of domain int
-* *type* - type of DNS record 'NS','MX','A','CNAME'
+* *domain_id* int
+* *type* NS, MX, A, CNAME
 
 ### Response
 
@@ -32,7 +32,7 @@ GET 	https://api.create.net/dns?domain_id=2672&type=MX
 Status: 200 OK
 {% endhighlight %}
 
-{% highlight json %}
+{% highlight javascript %}
 { "dns" :[ 
 	{
 		"id" : "242223",
@@ -60,7 +60,7 @@ GET 	https://api.create.net/dns/:id
 Status: 200 OK
 {% endhighlight %}
 
-{% highlight json %}
+{% highlight javascript %}
 { "dns" : 
 	{
 		"id" : "242223",
@@ -86,7 +86,7 @@ POST 	https://api.create.net/dns
 
 * *domain_id* Required int
 * *name* Required string
-* *type* Required 'NS','MX','A','CNAME'
+* *type* Required NS, MX, A, CNAME
 * *content* Required string
 
 ### Response
@@ -96,7 +96,7 @@ Status: 201 Created
 Location: http://api.create.net/dns/242823
 {% endhighlight %}
 
-{% highlight json %}
+{% highlight javascript %}
 { "dns" : 
 	{
 		"id" : "242823",
@@ -120,9 +120,9 @@ PUT 	https://api.create.net/dns/:id
 
 ### Input
 
-* *name* Required string
-* *type* Required 'NS','MX','A','CNAME'
-* *content* Required string
+* *name* string
+* *type* NS, MX, A, CNAME
+* *content* string
 
 ### Response
 

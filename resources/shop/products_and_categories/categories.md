@@ -22,6 +22,7 @@ GET 	https://api.create.net/categories
 {% highlight php %}
 GET 	https://api.create.net/categories?parent_category=222608
 {% endhighlight %}
+
 * *parent_category* int
 
 ### Response
@@ -30,7 +31,7 @@ GET 	https://api.create.net/categories?parent_category=222608
 Status: 200 OK
 {% endhighlight %}
 
-{% highlight json %}
+{% highlight javascript %}
 { "categories" :[ 
 	{
 		"ID" : "271099",
@@ -56,7 +57,7 @@ GET 	https://api.create.net/categories/:id
 Status: 200 OK
 {% endhighlight %}
 
-{% highlight json %}
+{% highlight javascript %}
 { "categories" : 
 	{
 		"ID" : "271099",
@@ -91,7 +92,7 @@ Status: 201 Created
 Location: http://api.create.net/categories/2455436
 {% endhighlight %}
 
-{% highlight json %}
+{% highlight javascript %}
 { "categories" : 
 	{
 		"ID" : "271099",

@@ -23,8 +23,8 @@ GET 	https://api.create.net/guestbook
 GET 	https://api.create.net/guestbook?datetime_from=2010-04-07%2018:08:14
 {% endhighlight %}
 
-* *datetime_from* 2010-04-07 18:08:14
-* *datetime_to* 2012-06-02 00:00:00
+* *datetime_from* datetime
+* *datetime_to* datetime
 * *approved* int
 
 ### Response
@@ -33,7 +33,7 @@ GET 	https://api.create.net/guestbook?datetime_from=2010-04-07%2018:08:14
 Status: 200 OK
 {% endhighlight %}
 
-{% highlight json %}
+{% highlight javascript %}
 { "guestbook" :[
 	{
 		"ID" : "1743",
@@ -60,7 +60,7 @@ GET 	https://api.create.net/guestbook/:id
 Status: 200 OK
 {% endhighlight %}
 
-{% highlight json %}
+{% highlight javascript %}
 { "guestbook" :
 	{
 		"ID" : "1743",
@@ -73,7 +73,6 @@ Status: 200 OK
 	}
 }
 {% endhighlight %}
-
 
 Delete a guestbook entry
 ------------------------

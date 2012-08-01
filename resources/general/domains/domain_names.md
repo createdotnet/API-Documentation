@@ -23,7 +23,7 @@ GET 	https://api.create.net/domain_names
 Status: 200 OK
 {% endhighlight %}
 
-{% highlight json %}
+{% highlight javascript %}
 { "domain_names" :[ 
 	{
 		"ID" : "228025",
@@ -49,7 +49,7 @@ GET 	https://api.create.net/domain_names/:id
 Status: 200 OK
 {% endhighlight %}
 
-{% highlight json %}
+{% highlight javascript %}
 { "domain_name" : 
 	{
 		"ID" : "228025",

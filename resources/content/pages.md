@@ -23,7 +23,7 @@ GET 	https://api.create.net/pages
 Status: 200 OK
 {% endhighlight %}
 
-{% highlight json %}
+{% highlight javascript %}
 { "pages" :[ 
 	{
 		"ID" : "2640116",
@@ -55,7 +55,7 @@ GET 	https://api.create.net/pages/:id
 Status: 200 OK
 {% endhighlight %}
 
-{% highlight json %}
+{% highlight javascript %}
 { "pages" : 
 	{
 		"ID" : "2640116",
@@ -84,7 +84,7 @@ POST 	https://api.create.net/pages
 ### Input
 
 * *pagetitle* string
-* *pagetype* 'standard', 'dynamic', 'homepage'
+* *pagetype* standard, dynamic, homepage
 * *content* string
 * *titletag* string
 * *metakeys* string
@@ -102,7 +102,7 @@ Status: 201 Created
 Location: http://api.create.net/pages/236
 {% endhighlight %}
 
-{% highlight json %}
+{% highlight javascript %}
 { "pages" : 
 	{
 		"ID" : "2640116",
@@ -131,7 +131,7 @@ PUT 	https://api.create.net/pages/:id
 ### Input
 
 * *pagetitle* string
-* *pagetype* 'standard', 'dynamic', 'homepage'
+* *pagetype* standard, dynamic, homepage
 * *content* string
 * *titletag* string
 * *metakeys* string

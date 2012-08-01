@@ -23,8 +23,8 @@ GET 	https://api.create.net/enquirys
 GET 	https://api.create.net/enquirys?datetime_from=2010-04-07%2018:08:14
 {% endhighlight %}
 
-* *datetime_from* - Date and Time of from range 2010-04-07 18:08:14
-* *datetime_to* - Date and Time of to range 2012-06-02 00:00:00
+* *datetime_from* - datetime
+* *datetime_to* - datetime
 
 ### Response
 
@@ -32,7 +32,7 @@ GET 	https://api.create.net/enquirys?datetime_from=2010-04-07%2018:08:14
 Status: 200 OK
 {% endhighlight %}
 
-{% highlight json %}
+{% highlight javascript %}
 { "enquirys" :[
 	{
 		"ID" : "355766",
@@ -57,7 +57,7 @@ GET 	https://api.create.net/enquirys/:id
 Status: 200 OK
 {% endhighlight %}
 
-{% highlight json %}
+{% highlight javascript %}
 { "enquirys" :
 	{
 		"ID" : "355766",

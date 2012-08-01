@@ -22,9 +22,10 @@ GET 	https://api.create.net/blog_comments
 {% highlight php %}
 GET 	https://api.create.net/blog_comments?post_id=2554
 {% endhighlight %}
-* *post_id* - ID of a blog post int 
-* *datetime_from* - Date and Time of from range 2010-04-07 18:08:14
-* *datetime_to* - Date and Time of to range 2012-06-02 00:00:00
+
+* *post_id* int
+* *datetime_from* datetime
+* *datetime_to* datetime
 
 ### Response
 
@@ -32,7 +33,7 @@ GET 	https://api.create.net/blog_comments?post_id=2554
 Status: 200 OK
 {% endhighlight %}
 
-{% highlight json %}
+{% highlight javascript %}
 { "blog_comments":[
 	{
 		"ID" : "464533",
@@ -60,7 +61,7 @@ GET 	https://api.create.net/blog_comments/:id
 Status: 200 OK
 {% endhighlight %}
 
-{% highlight json %}
+{% highlight javascript %}
 { "blog_comment" :
 	{
 		"ID" : "464533",
