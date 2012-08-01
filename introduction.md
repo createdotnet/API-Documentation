@@ -39,7 +39,7 @@ Content-Type: application/xml
 
 Access to our resources is limited by user permissions. Resources are split into groups, you can request access to a whole group, or individual resources within a group. The minimum required access level is specified for each resource. The access levels are as follows:
 
-```ruby
+{% highlight ruby %}
 general
 	site_details
 		account_details
@@ -85,7 +85,7 @@ shop
 	shop_reports
 		financial_reports  
 		product_reports  
-```
+{% endhighlight %}
 
 ## Pagination
 
