@@ -94,7 +94,7 @@ Status: 200 OK
 {% endhighlight %}
 
 {% highlight javascript %}
-{ "orders" :
+{ "order" :
 	{
 		"ID" : "42050",
 		"customer_id" : "0",

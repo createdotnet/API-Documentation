@@ -67,7 +67,7 @@ Status: 200 OK
 {% endhighlight %}
 
 {% highlight javascript %}
-{ "products" : 
+{ "product" : 
 	{
 		"ID" : "898440",
 		"parentcat_INC" : "123133",
@@ -121,7 +121,7 @@ Location: http://api.create.net/products/2455436
 {% endhighlight %}
 
 {% highlight javascript %}
-{ "products" : 
+{ "product" : 
 	{
 		"ID" : "898440",
 		"parentcat_INC" : "0",

@@ -50,7 +50,7 @@ Status: 200 OK
 {% endhighlight %}
 
 {% highlight javascript %}
-{ "discount_codes" : 
+{ "discount_code" : 
 	{
 		"ID" : "5890",
 		"name" : "Facebook Friends Discount",
@@ -85,7 +85,7 @@ Location: http://api.create.net/discount_codes/5890
 {% endhighlight %}
 
 {% highlight javascript %}
-{ "discount_codes" : 
+{ "discount_code" : 
 	{
 		"ID" : "5890",
 		"name" : "Facebook Friends Discount",

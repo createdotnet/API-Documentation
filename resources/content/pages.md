@@ -56,7 +56,7 @@ Status: 200 OK
 {% endhighlight %}
 
 {% highlight javascript %}
-{ "pages" : 
+{ "page" : 
 	{
 		"ID" : "2640116",
 		"pagetitle" : "Summer Festival",
@@ -103,7 +103,7 @@ Location: http://api.create.net/pages/236
 {% endhighlight %}
 
 {% highlight javascript %}
-{ "pages" : 
+{ "page" : 
 	{
 		"ID" : "2640116",
 		"pagetitle" : "Summer Festival",

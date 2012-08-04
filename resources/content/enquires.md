@@ -33,7 +33,7 @@ Status: 200 OK
 {% endhighlight %}
 
 {% highlight javascript %}
-{ "enquirys" :[
+{ "enquiries" :[
 	{
 		"ID" : "355766",
 		"sender" : "adam@create.net",
@@ -58,7 +58,7 @@ Status: 200 OK
 {% endhighlight %}
 
 {% highlight javascript %}
-{ "enquirys" :
+{ "enquiry" :
 	{
 		"ID" : "355766",
 		"sender" : "adam@create.net",
