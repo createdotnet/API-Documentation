@@ -35,11 +35,11 @@ Status: 200 OK
 { "categories" :[ 
 	{
 		"ID" : "271099",
-		"parentcat_INC" : "222608",
+		"parent_category" : "222608",
 		"title" : "Hiking",
-		"titletag" : "Hiking Gear",
-		"metadesc" : "Buy new hiking gear",
-		"metakeys" : "hiking, clothing, gear"
+		"title_tag" : "Hiking Gear",
+		"meta_description" : "Buy new hiking gear",
+		"meta_keywords" : "hiking, clothing, gear"
 	}
 ]}
 {% endhighlight %}
@@ -61,11 +61,11 @@ Status: 200 OK
 { "category" : 
 	{
 		"ID" : "271099",
-		"parentcat_INC" : "222608",
+		"parent_category" : "222608",
 		"title" : "Hiking",
-		"titletag" : "Hiking Gear",
-		"metadesc" : "Buy new hiking gear",
-		"metakeys" : "hiking, clothing, gear"
+		"title_tag" : "Hiking Gear",
+		"meta_description" : "Buy new hiking gear",
+		"meta_keywords" : "hiking, clothing, gear"
 	}
 }
 {% endhighlight %}
@@ -79,11 +79,11 @@ POST 	https://api.create.net/categories
 
 ### Input
 
-* *parentcat_INC* int
+* *parent_category* int
 * *title* string
 * *titletag* string
-* *metakeys* string
-* *metadesc* string
+* *meta_keywords* string
+* *meta_description* string
 
 ### Response
 
@@ -96,11 +96,11 @@ Location: http://api.create.net/categories/2455436
 { "category" : 
 	{
 		"ID" : "271099",
-		"parentcat_INC" : "222608",
+		"parent_category" : "222608",
 		"title" : "Hiking",
 		"titletag" : "Hiking Gear",
-		"metadesc" : "Buy new hiking gear",
-		"metakeys" : "hiking, clothing, gear"
+		"meta_description" : "Buy new hiking gear",
+		"meta_keywords" : "hiking, clothing, gear"
 	}
 }
 {% endhighlight %}
@@ -114,11 +114,11 @@ PUT 	https://api.create.net/categories/:id
 
 ### Input
 
-* *parentcat_INC* int
+* *parent_category* int
 * *title* string
 * *titletag* string
-* *metakeys* string
-* *metadesc* string
+* *meta_keywords* string
+* *meta_description* string
 
 ### Response
 

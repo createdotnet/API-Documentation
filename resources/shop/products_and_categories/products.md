@@ -35,17 +35,17 @@ Status: 200 OK
 { "products" :[ 
 	{
 		"ID" : "898440",
-		"parentcat_INC" : "123133",
+		"parent_category" : "123133",
 		"title" : "Retro T-Shirt",
-		"shortdesc" : "Quisque sed arcu quis nunc porttitor rutrum faucibus a nunc.",
-		"longdesc" : "",
+		"short_description" : "Quisque sed arcu quis nunc porttitor rutrum faucibus a nunc.",
+		"long_description" : "",
 		"price" : "25.99",
 		"sku" : "898440",
 		"weight" : "4.60",
 		"stock_number" : "121",
-		"titletag" : "Retro T-Shirt",
-		"metakeys" : "Tshirt, retro, clothing",
-		"metadesc" : "A retro T-shirt",
+		"title_tag" : "Retro T-Shirt",
+		"meta_keywords" : "Tshirt, retro, clothing",
+		"meta_description" : "A retro T-shirt",
 		"was_price" : "0.00",
 		"rrp" : "0.00",
 		"trade_price" : "0.00"
@@ -70,17 +70,17 @@ Status: 200 OK
 { "product" : 
 	{
 		"ID" : "898440",
-		"parentcat_INC" : "123133",
+		"parent_category" : "123133",
 		"title" : "Retro T-Shirt",
-		"shortdesc" : "Quisque sed arcu quis nunc porttitor rutrum faucibus a nunc.",
-		"longdesc" : "",
+		"short_description" : "Quisque sed arcu quis nunc porttitor rutrum faucibus a nunc.",
+		"long_description" : "",
 		"price" : "25.99",
 		"sku" : "898440",
 		"weight" : "4.60",
 		"stock_number" : "121",
-		"titletag" : "Retro T-Shirt",
-		"metakeys" : "Tshirt, retro, clothing",
-		"metadesc" : "A retro T-shirt",
+		"title_tag" : "Retro T-Shirt",
+		"meta_keywords" : "Tshirt, retro, clothing",
+		"meta_description" : "A retro T-shirt",
 		"was_price" : "0.00",
 		"rrp" : "0.00",
 		"trade_price" : "0.00"
@@ -97,17 +97,17 @@ POST 	https://api.create.net/products
 
 ### Input
 
-* *parentcat_INC* int
+* *parent_category* int
 * *title* string
-* *shortdesc* string
-* *longdesc* string
+* *short_description* string
+* *long_description* string
 * *price* int
 * *sku* int
 * *weight* int
 * *stock_number* int
-* *titletag* string
-* *metakeys* string
-* *metadesc* string
+* *title_tag* string
+* *meta_keywords* string
+* *meta_description* string
 * *was_price* int
 * *rrp* int
 * *trade_price* int
@@ -124,17 +124,17 @@ Location: http://api.create.net/products/2455436
 { "product" : 
 	{
 		"ID" : "898440",
-		"parentcat_INC" : "0",
+		"parent_category" : "123133",
 		"title" : "Retro T-Shirt",
-		"shortdesc" : "Quisque sed arcu quis nunc porttitor rutrum faucibus a nunc.",
-		"longdesc" : "",
+		"short_description" : "Quisque sed arcu quis nunc porttitor rutrum faucibus a nunc.",
+		"long_description" : "",
 		"price" : "25.99",
 		"sku" : "898440",
 		"weight" : "4.60",
 		"stock_number" : "121",
-		"titletag" : "Retro T-Shirt",
-		"metakeys" : "Tshirt, retro, clothing",
-		"metadesc" : "A retro T-shirt",
+		"title_tag" : "Retro T-Shirt",
+		"meta_keywords" : "Tshirt, retro, clothing",
+		"meta_description" : "A retro T-shirt",
 		"was_price" : "0.00",
 		"rrp" : "0.00",
 		"trade_price" : "0.00"
@@ -151,17 +151,17 @@ PUT 	https://api.create.net/products/:id
 
 ### Input
 
-* *parentcat_INC* int
+* *parent_category* int
 * *title* string
-* *shortdesc* string
-* *longdesc* string
+* *short_description* string
+* *long_description* string
 * *price* int
 * *sku* int
 * *weight* int
 * *stock_number* int
-* *titletag* string
-* *metakeys* string
-* *metadesc* string
+* *title_tag* string
+* *meta_keywords* string
+* *meta_description* string
 * *was_price* int
 * *rrp* int
 * *trade_price* int
