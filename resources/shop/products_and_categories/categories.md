@@ -58,7 +58,7 @@ Status: 200 OK
 {% endhighlight %}
 
 {% highlight javascript %}
-{ "categories" : 
+{ "category" : 
 	{
 		"ID" : "271099",
 		"parentcat_INC" : "222608",
@@ -93,7 +93,7 @@ Location: http://api.create.net/categories/2455436
 {% endhighlight %}
 
 {% highlight javascript %}
-{ "categories" : 
+{ "category" : 
 	{
 		"ID" : "271099",
 		"parentcat_INC" : "222608",

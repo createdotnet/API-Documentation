@@ -79,7 +79,7 @@ Location: http://api.create.net/blog_categories/54648
 {% endhighlight %}
 
 {% highlight javascript %}
-{ "blog_post" : 
+{ "blog_category" : 
 	{
 		"ID" : "3528",
 		"name" : "Cats in hats",
