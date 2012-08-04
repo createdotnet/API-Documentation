@@ -27,17 +27,17 @@ Status: 200 OK
 { "pages" :[ 
 	{
 		"ID" : "2640116",
-		"pagetitle" : "Summer Festival",
-		"pagetype" : "standard",
+		"page_title" : "Summer Festival",
+		"page_type" : "standard",
 		"content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae libero ut odio consequat tempor...",
-		"titletag" : "Summer Festival",
-		"metakeys" : "summer,festival,fun,wahey",
-		"metadesc" : "A Summer Festival of fun",
-		"onmenu_YN" : "1",
-		"menutext" : "Summer Festival",
-		"pagefilename" : "summer-festival",
-		"menuorder" : "6",
-		"parentid" : "0"
+		"title_tag" : "Summer Festival",
+		"meta_keywords" : "summer,festival,fun,wahey",
+		"meta_keywords" : "A Summer Festival of fun",
+		"isonmenu" : "1",
+		"menu_text" : "Summer Festival",
+		"page_filename" : "summer-festival",
+		"menu_order" : "6",
+		"parent_id" : "0"
 	}
 ]}
 {% endhighlight %}
@@ -59,17 +59,17 @@ Status: 200 OK
 { "page" : 
 	{
 		"ID" : "2640116",
-		"pagetitle" : "Summer Festival",
-		"pagetype" : "standard",
+		"page_title" : "Summer Festival",
+		"page_type" : "standard",
 		"content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae libero ut odio consequat tempor...",
 		"titletag" : "Summer Festival",
-		"metakeys" : "summer,festival,fun,wahey",
+		"meta_keywords" : "summer,festival,fun,wahey",
 		"metadesc" : "A Summer Festival of fun",
-		"onmenu_YN" : "1",
-		"menutext" : "Summer Festival",
-		"pagefilename" : "summer-festival",
-		"menuorder" : "6",
-		"parentid" : "0"
+		"isonmenu" : "1",
+		"menu_text" : "Summer Festival",
+		"page_filename" : "summer-festival",
+		"menu_order" : "6",
+		"parent_id" : "0"
 	}
 }
 {% endhighlight %}
@@ -83,17 +83,17 @@ POST 	https://api.create.net/pages
 
 ### Input
 
-* *pagetitle* string
-* *pagetype* standard, dynamic, homepage
+* *page_title* string
+* *page_type* standard, dynamic, homepage
 * *content* string
 * *titletag* string
-* *metakeys* string
+* *meta_keywords* string
 * *metadesc* string
-* *onmenu_YN* boolen
-* *menutext* string
-* *pagefilename* string
-* *menuorder* int
-* *parentid* int
+* *isonmenu* boolen
+* *menu_text* string
+* *page_filename* string
+* *menu_order* int
+* *parent_id* int
 
 ### Response
 
@@ -106,17 +106,17 @@ Location: http://api.create.net/pages/236
 { "page" : 
 	{
 		"ID" : "2640116",
-		"pagetitle" : "Summer Festival",
-		"pagetype" : "standard",
+		"page_title" : "Summer Festival",
+		"page_type" : "standard",
 		"content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae libero ut odio consequat tempor...",
 		"titletag" : "Summer Festival",
-		"metakeys" : "summer,festival,fun,wahey",
+		"meta_keywords" : "summer,festival,fun,wahey",
 		"metadesc" : "A Summer Festival of fun",
-		"onmenu_YN" : "1",
-		"menutext" : "Summer Festival",
-		"pagefilename" : "summer-festival",
-		"menuorder" : "6",
-		"parentid" : "0"
+		"isonmenu" : "1",
+		"menu_text" : "Summer Festival",
+		"page_filename" : "summer-festival",
+		"menu_order" : "6",
+		"parent_id" : "0"
 	}
 }
 {% endhighlight %}
@@ -130,17 +130,17 @@ PUT 	https://api.create.net/pages/:id
 
 ### Input
 
-* *pagetitle* string
-* *pagetype* standard, dynamic, homepage
+* *page_title* string
+* *page_type* standard, dynamic, homepage
 * *content* string
 * *titletag* string
-* *metakeys* string
+* *meta_keywords* string
 * *metadesc* string
-* *onmenu_YN* boolen
-* *menutext* string
-* *pagefilename* string
-* *menuorder* int
-* *parentid* int
+* *isonmenu* boolen
+* *menu_text* string
+* *page_filename* string
+* *menu_order* int
+* *parent_id* int
 
 ### Response
 

@@ -44,8 +44,8 @@ Status: 200 OK
 		"author" : "Adam",
 		"datetime" : "2011-04-16 14:28:18",
 		"title_tag" : "Cliff top walks in West Penwith",
-		"meta_keys" : "Cliff top walks Lands End Nanjizal Bay St Just Cap Cornwall Sennen Cove",
-		"meta_desc" : "cliff top walks in West Penwith and around Sennen Cove"
+		"meta_keywords" : "Cliff top walks Lands End Nanjizal Bay St Just Cap Cornwall Sennen Cove",
+		"meta_description" : "cliff top walks in West Penwith and around Sennen Cove"
 	}
 ]}
 {% endhighlight %}
@@ -73,8 +73,8 @@ Status: 200 OK
 		"author" : "Adam",
 		"datetime" : "2011-08-06 10:42:12",
 		"title_tag" : "Great Pubs in West Penwith",
-		"meta_keys" : "Great Pubs Cornwall Sennen Cove",
-		"meta_desc" : "Great Pubs in West Penwith and around Sennen Cove"
+		"meta_keywords" : "Great Pubs Cornwall Sennen Cove",
+		"meta_description" : "Great Pubs in West Penwith and around Sennen Cove"
 	}
 }
 {% endhighlight %}
@@ -93,8 +93,8 @@ POST 	https://api.create.net/blog_posts
 * *post* Required string
 * *author* Optional string
 * *title_tag* Optional string
-* *meta_keys* Optional string
-* *meta_desc* Optional string
+* *meta_keywords* Optional string
+* *meta_description* Optional string
 
 ### Response
 
@@ -113,8 +113,8 @@ Location: http://api.create.net/blog_posts/54648
 		"author" : "Adam",
 		"datetime" : "2011-08-06 10:42:12",
 		"title_tag" : "Great Pubs in West Penwith",
-		"meta_keys" : "Great Pubs Cornwall Sennen Cove",
-		"meta_desc" : "Great Pubs in West Penwith and around Sennen Cove"
+		"meta_keywords" : "Great Pubs Cornwall Sennen Cove",
+		"meta_description" : "Great Pubs in West Penwith and around Sennen Cove"
 	}
 }
 {% endhighlight %}
@@ -133,8 +133,8 @@ PUT 	https://api.create.net/blog_posts/:id
 * *post* string
 * *author* string
 * *title_tag* string
-* *meta_keys* string
-* *meta_desc* string
+* *meta_keywords* string
+* *meta_description* string
 
 ### Response
 
