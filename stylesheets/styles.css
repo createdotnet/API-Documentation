@@ -186,19 +186,22 @@ th {
   font-size: 18px;
   font-weight: normal;
   padding: 10px;
-  background: #232323;
-  color: #FDFEFB;
+  background: #E2DFDF;
+  color: #3B3C39;
  }
 
 td {
   padding: 10px;
-  background: #ccc;
+  background: #EBEBEB;
  }
-
 
 /* Wrapper */
 .wrapper {
   width:960px;
+}
+
+small {
+  font-size: 12px;
 }
 
 
