@@ -5,7 +5,7 @@ title: Introduction
 
 # Introduction
 
-API access is over HTTPS and avaliable from api.create.net. Our API supports JSON and XML formats. Authentication is handled with OAuth2
+API access is over HTTPS and avaliable from api.create.net. Our API currently only supports JSON. Authentication is handled with OAuth2
 
 The standard four HTTP verbs are used to access our resources:
 
@@ -19,20 +19,13 @@ The standard four HTTP verbs are used to access our resources:
 
 ## About Request and Response Formats
 
-Requests and responses can be provided in either JSON or XML. Set the HTTP Accept header to specify the response format and the HTTP Content-Type header to specify the request format.
+Requests and responses can be provided in JSON. Set the HTTP Accept header to specify the response format and the HTTP Content-Type header to specify the request format.
 
 JSON 
 
 {% highlight php %}
 Accept: application/json
 Content-Type: application/json
-{% endhighlight %}
-
-XML
-
-{% highlight php %}
-Accept: application/xml
-Content-Type: application/xml
 {% endhighlight %}
 
 ## Access Levels
