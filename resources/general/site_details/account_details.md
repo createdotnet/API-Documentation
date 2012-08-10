@@ -26,8 +26,8 @@ Status: 200 OK
 {% highlight javascript %}
 { "account_details" :
 	{
-		"ID" : "73663",
-		"userid" : "537",
+		"ID" : 73663,
+		"userid" : 537,
 		"company_name" : "Smiths Sweet Emporium",
 		"site_name" : "Smiths Amazing Sweets",
 		"address1" : "291 Albert Road",
@@ -39,7 +39,7 @@ Status: 200 OK
 		"telephone" : "01273 431234",
 		"email" : "adam@smithssweets.net",
 		"creation_date" : "2002-06-19 14:18:46",
-		"account_type_INC" : "Pro Seller",
+		"package_name" : "Pro Seller",
 		"payment_due_date" : "2014-06-12"
 	}
 }
@@ -54,16 +54,78 @@ PUT 	https://api.create.net/account_details
 
 ### Input
 
-* *company_name* string  
-* *site_name* string  
-* *address1* string
-* *address2* string  
-* *town* string  
-* *county* string  
-* *postcode* string  
-* *country* string  
-* *telephone* string  
-* *email* string  
+<table>
+	<thead>
+		<tr>
+			<th>Param</th>
+			<th>Type</th>
+			<th>Required</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>company_name</td>
+			<td>string</td>
+			<td>Optional</td>
+			<td>The company name of the Create. account</td>
+		</tr>
+		<tr>
+			<td>site_name</td>
+			<td>string</td>
+			<td>Optional</td>
+			<td>The site name of the Create. account</td>
+		</tr>
+		<tr>
+			<td>address1</td>
+			<td>string</td>
+			<td>Optional</td>
+			<td>The first line of the account address</td>
+		</tr>
+		<tr>
+			<td>address2</td>
+			<td>string</td>
+			<td>Optional</td>
+			<td>The second line of the account address</td>
+		</tr>
+		<tr>
+			<td>town</td>
+			<td>string</td>
+			<td>Optional</td>
+			<td>The town of the account address</td>
+		</tr>
+		<tr>
+			<td>county</td>
+			<td>string</td>
+			<td>Optional</td>
+			<td>The county of the account address</td>
+		</tr>
+		<tr>
+			<td>postcode</td>
+			<td>string</td>
+			<td>Optional</td>
+			<td>The postcode of the account address</td>
+		</tr>
+		<tr>
+			<td>country</td>
+			<td>string</td>
+			<td>Optional</td>
+			<td>The country of the account address</td>
+		</tr>
+		<tr>
+			<td>telephone</td>
+			<td>string</td>
+			<td>Optional</td>
+			<td>The telephone number of the account address</td>
+		</tr>
+		<tr>
+			<td>email</td>
+			<td>string</td>
+			<td>Optional</td>
+			<td>The email address of the account address</td>
+		</tr>
+	</tbody>
+</table>
 
 ### Response
 
