@@ -26,12 +26,12 @@ Status: 200 OK
 {% highlight javascript %}
 { "domain_names" :[ 
 	{
-		"ID" : "228025",
+		"ID" : 228025,
 		"domain" : "beachfile2.co.uk",
 		"date_registered" : "2012-07-17",
 		"date_expire" : "2014-07-17",
-		"isprimary" : "1",
-		"isourdns" : "1"
+		"is_primary" : TRUE,
+		"is_ourdns" : TRUE
 	}
 ]}
 {% endhighlight %}
@@ -52,12 +52,12 @@ Status: 200 OK
 {% highlight javascript %}
 { "domain_name" : 
 	{
-		"ID" : "228025",
+		"ID" : 228025,
 		"domain" : "beachfile2.co.uk",
 		"date_registered" : "2012-07-17",
 		"date_expire" : "2014-07-17",
-		"isprimary" : "1",
-		"isourdns" : "1"
+		"is_primary" : TRUE,
+		"is_ourdns" : TRUE
 	}
 }
 {% endhighlight %}
