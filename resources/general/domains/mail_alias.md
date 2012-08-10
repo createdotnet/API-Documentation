@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Email Forwarding
+title: Mail Forwarding
 ---
 
-Domain mail alias
+Mail Forwarding
 =============
 
 *Access Levels*    
@@ -23,7 +23,24 @@ GET 	https://api.create.net/mail_alias
 GET 	https://api.create.net/mail_alias?domain_id=2672
 {% endhighlight %}
 
-* *domain_id* - ID of domain int
+<table>
+	<thead>
+		<tr>
+			<th>Param</th>
+			<th>Type</th>
+			<th>Required</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>domain_id</td>
+			<td>INT</td>
+			<td>Optional</td>
+			<td>The ID of the domain. See <a href="http://createdotnet.github.com/API-Documentation/resources/general/domains/domain_names.html">Domain Names</a></td>
+		</tr>
+	</tbody>
+</table>
 
 ### Response
 
@@ -34,8 +51,8 @@ Status: 200 OK
 {% highlight javascript %}
 { "mail_alias" :[ 
 	{
-		"ID" : "236",
-		"domain_id" : "2672",
+		"ID" : 236,
+		"domain_id" : 2672,
 		"alias" : "help",
 		"email" : "adam@create.net"
 	}
@@ -58,8 +75,8 @@ Status: 200 OK
 {% highlight javascript %}
 { "mail_alias" : 
 	{
-		"ID" : "236",
-		"domain_id" : "2672",
+		"ID" : 236,
+		"domain_id" : 2672,
 		"alias" : "help",
 		"email" : "adam@create.net"
 	}
@@ -75,9 +92,36 @@ POST 	https://api.create.net/mail_alias
 
 ### Input
 
-* *domain_id* Required int
-* *alias* Required string
-* *email* Required string
+<table>
+	<thead>
+		<tr>
+			<th>Param</th>
+			<th>Type</th>
+			<th>Required</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>domain_id</td>
+			<td>INT</td>
+			<td>Required</td>
+			<td>The ID of the domain. See <a href="http://createdotnet.github.com/API-Documentation/resources/general/domains/domain_names.html">Domain Names</a></td>
+		</tr>
+		<tr>
+			<td>alias</td>
+			<td>string</td>
+			<td>Required</td>
+			<td>The alias of the forwording address <br /><small>Example: info (Will become: info@mydomain.com)</small></td>
+		</tr>
+		<tr>
+			<td>email</td>
+			<td>string</td>
+			<td>Required</td>
+			<td>The email address to forward to. <br /><small>Example: adam@create.net</small></td>
+		</tr>
+	</tbody>
+</table>
 
 ### Response
 
@@ -89,8 +133,8 @@ Location: http://api.create.net/mail_alias/236
 {% highlight javascript %}
 { "mail_alias" : 
 	{
-		"ID" : "236",
-		"domain_id" : "2672",
+		"ID" : 236,
+		"domain_id" : 2672,
 		"alias" : "help",
 		"email" : "adam@create.net"
 	}
@@ -106,8 +150,30 @@ PUT 	https://api.create.net/mail_alias/:id
 
 ### Input
 
-* *alias* string
-* *email* Forwarding address string
+<table>
+	<thead>
+		<tr>
+			<th>Param</th>
+			<th>Type</th>
+			<th>Required</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>alias</td>
+			<td>string</td>
+			<td>Optional</td>
+			<td>The alias of the forwording address <br /><small>Example: info (Will become: info@mydomain.com)</small></td>
+		</tr>
+		<tr>
+			<td>email</td>
+			<td>string</td>
+			<td>Optional</td>
+			<td>The email address to forward to. <br /><small>Example: adam@create.net</small></td>
+		</tr>
+	</tbody>
+</table>
 
 ### Response
 

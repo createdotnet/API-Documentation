@@ -24,7 +24,7 @@ GET 	https://api.create.net/dns?domain_id=2672&type=MX
 {% endhighlight %}
 
 * *domain_id* int
-* *type* NS, MX, A, CNAME
+* *type* \['NS', 'MX', 'A', 'CNAME'\]
 
 ### Response
 
@@ -35,14 +35,14 @@ Status: 200 OK
 {% highlight javascript %}
 { "dns" :[ 
 	{
-		"id" : "242223",
-		"domain_id" : "226216",
+		"id" : 242223,
+		"domain_id" : 226216,
 		"name" : "lifefloat.co.uk",
 		"type" : "MX",
 		"content" : "mail.create.net",
-		"ttl" : "900",
-		"prio" : "10",
-		"change_date" : "NULL"
+		"ttl" : 900,
+		"prio" : 10,
+		"change_date" : NULL
 	}
 ]}
 {% endhighlight %}
@@ -63,14 +63,14 @@ Status: 200 OK
 {% highlight javascript %}
 { "dns" : 
 	{
-		"id" : "242223",
-		"domain_id" : "226216",
+		"id" : 242223,
+		"domain_id" : 226216,
 		"name" : "lifefloat.co.uk",
 		"type" : "MX",
 		"content" : "mail.create.net",
-		"ttl" : "900",
-		"prio" : "10",
-		"change_date" : "NULL"
+		"ttl" : 900,
+		"prio" : 10,
+		"change_date" : NULL
 	}
 }
 {% endhighlight %}
@@ -86,7 +86,7 @@ POST 	https://api.create.net/dns
 
 * *domain_id* Required int
 * *name* Required string
-* *type* Required NS, MX, A, CNAME
+* *type* Required \['NS', 'MX', 'A', 'CNAME'\]
 * *content* Required string
 
 ### Response
@@ -99,14 +99,14 @@ Location: http://api.create.net/dns/242823
 {% highlight javascript %}
 { "dns" : 
 	{
-		"id" : "242823",
-		"domain_id" : "226216",
+		"id" : 242823,
+		"domain_id" : 226216,
 		"name" : "www.lifefloat.co.uk",
 		"type" : "CNAME",
 		"content" : "lifefloat.co.uk",
-		"ttl" : "900",
-		"prio" : "0",
-		"change_date" : "NULL"
+		"ttl" : 900,
+		"prio" : 0,
+		"change_date" : NULL
 	}
 }
 {% endhighlight %}
@@ -121,7 +121,7 @@ PUT 	https://api.create.net/dns/:id
 ### Input
 
 * *name* string
-* *type* NS, MX, A, CNAME
+* *type* \['NS', 'MX', 'A', 'CNAME'\]
 * *content* string
 
 ### Response
