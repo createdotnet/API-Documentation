@@ -23,8 +23,30 @@ GET 	https://api.create.net/dns
 GET 	https://api.create.net/dns?domain_id=2672&type=MX
 {% endhighlight %}
 
-* *domain_id* int
-* *type* \['NS', 'MX', 'A', 'CNAME'\]
+<table>
+	<thead>
+		<tr>
+			<th>Param</th>
+			<th>Type</th>
+			<th>Required</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>domain_id</td>
+			<td>INT</td>
+			<td>Optional</td>
+			<td>The ID of the domain. See <a href="http://createdotnet.github.com/API-Documentation/resources/general/domains/domain_names.html">Domain Names</a></td>
+		</tr>
+		<tr>
+			<td>type</td>
+			<td>string</td>
+			<td>Optional</td>
+			<td>The DNS record type <br /><small>Options: NS, MX, A or CNAME</small></td>
+		</tr>
+	</tbody>
+</table>
 
 ### Response
 
@@ -84,10 +106,42 @@ POST 	https://api.create.net/dns
 
 ### Input
 
-* *domain_id* Required int
-* *name* Required string
-* *type* Required \['NS', 'MX', 'A', 'CNAME'\]
-* *content* Required string
+<table>
+	<thead>
+		<tr>
+			<th>Param</th>
+			<th>Type</th>
+			<th>Required</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>domain_id</td>
+			<td>INT</td>
+			<td>Required</td>
+			<td>The ID of the domain. See <a href="http://createdotnet.github.com/API-Documentation/resources/general/domains/domain_names.html">Domain Names</a></td>
+		</tr>
+		<tr>
+			<td>name</td>
+			<td>string</td>
+			<td>Required</td>
+			<td>The record name. <br /><small>IE. www.google.com</small></td>
+		</tr>
+		<tr>
+			<td>type</td>
+			<td>string</td>
+			<td>Required</td>
+			<td>The DNS record type <br /><small>Options: NS, MX, A or CNAME</small></td>
+		</tr>
+		<tr>
+			<td>domain_id</td>
+			<td>string</td>
+			<td>Required</td>
+			<td>The DNS record content. <br /><small>IE. an IP address or domain</small></td>
+		</tr>
+	</tbody>
+</table>
 
 ### Response
 
@@ -120,9 +174,36 @@ PUT 	https://api.create.net/dns/:id
 
 ### Input
 
-* *name* string
-* *type* \['NS', 'MX', 'A', 'CNAME'\]
-* *content* string
+<table>
+	<thead>
+		<tr>
+			<th>Param</th>
+			<th>Type</th>
+			<th>Required</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>name</td>
+			<td>string</td>
+			<td>Optional</td>
+			<td>The record name. <br /><small>IE. www.google.com</small></td>
+		</tr>
+		<tr>
+			<td>type</td>
+			<td>string</td>
+			<td>Optional</td>
+			<td>The DNS record type <br /><small>Options: NS, MX, A or CNAME</small></td>
+		</tr>
+		<tr>
+			<td>domain_id</td>
+			<td>string</td>
+			<td>Optional</td>
+			<td>The DNS record content. <br /><small>IE. an IP address or domain</small></td>
+		</tr>
+	</tbody>
+</table>
 
 ### Response
 
