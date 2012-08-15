@@ -37,8 +37,8 @@ Status: 200 OK
 {% highlight javascript %}
 { "blog_posts":[
 	{
-		"ID" : "3408",
-		"category_id" : "2352",
+		"ID" : 3408,
+		"category_id" : [2352],
 		"title" : "Memorable Walks",
 		"post" : "This coastal path goes from Sennen to &lt;a title=&quot;walk to Lands End and Nanjizal Bay - The Times &quot; href=&quot;http://www.timesonline.co.uk/tol/travel/holiday_type/active/article6107981.ece&quot; target=&quot;_blank&quot;&gt;Lands End and then Nanjizal Bay&lt;/a&gt;, or seal cove as we always seem to see seals here. There are some beautiful cliffs, and stunning views out towards the Scily Isles on a clear day. The walk back across the fields has great views of Lands End; a&amp;nbsp;strategically placed cafe is reopening half way back to reward hearty&amp;nbsp;walkers with a cream tea!",
 		"author" : "Adam",
@@ -66,8 +66,8 @@ Status: 200 OK
 {% highlight javascript %}
 { "blog_post" : 
 	{
-		"ID" : "3528",
-		"category_id" : "2352,1248",
+		"ID" : 3528,
+		"category_id" : [2352, 1248],
 		"title" : "Great Pubs",
 		"post" : "The Gurnards Head in Treen is a favourite. Sunday lunch is particularly good but you do need to book. We walked-up Cairn Galver after lunch and the views from Zennor across the peninsular to Penzance are just amazing. We love the fact this stretch of coastline is so wild. ",
 		"author" : "Adam",
@@ -106,8 +106,8 @@ Location: http://api.create.net/blog_posts/54648
 {% highlight javascript %}
 { "blog_post" : 
 	{
-		"ID" : "3528",
-		"category_id" : "2352,1248",
+		"ID" : 3528,
+		"category_id" : [2352, 1248],
 		"title" : "Great Pubs",
 		"post" : "The Gurnards Head in Treen is a favourite. Sunday lunch is particularly good but you do need to book. We walked-up Cairn Galver after lunch and the views from Zennor across the peninsular to Penzance are just amazing. We love the fact this stretch of coastline is so wild. ",
 		"author" : "Adam",
