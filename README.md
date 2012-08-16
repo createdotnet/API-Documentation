@@ -15,3 +15,5 @@ If you have any questions, you can catch me at the following places:
 - Email: [adam@create.net](mailto:adam@create.net)
 - Twitter: [@adamstrawson](https://twitter.com/adamstrawson)
 - Campfire: [https://createinternetltd.campfirenow.com/fbba7](https://createinternetltd.campfirenow.com/fbba7)  
+
+For the most recent source, please view gh-pages branch. Revision 1.2 currently being written there.
