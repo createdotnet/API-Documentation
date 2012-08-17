@@ -23,9 +23,36 @@ GET 	https://api.create.net/guestbook
 GET 	https://api.create.net/guestbook?datetime_from=2010-04-07%2018:08:14
 {% endhighlight %}
 
-* *datetime_from* datetime
-* *datetime_to* datetime
-* *approved* int
+<table>
+	<thead>
+		<tr>
+			<th>Param</th>
+			<th>Type</th>
+			<th>Required</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>datetime_from</td>
+			<td>datetime</td>
+			<td>Optional</td>
+			<td>Entries after a certian date <br /><small>yyyy-mm-dd hh:mm:ss</small></td>
+		</tr>
+		<tr>
+			<td>datetime_to</td>
+			<td>datetime</td>
+			<td>Optional</td>
+			<td>Entries up to a certian date <br /><small>yyyy-mm-dd hh:mm:ss</small></td>
+		</tr>
+		<tr>
+			<td>approved</td>
+			<td>INT</td>
+			<td>Optional</td>
+			<td>Get entries by approved status <br /><small>TRUE = Approved, FALSE = Awaiting Approval</small></td>
+		</tr>
+	</tbody>
+</table>
 
 ### Response
 
@@ -36,13 +63,13 @@ Status: 200 OK
 {% highlight javascript %}
 { "guestbook" :[
 	{
-		"ID" : "1743",
+		"ID" : 1743,
 		"name" : "Adam",
 		"email" : "adam@create.net",
 		"website" : "lmgtfy.com",
 		"message" : "Thanks for the advice on the fabric colour, it matched perfectly.",
 		"datestamp" : "2008-09-08 19:08:21",
-		"approved" : "1"
+		"approved" : TRUE
 	}
 ]}
 {% endhighlight %}
@@ -63,13 +90,13 @@ Status: 200 OK
 {% highlight javascript %}
 { "guestbook" :
 	{
-		"ID" : "1743",
+		"ID" : 1743,
 		"name" : "Adam",
 		"email" : "adam@create.net",
 		"website" : "lmgtfy.com",
 		"message" : "Thanks for the advice on the fabric colour, it matched perfectly.",
 		"datestamp" : "2008-09-08 19:08:21",
-		"approved" : "1"
+		"approved" : TRUE
 	}
 }
 {% endhighlight %}

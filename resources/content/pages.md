@@ -7,7 +7,7 @@ Pages
 =============
 
 *Access Levels*    
-__Group:__ content
+__Group:__ content  
 __Resource:__ pages
 
 List all pages
@@ -26,18 +26,18 @@ Status: 200 OK
 {% highlight javascript %}
 { "pages" :[ 
 	{
-		"ID" : "2640116",
+		"ID" : 2640116,
 		"page_title" : "Summer Festival",
 		"page_type" : "standard",
 		"content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae libero ut odio consequat tempor...",
 		"title_tag" : "Summer Festival",
 		"meta_keywords" : "summer,festival,fun,wahey",
-		"meta_keywords" : "A Summer Festival of fun",
-		"isonmenu" : "1",
+		"meta_description" : "A Summer Festival of fun",
+		"is_onmenu" : TRUE,
 		"menu_text" : "Summer Festival",
 		"page_filename" : "summer-festival",
-		"menu_order" : "6",
-		"parent_id" : "0"
+		"menu_order" : 6,
+		"parent_id" : 0
 	}
 ]}
 {% endhighlight %}
@@ -58,18 +58,18 @@ Status: 200 OK
 {% highlight javascript %}
 { "page" : 
 	{
-		"ID" : "2640116",
+		"ID" : 2640116,
 		"page_title" : "Summer Festival",
 		"page_type" : "standard",
 		"content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae libero ut odio consequat tempor...",
-		"titletag" : "Summer Festival",
+		"title_tag" : "Summer Festival",
 		"meta_keywords" : "summer,festival,fun,wahey",
-		"metadesc" : "A Summer Festival of fun",
-		"isonmenu" : "1",
+		"meta_description" : "A Summer Festival of fun",
+		"is_onmenu" : TRUE,
 		"menu_text" : "Summer Festival",
 		"page_filename" : "summer-festival",
-		"menu_order" : "6",
-		"parent_id" : "0"
+		"menu_order" : 6,
+		"parent_id" : 0
 	}
 }
 {% endhighlight %}
@@ -105,18 +105,18 @@ Location: http://api.create.net/pages/236
 {% highlight javascript %}
 { "page" : 
 	{
-		"ID" : "2640116",
+		"ID" : 2640116,
 		"page_title" : "Summer Festival",
 		"page_type" : "standard",
 		"content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae libero ut odio consequat tempor...",
-		"titletag" : "Summer Festival",
+		"title_tag" : "Summer Festival",
 		"meta_keywords" : "summer,festival,fun,wahey",
-		"metadesc" : "A Summer Festival of fun",
-		"isonmenu" : "1",
+		"meta_description" : "A Summer Festival of fun",
+		"is_onmenu" : TRUE,
 		"menu_text" : "Summer Festival",
 		"page_filename" : "summer-festival",
-		"menu_order" : "6",
-		"parent_id" : "0"
+		"menu_order" : 6,
+		"parent_id" : 0
 	}
 }
 {% endhighlight %}

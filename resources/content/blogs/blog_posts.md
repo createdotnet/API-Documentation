@@ -23,10 +23,42 @@ GET 	https://api.create.net/blog_posts
 GET 	https://api.create.net/blog_posts?author=adam
 {% endhighlight %}
 
-* *author* string
-* *datetime_from* datetime
-* *datetime_to* datetime
-* *category* int
+<table>
+	<thead>
+		<tr>
+			<th>Param</th>
+			<th>Type</th>
+			<th>Required</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>author</td>
+			<td>string</td>
+			<td>Optional</td>
+			<td>The name of the author.</td>
+		</tr>
+		<tr>
+			<td>datetime_from</td>
+			<td>datetime</td>
+			<td>Optional</td>
+			<td>Posts after a certian date <br /><small>yyyy-mm-dd hh:mm:ss</small></td>
+		</tr>
+		<tr>
+			<td>datetime_to</td>
+			<td>datetime</td>
+			<td>Optional</td>
+			<td>Posts up to a certian date <br /><small>yyyy-mm-dd hh:mm:ss</small></td>
+		</tr>
+		<tr>
+			<td>category</td>
+			<td>array</td>
+			<td>Optional</td>
+			<td>Array of category IDs</td>
+		</tr>
+	</tbody>
+</table>
 
 ### Response
 
@@ -88,13 +120,60 @@ POST 	https://api.create.net/blog_posts
 
 ### Input
 
-* *category_id* Optional int
-* *title* Required string
-* *post* Required string
-* *author* Optional string
-* *title_tag* Optional string
-* *meta_keywords* Optional string
-* *meta_description* Optional string
+<table>
+	<thead>
+		<tr>
+			<th>Param</th>
+			<th>Type</th>
+			<th>Required</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>category_id</td>
+			<td>array</td>
+			<td>Optional</td>
+			<td>Array of category IDs</td>
+		</tr>
+		<tr>
+			<td>title</td>
+			<td>string</td>
+			<td>Required</td>
+			<td>Title of the blog post</td>
+		</tr>
+		<tr>
+			<td>post</td>
+			<td>string</td>
+			<td>Required</td>
+			<td>Content of the blog post <br /><small>Plain text and HTML accepted</small></td>
+		</tr>
+		<tr>
+			<td>author</td>
+			<td>string</td>
+			<td>Optional</td>
+			<td>The name of the author.</td>
+		</tr>
+		<tr>
+			<td>title_tag</td>
+			<td>string</td>
+			<td>Optional</td>
+			<td>Title meta tag of the blog post. Used for SEO</td>
+		</tr>
+		<tr>
+			<td>meta_keywords</td>
+			<td>string</td>
+			<td>Optional</td>
+			<td>Keywords meta of the blog post. Used for SEO</td>
+		</tr>
+		<tr>
+			<td>meta_description</td>
+			<td>string</td>
+			<td>Optional</td>
+			<td>Description meta tag of the blog post. Used for SEO</td>
+		</tr>
+	</tbody>
+</table>
 
 ### Response
 
@@ -128,13 +207,60 @@ PUT 	https://api.create.net/blog_posts/:id
 
 ### Input
 
-* *category_id* int
-* *title* string
-* *post* string
-* *author* string
-* *title_tag* string
-* *meta_keywords* string
-* *meta_description* string
+<table>
+	<thead>
+		<tr>
+			<th>Param</th>
+			<th>Type</th>
+			<th>Required</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>category_id</td>
+			<td>array</td>
+			<td>Optional</td>
+			<td>Array of category IDs</td>
+		</tr>
+		<tr>
+			<td>title</td>
+			<td>string</td>
+			<td>Optional</td>
+			<td>Title of the blog post</td>
+		</tr>
+		<tr>
+			<td>post</td>
+			<td>string</td>
+			<td>Optional</td>
+			<td>Content of the blog post <br /><small>Plain text and HTML accepted</small></td>
+		</tr>
+		<tr>
+			<td>author</td>
+			<td>string</td>
+			<td>Optional</td>
+			<td>The name of the author.</td>
+		</tr>
+		<tr>
+			<td>title_tag</td>
+			<td>string</td>
+			<td>Optional</td>
+			<td>Title meta tag of the blog post. <br /><small>Used for SEO</small></td>
+		</tr>
+		<tr>
+			<td>meta_keywords</td>
+			<td>string</td>
+			<td>Optional</td>
+			<td>Keywords meta of the blog post. <br /><small>Used for SEO</small></td>
+		</tr>
+		<tr>
+			<td>meta_description</td>
+			<td>string</td>
+			<td>Optional</td>
+			<td>Description meta tag of the blog post. <br /><small>Used for SEO</small></td>
+		</tr>
+	</tbody>
+</table>
 
 ### Response
 

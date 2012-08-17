@@ -23,8 +23,30 @@ GET 	https://api.create.net/enquirys
 GET 	https://api.create.net/enquirys?datetime_from=2010-04-07%2018:08:14
 {% endhighlight %}
 
-* *datetime_from* - datetime
-* *datetime_to* - datetime
+<table>
+	<thead>
+		<tr>
+			<th>Param</th>
+			<th>Type</th>
+			<th>Required</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>datetime_from</td>
+			<td>datetime</td>
+			<td>Optional</td>
+			<td>Enquiries after a certian date <br /><small>yyyy-mm-dd hh:mm:ss</small></td>
+		</tr>
+		<tr>
+			<td>datetime_to</td>
+			<td>datetime</td>
+			<td>Optional</td>
+			<td>Enquiries up to a certian date <br /><small>yyyy-mm-dd hh:mm:ss</small></td>
+		</tr>
+	</tbody>
+</table>
 
 ### Response
 
@@ -35,7 +57,7 @@ Status: 200 OK
 {% highlight javascript %}
 { "enquiries" :[
 	{
-		"ID" : "355766",
+		"ID" : 355766,
 		"sender" : "adam@create.net",
 		"subject" : "Recent order",
 		"message" : "Thanks for the order, I\'m impressed with the quality. Do you also have it in Blue?",
@@ -60,7 +82,7 @@ Status: 200 OK
 {% highlight javascript %}
 { "enquiry" :
 	{
-		"ID" : "355766",
+		"ID" : 355766,
 		"sender" : "adam@create.net",
 		"subject" : "Recent order",
 		"message" : "Thanks for the order, I\'m impressed with the quality. Do you also have it in Blue?",
@@ -68,7 +90,6 @@ Status: 200 OK
 	}
 }
 {% endhighlight %}
-
 
 Delete an enquiry
 ------------------

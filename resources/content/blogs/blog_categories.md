@@ -17,12 +17,6 @@ List all blog categories
 GET 	https://api.create.net/blog_categories
 {% endhighlight %}
 
-### Input
-
-{% highlight php %}
-GET 	https://api.create.net/blog_categories
-{% endhighlight %}
-
 ### Response
 
 {% highlight php %}
@@ -32,7 +26,7 @@ Status: 200 OK
 {% highlight javascript %}
 { "blog_categories":[
 	{
-		"ID" : "26255",
+		"ID" : 26255,
 		"name" : "Holidays"
 	}
 ]}
@@ -54,7 +48,7 @@ Status: 200 OK
 {% highlight javascript %}
 { "blog_category" : 
 	{
-		"ID" : "26255",
+		"ID" : 26255,
 		"name" : "Holidays"
 	}
 }
@@ -69,7 +63,24 @@ POST 	https://api.create.net/blog_categories
 
 ### Input
 
-* *name* Requried string
+<table>
+	<thead>
+		<tr>
+			<th>Param</th>
+			<th>Type</th>
+			<th>Required</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>name</td>
+			<td>string</td>
+			<td>Required</td>
+			<td>The name of the category</td>
+		</tr>
+	</tbody>
+</table>
 
 ### Response
 
@@ -81,7 +92,7 @@ Location: http://api.create.net/blog_categories/54648
 {% highlight javascript %}
 { "blog_category" : 
 	{
-		"ID" : "3528",
+		"ID" : 3528,
 		"name" : "Cats in hats",
 	}
 }
