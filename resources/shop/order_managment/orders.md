@@ -22,6 +22,44 @@ GET 	https://api.create.net/orders
 {% highlight php %}
 GET 	https://api.create.net/orders?datetime_from=2010-04-07%2018:08:14
 {% endhighlight %}
+
+<table>
+	<thead>
+		<tr>
+			<th>Param</th>
+			<th>Type</th>
+			<th>Required</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>datetime_from</td>
+			<td>datetime</td>
+			<td>Optional</td>
+			<td>Orders after a certian date <br /><small>yyyy-mm-dd hh:mm:ss</small></td>
+		</tr>
+		<tr>
+			<td>datetime_to</td>
+			<td>datetime</td>
+			<td>Optional</td>
+			<td>Orders up to a certian date <br /><small>yyyy-mm-dd hh:mm:ss</small></td>
+		</tr>
+		<tr>
+			<td>status</td>
+			<td>INT</td>
+			<td>Optional</td>
+			<td>Get orders by status <br /><small>1 = X, 2 = X etc</small></td>
+		</tr>
+		<tr>
+			<td>customer_id</td>
+			<td>INT</td>
+			<td>Optional</td>
+			<td>Get orders from a single customer</td>
+		</tr>
+	</tbody>
+</table>
+
 * *datetime_from* datetime
 * *datetime_to* datetime
 * *status* int
@@ -36,40 +74,48 @@ Status: 200 OK
 {% highlight javascript %}
 { "orders" :[
 	{
-		"ID" : "42050",
-		"customer_id" : "0",
-		"customer_email" : "adam@create.net",
-		"customer_firstname" : "Adam",
-		"customer_lastname" : "Strawson",
-		"customer_company" : "",
-		"customer_address1" : "45 Topic Street",
-		"customer_address2" : "",
-		"customer_address3" : "",
-		"customer_city" : "Brighton",
-		"customer_county" : "East Sussex",
-		"customer_postcode" : "BN1 7TY",
-		"customer_country" : "United Kingdom"
-		"customer_phone" : "01275 456545",
-		"delivery_firstname" : "Adam",
-		"delivery_lastname" : "Strawson",
-		"delivery_company" : "",
-		"delivery_address1" : "45 Topic Street",
-		"delivery_address2" : "",
-		"delivery_address3" : "",
-		"delivery_city" : "Brighton",
-		"delivery_county" : "East Sussex",
-		"delivery_postcode" : "BN1 7TY",
-		"delivery_country" : "United Kingdom"
-		"delivery_phone" : "01275 456545",
-		"delivery_email" : "adam@create.net",
+		"ID" : 42050,
+		"customer_details" : [
+			{
+				"ID" : 0,
+				"email" : "adam@create.net",
+				"first_name" : "Adam",
+				"last_name" : "Strawson",
+				"company" : "",
+				"address1" : "45 Topic Street",
+				"address2" : "",
+				"address3" : "",
+				"city" : "Brighton",
+				"county" : "East Sussex",
+				"postcode" : "BN1 7TY",
+				"country" : "United Kingdom"
+				"phone" : "01275 456545"
+			}
+		],
+		"delivery_details" : [
+			{
+				"first_name" : "Adam",
+				"last_name" : "Strawson",
+				"company" : "",
+				"address1" : "45 Topic Street",
+				"address2" : "",
+				"address3" : "",
+				"city" : "Brighton",
+				"county" : "East Sussex",
+				"postcode" : "BN1 7TY",
+				"country" : "United Kingdom"
+				"phone" : "01275 456545",
+				"email" : "adam@create.net"
+			}
+		],
 		"date_purchased" : "2012-10-02",
 		"order_total" : "25.99",
 		"order_currency" : "GBP",
 		"shipping_method" : "Standard Postage",
 		"shipping_total" : "2.98",
 		"tax_total" : "0.00",
-		"status" : "2",
-		"substatus" : "",
+		"status" : 2,
+		"sub_status" : "",
 		"gateway" : "PayPal",
 		"gateway_transaction_id" : "3377373820382646",
 		"notes" : "",
@@ -96,40 +142,48 @@ Status: 200 OK
 {% highlight javascript %}
 { "order" :
 	{
-		"ID" : "42050",
-		"customer_id" : "0",
-		"customer_email" : "adam@create.net",
-		"customer_firstname" : "Adam",
-		"customer_lastname" : "Strawson",
-		"customer_company" : "",
-		"customer_address1" : "45 Topic Street",
-		"customer_address2" : "",
-		"customer_address3" : "",
-		"customer_city" : "Brighton",
-		"customer_county" : "East Sussex",
-		"customer_postcode" : "BN1 7TY",
-		"customer_country" : "United Kingdom"
-		"customer_phone" : "01275 456545",
-		"delivery_firstname" : "Adam",
-		"delivery_lastname" : "Strawson",
-		"delivery_company" : "",
-		"delivery_address1" : "45 Topic Street",
-		"delivery_address2" : "",
-		"delivery_address3" : "",
-		"delivery_city" : "Brighton",
-		"delivery_county" : "East Sussex",
-		"delivery_postcode" : "BN1 7TY",
-		"delivery_country" : "United Kingdom"
-		"delivery_phone" : "01275 456545",
-		"delivery_email" : "adam@create.net",
+		"ID" : 42050,
+		"customer_details" : [
+			{
+				"ID" : 0,
+				"email" : "adam@create.net",
+				"first_name" : "Adam",
+				"last_name" : "Strawson",
+				"company" : "",
+				"address1" : "45 Topic Street",
+				"address2" : "",
+				"address3" : "",
+				"city" : "Brighton",
+				"county" : "East Sussex",
+				"postcode" : "BN1 7TY",
+				"country" : "United Kingdom"
+				"phone" : "01275 456545"
+			}
+		],
+		"delivery_details" : [
+			{
+				"first_name" : "Adam",
+				"last_name" : "Strawson",
+				"company" : "",
+				"address1" : "45 Topic Street",
+				"address2" : "",
+				"address3" : "",
+				"city" : "Brighton",
+				"county" : "East Sussex",
+				"postcode" : "BN1 7TY",
+				"country" : "United Kingdom"
+				"phone" : "01275 456545",
+				"email" : "adam@create.net"
+			}
+		],
 		"date_purchased" : "2012-10-02",
 		"order_total" : "25.99",
 		"order_currency" : "GBP",
 		"shipping_method" : "Standard Postage",
 		"shipping_total" : "2.98",
 		"tax_total" : "0.00",
-		"status" : "2",
-		"substatus" : "",
+		"status" : 2,
+		"sub_status" : "",
 		"gateway" : "PayPal",
 		"gateway_transaction_id" : "3377373820382646",
 		"notes" : "",
