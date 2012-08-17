@@ -5,7 +5,7 @@ title: Introduction
 
 # Introduction
 
-API access is over HTTPS and avaliable from api.create.net. Our API currently only supports JSON. Authentication is handled with OAuth2
+API access is over HTTPS and available from api.create.net. Our API currently only supports JSON. Authentication is handled with OAuth2
 
 The standard four HTTP verbs are used to access our resources:
 
@@ -82,8 +82,10 @@ Access to our resources is limited by user permissions. Resources are split into
 
 ## Pagination
 
-API requests that returns multiple items, such as listing orders, will be paginated (default to 25 items per page). A client can retrieve a specific page by providing the page param. In order to alter the number of records returned per page, a client can provide the per_page param (limited to 100 items per page).
+API requests that returns multiple items, such as listing orders, will be paginated (default to 25 items per page). In order to alter the number of records returned per page, a client can provide the per_page param (limited to 100 items per page). 
+
+To retrieve the next set of data, you can provide the last_id param. This would be the last ID of the previous page, or an ID to offset the request.
 
 {% highlight php %}
-GET		/orders?page=5&per_page=50
+GET		/orders?last_id=45546=5&per_page=50
 {% endhighlight %}
