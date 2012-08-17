@@ -44,7 +44,7 @@ Status: 200 OK
 		"ID" : 2640248,
 		"page_title" : "Festival Blog",
 		"page_type" : "dynamic",
-		"content" : NULL,
+		"content" : "blog",
 		"title_tag" : "Our Festival Blog",
 		"meta_keywords" : "blog,festival,fun,wahey",
 		"meta_description" : "A blog about our Festivals",
@@ -60,7 +60,7 @@ Status: 200 OK
 
 ### Dynamic Pages
 
-If the page is a dynamic page, the content will be NULL, an additional request will be required to retreive content speciic to the page. The relevant method is specified in "data_set".
+If the page is a dynamic page, the content will be the dynamic page type (see below), an additional request will be required to retrieve content specific to the page. The relevant method is specified in "data_set".
 
 The following pages are dynamic:
 * News
