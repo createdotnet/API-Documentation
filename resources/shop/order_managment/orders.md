@@ -60,11 +60,6 @@ GET 	https://api.create.net/orders?datetime_from=2010-04-07%2018:08:14
 	</tbody>
 </table>
 
-* *datetime_from* datetime
-* *datetime_to* datetime
-* *status* int
-* *customer_id* int
-
 ### Response
 
 {% highlight php %}
