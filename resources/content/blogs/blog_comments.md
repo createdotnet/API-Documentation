@@ -43,13 +43,13 @@ GET 	https://api.create.net/blog_comments?post_id=2554
 			<td>datetime_from</td>
 			<td>datetime</td>
 			<td>Optional</td>
-			<td>Comments after a certian date <br /><small>yyyy-mm-dd hh:mm:ss</small></td>
+			<td>Comments after a certain date <br /><small>yyyy-mm-dd hh:mm:ss</small></td>
 		</tr>
 		<tr>
 			<td>datetime_to</td>
 			<td>datetime</td>
 			<td>Optional</td>
-			<td>Comments up to a certian date <br /><small>yyyy-mm-dd hh:mm:ss</small></td>
+			<td>Comments up to a certain date <br /><small>yyyy-mm-dd hh:mm:ss</small></td>
 		</tr>
 		<tr>
 			<td>approved</td>
@@ -75,7 +75,7 @@ Status: 200 OK
 		"email" : "adam@create.net",
 		"website" : "http://create.net",
 		"message" : "A great article, thanks for helping me solve my problem.",
-		"datestamp" : "2012-05-16 15:17:04",
+		"datetime" : "2012-05-16 15:17:04",
 		"approved" : TRUE
 	}
 ]}
@@ -103,7 +103,7 @@ Status: 200 OK
 		"email" : "adam@create.net",
 		"website" : "http://create.net",
 		"message" : "A great article, thanks for helping me solve my problem.",
-		"datestamp" : "2012-05-16 15:17:04",
+		"datetime" : "2012-05-16 15:17:04",
 		"approved" : TRUE
 	}
 }

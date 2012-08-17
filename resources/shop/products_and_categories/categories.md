@@ -152,7 +152,7 @@ Location: http://api.create.net/categories/2455436
 		"ID" : 271099,
 		"parent_category" : 222608,
 		"title" : "Hiking",
-		"titletag" : "Hiking Gear",
+		"title_tag" : "Hiking Gear",
 		"meta_description" : "Buy new hiking gear",
 		"meta_keywords" : "hiking, clothing, gear"
 	}

@@ -35,7 +35,7 @@ Status: 200 OK
 		"town" : "Brighton",
 		"county" : "East Sussex",
 		"postcode" : "BN2 4QN",
-		"country" : "United Kindom"
+		"country" : "United Kingdom"
 		"telephone" : "01273 431234",
 		"email" : "adam@smithssweets.net",
 		"creation_date" : "2002-06-19 14:18:46",

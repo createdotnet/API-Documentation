@@ -37,13 +37,13 @@ GET 	https://api.create.net/orders?datetime_from=2010-04-07%2018:08:14
 			<td>datetime_from</td>
 			<td>datetime</td>
 			<td>Optional</td>
-			<td>Orders after a certian date <br /><small>yyyy-mm-dd hh:mm:ss</small></td>
+			<td>Orders after a certain date <br /><small>yyyy-mm-dd hh:mm:ss</small></td>
 		</tr>
 		<tr>
 			<td>datetime_to</td>
 			<td>datetime</td>
 			<td>Optional</td>
-			<td>Orders up to a certian date <br /><small>yyyy-mm-dd hh:mm:ss</small></td>
+			<td>Orders up to a certain date <br /><small>yyyy-mm-dd hh:mm:ss</small></td>
 		</tr>
 		<tr>
 			<td>status</td>

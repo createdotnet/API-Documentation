@@ -112,7 +112,7 @@ POST 	https://api.create.net/mail_alias
 			<td>alias</td>
 			<td>string</td>
 			<td>Required</td>
-			<td>The alias of the forwording address <br /><small>Example: info (Will become: info@mydomain.com)</small></td>
+			<td>The alias of the forwarding address <br /><small>Example: info (Will become: info@mydomain.com)</small></td>
 		</tr>
 		<tr>
 			<td>email</td>
@@ -164,7 +164,7 @@ PUT 	https://api.create.net/mail_alias/:id
 			<td>alias</td>
 			<td>string</td>
 			<td>Optional</td>
-			<td>The alias of the forwording address <br /><small>Example: info (Will become: info@mydomain.com)</small></td>
+			<td>The alias of the forwarding address <br /><small>Example: info (Will become: info@mydomain.com)</small></td>
 		</tr>
 		<tr>
 			<td>email</td>

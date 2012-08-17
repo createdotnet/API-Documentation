@@ -43,13 +43,13 @@ GET 	https://api.create.net/blog_posts?author=adam
 			<td>datetime_from</td>
 			<td>datetime</td>
 			<td>Optional</td>
-			<td>Posts after a certian date <br /><small>yyyy-mm-dd hh:mm:ss</small></td>
+			<td>Posts after a certain date <br /><small>yyyy-mm-dd hh:mm:ss</small></td>
 		</tr>
 		<tr>
 			<td>datetime_to</td>
 			<td>datetime</td>
 			<td>Optional</td>
-			<td>Posts up to a certian date <br /><small>yyyy-mm-dd hh:mm:ss</small></td>
+			<td>Posts up to a certain date <br /><small>yyyy-mm-dd hh:mm:ss</small></td>
 		</tr>
 		<tr>
 			<td>category</td>
@@ -101,7 +101,7 @@ Status: 200 OK
 		"ID" : 3528,
 		"category_id" : [2352, 1248],
 		"title" : "Great Pubs",
-		"post" : "The Gurnards Head in Treen is a favourite. Sunday lunch is particularly good but you do need to book. We walked-up Cairn Galver after lunch and the views from Zennor across the peninsular to Penzance are just amazing. We love the fact this stretch of coastline is so wild. ",
+		"post" : "The Gurnards Head in Treen is a favorite. Sunday lunch is particularly good but you do need to book. We walked-up Cairn Galver after lunch and the views from Zennor across the peninsular to Penzance are just amazing. We love the fact this stretch of coastline is so wild. ",
 		"author" : "Adam",
 		"datetime" : "2011-08-06 10:42:12",
 		"title_tag" : "Great Pubs in West Penwith",
@@ -188,7 +188,7 @@ Location: http://api.create.net/blog_posts/54648
 		"ID" : 3528,
 		"category_id" : [2352, 1248],
 		"title" : "Great Pubs",
-		"post" : "The Gurnards Head in Treen is a favourite. Sunday lunch is particularly good but you do need to book. We walked-up Cairn Galver after lunch and the views from Zennor across the peninsular to Penzance are just amazing. We love the fact this stretch of coastline is so wild. ",
+		"post" : "The Gurnards Head in Treen is a favorite. Sunday lunch is particularly good but you do need to book. We walked-up Cairn Galver after lunch and the views from Zennor across the peninsular to Penzance are just amazing. We love the fact this stretch of coastline is so wild. ",
 		"author" : "Adam",
 		"datetime" : "2011-08-06 10:42:12",
 		"title_tag" : "Great Pubs in West Penwith",

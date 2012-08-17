@@ -7,7 +7,7 @@ Pages
 =============
 
 *Access Levels*    
-__Group:__ content  
+__Group:__ content   
 __Resource:__ pages
 
 List all pages
@@ -89,7 +89,7 @@ POST 	https://api.create.net/pages
 * *titletag* string
 * *meta_keywords* string
 * *metadesc* string
-* *isonmenu* boolen
+* *isonmenu* boolean
 * *menu_text* string
 * *page_filename* string
 * *menu_order* int

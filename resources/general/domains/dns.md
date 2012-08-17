@@ -29,7 +29,7 @@ GET 	https://api.create.net/dns?domain_id=2672&type=MX
 			<th>Param</th>
 			<th>Type</th>
 			<th>Required</th>
-			<th>Description</th>
+			<th>Description</th>6
 		</tr>
 	</thead>
 	<tbody>

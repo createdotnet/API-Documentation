@@ -37,13 +37,13 @@ GET 	https://api.create.net/guestbook?datetime_from=2010-04-07%2018:08:14
 			<td>datetime_from</td>
 			<td>datetime</td>
 			<td>Optional</td>
-			<td>Entries after a certian date <br /><small>yyyy-mm-dd hh:mm:ss</small></td>
+			<td>Entries after a certain date <br /><small>yyyy-mm-dd hh:mm:ss</small></td>
 		</tr>
 		<tr>
 			<td>datetime_to</td>
 			<td>datetime</td>
 			<td>Optional</td>
-			<td>Entries up to a certian date <br /><small>yyyy-mm-dd hh:mm:ss</small></td>
+			<td>Entries up to a certain date <br /><small>yyyy-mm-dd hh:mm:ss</small></td>
 		</tr>
 		<tr>
 			<td>approved</td>
@@ -68,7 +68,7 @@ Status: 200 OK
 		"email" : "adam@create.net",
 		"website" : "lmgtfy.com",
 		"message" : "Thanks for the advice on the fabric colour, it matched perfectly.",
-		"datestamp" : "2008-09-08 19:08:21",
+		"datetime" : "2008-09-08 19:08:21",
 		"approved" : TRUE
 	}
 ]}
@@ -95,7 +95,7 @@ Status: 200 OK
 		"email" : "adam@create.net",
 		"website" : "lmgtfy.com",
 		"message" : "Thanks for the advice on the fabric colour, it matched perfectly.",
-		"datestamp" : "2008-09-08 19:08:21",
+		"datetime" : "2008-09-08 19:08:21",
 		"approved" : TRUE
 	}
 }
