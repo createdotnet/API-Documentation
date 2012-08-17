@@ -7,7 +7,7 @@ Discount Codes
 =============
 
 *Access Levels*    
-__Group:__ shop
+__Group:__ shop  
 __Resource:__ discount_codes
 
 List all discount codes
@@ -26,12 +26,12 @@ Status: 200 OK
 {% highlight javascript %}
 { "discount_codes" :[ 
 	{
-		"ID" : "5890",
+		"ID" : 5890,
 		"name" : "Facebook Friends Discount",
 		"code" : "FBF010",
 		"type" : "percent",
 		"amount" : "10.00",
-		"expiry" : "0000-00-00"
+		"expiry" : "9999-99-99"
 	}
 ]}
 {% endhighlight %}
@@ -52,12 +52,12 @@ Status: 200 OK
 {% highlight javascript %}
 { "discount_code" : 
 	{
-		"ID" : "5890",
+		"ID" : 5890,
 		"name" : "Facebook Friends Discount",
 		"code" : "FBF010",
 		"type" : "percent",
 		"amount" : "10.00",
-		"expiry" : "0000-00-00"
+		"expiry" : "9999-99-99"
 	}
 }
 {% endhighlight %}
@@ -71,11 +71,48 @@ POST 	https://api.create.net/discount_codes
 
 ### Input
 
-* *name* string
-* *code* string
-* *type* percent, amount
-* *amount* int
-* *expiry* date
+<table>
+	<thead>
+		<tr>
+			<th>Param</th>
+			<th>Type</th>
+			<th>Required</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>name</td>
+			<td>string</td>
+			<td>Required</td>
+			<td>The name of the discount code</td>
+		</tr>
+		<tr>
+			<td>code</td>
+			<td>string</td>
+			<td>Required</td>
+			<td>The discount code <br /><small>Letters and/or numbers only</small></td>
+		</tr>
+		<tr>
+			<td>type</td>
+			<td>string</td>
+			<td>Required</td>
+			<td>The type of discount code <br /><small>Options: percent, amount</small></td>
+		</tr>
+		<tr>
+			<td>amount</td>
+			<td>string</td>
+			<td>Required</td>
+			<td>The discount amount</td>
+		</tr>
+		<tr>
+			<td>expiry</td>
+			<td>date</td>
+			<td>Required</td>
+			<td>The date to expire <br /><small>yyyy-mm-dd OR 9999-99-99 to never expire</small></td>
+		</tr>
+	</tbody>
+</table>
 
 ### Response
 
@@ -87,12 +124,12 @@ Location: http://api.create.net/discount_codes/5890
 {% highlight javascript %}
 { "discount_code" : 
 	{
-		"ID" : "5890",
+		"ID" : 5890,
 		"name" : "Facebook Friends Discount",
 		"code" : "FBF010",
 		"type" : "percent",
 		"amount" : "10.00",
-		"expiry" : "0000-00-00"
+		"expiry" : "9999-99-99"
 	}
 }
 {% endhighlight %}
@@ -106,11 +143,48 @@ PUT 	https://api.create.net/discount_codes/:id
 
 ### Input
 
-* *name* string
-* *code* string
-* *type* percent, amount
-* *amount* int
-* *expiry* date
+<table>
+	<thead>
+		<tr>
+			<th>Param</th>
+			<th>Type</th>
+			<th>Required</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>name</td>
+			<td>string</td>
+			<td>Optional</td>
+			<td>The name of the discount code</td>
+		</tr>
+		<tr>
+			<td>code</td>
+			<td>string</td>
+			<td>Optional</td>
+			<td>The discount code <br /><small>Letters and/or numbers only</small></td>
+		</tr>
+		<tr>
+			<td>type</td>
+			<td>string</td>
+			<td>Optional</td>
+			<td>The type of discount code <br /><small>Options: percent, amount</small></td>
+		</tr>
+		<tr>
+			<td>amount</td>
+			<td>string</td>
+			<td>Optional</td>
+			<td>The discount amount</td>
+		</tr>
+		<tr>
+			<td>expiry</td>
+			<td>date</td>
+			<td>Optional</td>
+			<td>The date to expire <br /><small>yyyy-mm-dd OR 9999-99-99 to never expire</small></td>
+		</tr>
+	</tbody>
+</table>
 
 ### Response
 
