@@ -7,7 +7,7 @@ Categories
 =============
 
 *Access Levels*    
-__Group:__ shop, products_and_categories
+__Group:__ shop, products_and_categories  
 __Resource:__ categories
 
 List all categories
@@ -23,7 +23,24 @@ GET 	https://api.create.net/categories
 GET 	https://api.create.net/categories?parent_category=222608
 {% endhighlight %}
 
-* *parent_category* int
+<table>
+	<thead>
+		<tr>
+			<th>Param</th>
+			<th>Type</th>
+			<th>Required</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>parent_category</td>
+			<td>INT</td>
+			<td>Optional</td>
+			<td>Get all sub categories with parent ID</td>
+		</tr>
+	</tbody>
+</table>
 
 ### Response
 
@@ -34,8 +51,8 @@ Status: 200 OK
 {% highlight javascript %}
 { "categories" :[ 
 	{
-		"ID" : "271099",
-		"parent_category" : "222608",
+		"ID" : 271099,
+		"parent_category" : 222608,
 		"title" : "Hiking",
 		"title_tag" : "Hiking Gear",
 		"meta_description" : "Buy new hiking gear",
@@ -60,8 +77,8 @@ Status: 200 OK
 {% highlight javascript %}
 { "category" : 
 	{
-		"ID" : "271099",
-		"parent_category" : "222608",
+		"ID" : 271099,
+		"parent_category" : 222608,
 		"title" : "Hiking",
 		"title_tag" : "Hiking Gear",
 		"meta_description" : "Buy new hiking gear",
@@ -79,11 +96,48 @@ POST 	https://api.create.net/categories
 
 ### Input
 
-* *parent_category* int
-* *title* string
-* *titletag* string
-* *meta_keywords* string
-* *meta_description* string
+<table>
+	<thead>
+		<tr>
+			<th>Param</th>
+			<th>Type</th>
+			<th>Required</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>parent_category</td>
+			<td>INT</td>
+			<td>Optional</td>
+			<td>ID of parent category</td>
+		</tr>
+		<tr>
+			<td>title</td>
+			<td>string</td>
+			<td>Required</td>
+			<td>Title of category</td>
+		</tr>
+		<tr>
+			<td>title_tag</td>
+			<td>string</td>
+			<td>Optional</td>
+			<td>Meta title tag of category. Used for SEO</td>
+		</tr>
+		<tr>
+			<td>meta_keywords</td>
+			<td>string</td>
+			<td>Optional</td>
+			<td>The category keyword meta. Used for SEO</td>
+		</tr>
+		<tr>
+			<td>meta_description</td>
+			<td>string</td>
+			<td>Optional</td>
+			<td>The category description meta. Used for SEO</td>
+		</tr>
+	</tbody>
+</table>
 
 ### Response
 
@@ -95,8 +149,8 @@ Location: http://api.create.net/categories/2455436
 {% highlight javascript %}
 { "category" : 
 	{
-		"ID" : "271099",
-		"parent_category" : "222608",
+		"ID" : 271099,
+		"parent_category" : 222608,
 		"title" : "Hiking",
 		"titletag" : "Hiking Gear",
 		"meta_description" : "Buy new hiking gear",
@@ -105,7 +159,7 @@ Location: http://api.create.net/categories/2455436
 }
 {% endhighlight %}
 
-Update a categories
+Update a category
 -------------
 
 {% highlight php %}
@@ -114,11 +168,48 @@ PUT 	https://api.create.net/categories/:id
 
 ### Input
 
-* *parent_category* int
-* *title* string
-* *titletag* string
-* *meta_keywords* string
-* *meta_description* string
+<table>
+	<thead>
+		<tr>
+			<th>Param</th>
+			<th>Type</th>
+			<th>Required</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>parent_category</td>
+			<td>INT</td>
+			<td>Optional</td>
+			<td>ID of parent category</td>
+		</tr>
+		<tr>
+			<td>title</td>
+			<td>string</td>
+			<td>Optional</td>
+			<td>Title of category</td>
+		</tr>
+		<tr>
+			<td>title_tag</td>
+			<td>string</td>
+			<td>Optional</td>
+			<td>Meta title tag of category. Used for SEO</td>
+		</tr>
+		<tr>
+			<td>meta_keywords</td>
+			<td>string</td>
+			<td>Optional</td>
+			<td>The category keyword meta. Used for SEO</td>
+		</tr>
+		<tr>
+			<td>meta_description</td>
+			<td>string</td>
+			<td>Optional</td>
+			<td>The category description meta. Used for SEO</td>
+		</tr>
+	</tbody>
+</table>
 
 ### Response
 
