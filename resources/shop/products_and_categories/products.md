@@ -7,7 +7,7 @@ Products
 =============
 
 *Access Levels*    
-__Group:__ shop, products_and_categories  
+__Group:__ shop, products_and_categories   
 __Resource:__ products
 
 List all products
