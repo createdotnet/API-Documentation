@@ -8,8 +8,3 @@ This API is *not* in production, I'm following an RDD style of development, and 
 
 Also, pull requests are welcome.
 
-If you have any questions, you can catch me at the following places:
-
-- Email: [adam@create.net](mailto:adam@create.net)
-- Twitter: [@adamstrawson](https://twitter.com/adamstrawson)
-- Campfire: [https://createinternetltd.campfirenow.com/fbba7](https://createinternetltd.campfirenow.com/fbba7)  
