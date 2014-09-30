@@ -17,6 +17,15 @@ The standard four HTTP verbs are used to access our resources:
 
 *DELETE* - Use when deleting a resource
 
+
+## Authentication
+
+Authentication tokens are connected to a site and must be sent with every api request as an HTTP Header called 'Token'.
+
+{% highlight php %}
+Token=<myhashgoeshere>
+{% endhighlight %}
+
 ## About Request and Response Formats
 
 Requests and responses can be provided in JSON. Set the HTTP Accept header to specify the response format and the HTTP Content-Type header to specify the request format.
