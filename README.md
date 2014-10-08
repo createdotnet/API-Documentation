@@ -11,3 +11,13 @@ We are following an RDD style of development, and have written the documentation
 
 ## Live API Calls
 * GET orders
+
+
+## Issues
+- [x] Get data
+- [ ] Pagination
+- [ ] Updating
+- [ ] Deleting
+- [ ] Filters ( Date range, Gateway e.t.c.)
+- [ ] Document Authorisation
+- [ ] Error Responses
