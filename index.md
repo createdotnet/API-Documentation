@@ -3,14 +3,26 @@ layout: default
 title: Create API Documentation
 ---
 
-#Create. API Documentation
+# Create. API Documentation
 
 This is our beta API, which gives you access to the majority of our customers resources within the application. We plan on releasing with most of the planned resources, but some will follow in a later release, this is outlined in the introduction.
 
 ## Developers
 
-**This API is not in production**  
+**Not all of this API is in production.**
 
-I'm following an RDD style of development, and have only written the documentation before I write any code. If you've been invited to view this documentation, please have a read through and let me know if you see anything that I have missed anything fundamental or if something doesn't make sense. It makes sense for me to get the documentation perfect before I wrote code so that mistakes/improvements can be made early on. This is my first attempt at designing/developing a public API so any feedback is appreciated.
+We are following an RDD style of development, and have written the documentation before any code. If you've been invited to view this documentation, please have a read through and let me know if you see anything that's been missed or if something doesn't make sense.
 
-Also, pull requests are welcome.
+
+## Live API Calls
+* GET orders
+
+
+## Issues
+- [x] Get data
+- [ ] Pagination
+- [ ] Updating
+- [ ] Deleting
+- [ ] Filters ( Date range, Gateway e.t.c.)
+- [ ] Document Authorisation
+- [ ] Error Responses
