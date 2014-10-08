@@ -18,11 +18,11 @@ We are following an RDD style of development, and have written the documentation
 * GET orders
 
 
-## Issues
+## Pipeline
 - [x] Get data
+- [ ] Filters ( Date range, Gateway e.t.c.)
 - [ ] Pagination
 - [ ] Updating
 - [ ] Deleting
-- [ ] Filters ( Date range, Gateway e.t.c.)
 - [ ] Document Authorisation
 - [ ] Error Responses
