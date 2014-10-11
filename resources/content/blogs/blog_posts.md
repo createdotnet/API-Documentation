@@ -179,22 +179,14 @@ POST 	https://api.create.net/blog_posts
 
 {% highlight php %}
 Status: 201 Created
-Location: http://api.create.net/blog_posts/54648
 {% endhighlight %}
 
 {% highlight javascript %}
-{ "blog_post" : 
-	{
-		"ID" : 3528,
-		"category_id" : [2352, 1248],
-		"title" : "Great Pubs",
-		"post" : "The Gurnards Head in Treen is a favorite. Sunday lunch is particularly good but you do need to book. We walked-up Cairn Galver after lunch and the views from Zennor across the peninsular to Penzance are just amazing. We love the fact this stretch of coastline is so wild. ",
-		"author" : "Adam",
-		"datetime" : "2011-08-06 10:42:12",
-		"title_tag" : "Great Pubs in West Penwith",
-		"meta_keywords" : "Great Pubs Cornwall Sennen Cove",
-		"meta_description" : "Great Pubs in West Penwith and around Sennen Cove"
-	}
+{
+    "ID": 101775,
+    "_links": {
+        "self": "/blog_posts/101775"
+    }
 }
 {% endhighlight %}
 
