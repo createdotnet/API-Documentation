@@ -8,19 +8,19 @@ Blog Posts
 
 *Access Levels*    
 __Group:__ blogs     
-__Resource:__ blog_posts
+__Resource:__ blogs
 
 List all blog posts
 -------------------
 
 {% highlight php %}
-GET 	https://api.create.net/blog_posts
+GET 	https://api.create.net/blogs
 {% endhighlight %}
 
 ### Input
 
 {% highlight php %}
-GET 	https://api.create.net/blog_posts?author=adam
+GET 	https://api.create.net/blogs?author=adam
 {% endhighlight %}
 
 <table>
@@ -67,7 +67,7 @@ Status: 200 OK
 {% endhighlight %}
 
 {% highlight javascript %}
-{ "blog_posts":[
+{ "blogs":[
 	{
 		"ID" : 3408,
 		"category_id" : [2352],
@@ -86,7 +86,7 @@ Get a single blog post
 -----------------------
 
 {% highlight php %}
-GET 	https://api.create.net/blog_posts/:id
+GET 	https://api.create.net/blogs/:id
 {% endhighlight %}
 
 ### Response
@@ -115,7 +115,7 @@ Create a blog post
 ------------------
 
 {% highlight php %}
-POST 	https://api.create.net/blog_posts
+POST 	https://api.create.net/blogs
 {% endhighlight %}
 
 ### Input
@@ -185,7 +185,7 @@ Status: 201 Created
 {
     "ID": 101775,
     "_links": {
-        "self": "/blog_posts/101775"
+        "self": "/blogs/101775"
     }
 }
 {% endhighlight %}
@@ -194,7 +194,7 @@ Update a blog post
 ------------------
 
 {% highlight php %}
-PUT 	https://api.create.net/blog_posts/:id
+PUT 	https://api.create.net/blogs/:id
 {% endhighlight %}
 
 ### Input
@@ -264,7 +264,7 @@ Delete a blog post
 ------------------
 
 {% highlight php %}
-DELETE 	https://api.create.net/blog_posts/:id
+DELETE 	https://api.create.net/blogs/:id
 {% endhighlight %}
 
 ### Response
