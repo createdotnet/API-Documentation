@@ -20,7 +20,7 @@ GET 	https://api.create.net/orders
 ### Input
 
 {% highlight php %}
-GET 	https://api.create.net/orders?datetime_from=2010-04-07%2018:08:14
+GET 	https://api.create.net/orders?date_purchased__from=2010-04-07%2018:08:14
 {% endhighlight %}
 
 <table>
