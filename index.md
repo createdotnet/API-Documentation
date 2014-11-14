@@ -20,9 +20,9 @@ We are following an RDD style of development, and have written the documentation
 
 ## Pipeline
 - [x] Get data
-- [ ] Filters ( Date range, Gateway e.t.c.)
-- [ ] Pagination
+- [x] Filters ( Date range, Gateway e.t.c.)
+- [x] Pagination
 - [ ] Updating
 - [ ] Deleting
-- [ ] Document Authorisation
-- [ ] Error Responses
+- [x] Document Authorisation
+- [x] Error Responses

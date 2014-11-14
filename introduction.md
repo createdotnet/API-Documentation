@@ -71,6 +71,7 @@ Access to our resources is limited by user permissions. Resources are split into
 	- product_options  
 	- orders_managment  
 		- orders  
+		- order_products
 		- disptach_notes  
 		- address_labels  
 		- order_status  
