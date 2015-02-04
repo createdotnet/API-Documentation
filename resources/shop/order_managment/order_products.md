@@ -42,8 +42,7 @@ Status: 200 OK
     order_id: "1948152",
     product_id: "3706879",
     name: "Test Product 2",
-    options: [
-    {
+    options: [{
         ID: 1023305,
         name: "Colour",
         items: [{
