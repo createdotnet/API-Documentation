@@ -101,6 +101,28 @@ Status: 200 OK
 		"was_price" : "0.00",
 		"rrp" : "0.00",
 		"trade_price" : "0.00"
+
+		"options": [{  
+        	"ID":"137379",
+        	"title":"Colour",
+        	"required":"1",
+        	"items":[  
+            {  
+               "ID":"561041",
+               "title":"Red",
+               "price_adjustment":"0.00",
+               "weight_adjustment":"0.000",
+               "is_custom_input":"0"
+            },
+            {  
+               "ID":"561045",
+               "title":"Blue",
+               "price_adjustment":"0.00",
+               "weight_adjustment":"0.000",
+               "is_custom_input":"0"
+            }
+        ]
+      }]
 	}
 }
 {% endhighlight %}
