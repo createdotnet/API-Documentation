@@ -65,7 +65,8 @@ Status: 200 OK
 		"meta_description" : "A retro T-shirt",
 		"was_price" : "0.00",
 		"rrp" : "0.00",
-		"trade_price" : "0.00"
+		"trade_price" : "0.00",
+		"options": []
 	}
 ]}
 {% endhighlight %}
