@@ -47,7 +47,7 @@ Status: 200 OK
         name: "Colour",
         items: [{
             ID: 5039609,
-            value: "Blue",
+            title: "Blue",
             custom_value: ""
         }]
     }],
