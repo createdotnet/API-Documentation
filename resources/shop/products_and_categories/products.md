@@ -121,8 +121,8 @@ Status: 200 OK
                "weight_adjustment":"0.000",
                "is_custom_input":"0"
             }
-        ]
-      }]
+        	]
+      	}]
 	}
 }
 {% endhighlight %}
