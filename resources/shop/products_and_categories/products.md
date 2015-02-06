@@ -85,44 +85,48 @@ Status: 200 OK
 {% endhighlight %}
 
 {% highlight javascript %}
-{ "product" : 
-	{
-		"ID" : 898440,
-		"parent_category" : 123133,
-		"title" : "Retro T-Shirt",
-		"short_description" : "Quisque sed arcu quis nunc porttitor rutrum faucibus a nunc.",
-		"long_description" : "",
-		"price" : "25.99",
-		"sku" : "898440",
-		"weight" : "4.60",
-		"stock_number" : 121,
-		"title_tag" : "Retro T-Shirt",
-		"meta_keywords" : "Tshirt, retro, clothing",
-		"meta_description" : "A retro T-shirt",
-		"was_price" : "0.00",
-		"rrp" : "0.00",
-		"trade_price" : "0.00",
-
-		"options": [{  
-        	"ID":"137379",
-        	"title":"Colour",
-        	"required":"1",
-        	"items":[{  
-            	"ID":"561041",
-            	"title":"Red",
-            	"price_adjustment":"0.00",
-            	"weight_adjustment":"0.000",
-            	"is_custom_input":"0"
-            },
+{  
+    "product":{  
+        "ID":898440,
+        "parent_category":123133,
+        "title":"Retro T-Shirt",
+        "short_description":"Quisque sed arcu quis nunc porttitor rutrum faucibus a nunc.",
+        "long_description":"",
+        "price":"25.99",
+        "sku":"898440",
+        "weight":"4.60",
+        "stock_number":121,
+        "title_tag":"Retro T-Shirt",
+        "meta_keywords":"Tshirt, retro, clothing",
+        "meta_description":"A retro T-shirt",
+        "was_price":"0.00",
+        "rrp":"0.00",
+        "trade_price":"0.00",
+        
+        "options":[  
             {  
-            	"ID":"561045",
-            	"title":"Blue",
-            	"price_adjustment":"0.00",
-            	"weight_adjustment":"0.000",
-            	"is_custom_input":"0"
-            }]
-      	}]
-	}
+                "ID":"137379",
+                "title":"Colour",
+                "required":"1",
+                "items":[  
+                    {  
+                        "ID":"561041",
+                        "title":"Red",
+                        "price_adjustment":"0.00",
+                        "weight_adjustment":"0.000",
+                        "is_custom_input":"0"
+                    },
+                    {  
+                        "ID":"561045",
+                        "title":"Blue",
+                        "price_adjustment":"0.00",
+                        "weight_adjustment":"0.000",
+                        "is_custom_input":"0"
+                    }
+                ]
+            }
+        ]
+    }
 }
 {% endhighlight %}
 
