@@ -3,9 +3,6 @@ layout: default
 title: Products
 ---
 
-Products
-=============
-
 *Access Levels*    
 __Group:__ shop, products_and_categories   
 __Resource:__ products

@@ -3,9 +3,6 @@ layout: default
 title: Enquires
 ---
 
-Enquires
-=============
-
 *Access Levels*    
 __Group:__ content     
 __Resource:__ enquires

@@ -3,9 +3,6 @@ layout: default
 title: DNS
 ---
 
-DNS
-=============
-
 *Access Levels*    
 __Group:__ general, domains     
 __Resource:__ dns
