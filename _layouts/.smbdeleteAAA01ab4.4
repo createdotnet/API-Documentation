@@ -1,0 +1,53 @@
+{% include head.html %}
+{% include top-navigation-bars.html %}
+
+
+<div class="page-header">
+	<h2 class="page-title">{{ page.title }}</h2>
+</div>
+
+
+<div class="page-content">
+
+	<nav class="side-menu">
+
+		<!-- Assign posts based on which page we're on and set the navigation title -->
+		{% if page.url contains "glossary" %}
+			{% assign nav-items = site.glossary | sort:"nav-position" %}
+			<h1>Glossary</h1>
+		{% elsif page.url contains "tutorials" %}
+			{% assign nav-items = site.tutorials | sort:"nav-position" %}
+			<h1>Tutorials</h1>
+		{% elsif page.url contains "getting-started" %}
+			{% assign nav-items = site.getting-started | sort:"nav-position" %}
+			<h1>Getting Started</h1>
+		{% endif %}
+			
+
+		{{ site.collections }}
+		<ul>
+			{% for post in nav-items %}
+
+					<li class="nav__item">
+						<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+					    {% if post.parent != nil %}
+
+					    {% endif %}
+					</li>
+
+			{% endfor %}
+		</ul>
+
+	</nav>
+
+
+
+	<main>
+		{{ content }}
+		<p class="last-updated">Last Updated: {{ page.last-updated | date: "%-d %B %Y" }}</p>
+	</main>
+
+</div> <!--end container-->
+
+{% include footer.html %}
+{% include foot.html %}
