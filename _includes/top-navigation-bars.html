@@ -18,13 +18,16 @@
 
 		<nav class="top-nav">
 			<ul>
-				<li {% if page.title == "Getting Started" %}class="active"{% endif %}>
+				<li {% if page.title == "Create API Documentation" %}class="active"{% endif %}>
 					<a href="{{ site.baseurl }}/">Home</a>
 				</li>
-								
+
+				<li {% if page.title == "Introduction" %}class="active"{% endif %}>
+					<a href="{{ site.baseurl }}/introduction.html">Introduction</a>
+				</li>
+							
 				<li {% if page.title == "Change Log" %}class="active"{% endif %}>
 					<a href="{{ site.baseurl }}/changelog.html">Change Log</a>
 				</li>
 			</ul>
 		</nav>
-

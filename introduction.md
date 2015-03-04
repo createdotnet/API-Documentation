@@ -3,8 +3,6 @@ layout: default
 title: Introduction
 ---
 
-# Introduction
-
 API access is over HTTPS and available from api.create.net. Our API currently only supports JSON. Authentication is handled with OAuth2
 
 The standard four HTTP verbs are used to access our resources:
