@@ -20,12 +20,36 @@ GET 	https://api.create.net/guestbook
 GET 	https://api.create.net/guestbook?datetime_from=2010-04-07%2018:08:14
 {% endhighlight %}
 
-| Param         | Type     | Required | Description |
-|---------------|----------|----------|-------------|
-| datetime_from | datetime | Optional | Entries after a certain date <br /><small>yyyy-mm-dd hh:mm:ss</small> |
-| datetime_to   | datetime | Optional | Entries up to a certain date <br /><small>yyyy-mm-dd hh:mm:ss</small> |
-| approved      | INT      | Optional | Get entries by approved status <br /><small>TRUE = Approved, FALSE = Awaiting Approval</small> |
-
+<table>
+	<thead>
+		<tr>
+			<th>Param</th>
+			<th>Type</th>
+			<th>Required</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>datetime_from</td>
+			<td>datetime</td>
+			<td>Optional</td>
+			<td>Entries after a certain date <br /><small>yyyy-mm-dd hh:mm:ss</small></td>
+		</tr>
+		<tr>
+			<td>datetime_to</td>
+			<td>datetime</td>
+			<td>Optional</td>
+			<td>Entries up to a certain date <br /><small>yyyy-mm-dd hh:mm:ss</small></td>
+		</tr>
+		<tr>
+			<td>approved</td>
+			<td>INT</td>
+			<td>Optional</td>
+			<td>Get entries by approved status <br /><small>TRUE = Approved, FALSE = Awaiting Approval</small></td>
+		</tr>
+	</tbody>
+</table>
 
 ### Response
 
