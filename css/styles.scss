@@ -55,12 +55,12 @@ $page-width: 1200px;
 @import "header";
 @import "footer";
 @import "side-nav";
-@import "top-nav";
 @import "page-content";
 
 // Objects
 @import "button";
 @import "fonts";
+@import "tables";
 
 // Plugins
 @import "prism";
@@ -101,5 +101,8 @@ body {
 	@media (max-width: 670px) {
 		padding: 0;
 	}
+}
 
+table {
+	border: 1px solid black;
 }
