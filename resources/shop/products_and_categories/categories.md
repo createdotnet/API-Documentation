@@ -3,9 +3,6 @@ layout: default
 title: Categories
 ---
 
-Categories
-=============
-
 *Access Levels*    
 __Group:__ shop, products_and_categories  
 __Resource:__ categories

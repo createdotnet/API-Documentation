@@ -3,9 +3,6 @@ layout: default
 title: Blog Categories
 ---
 
-Blog Categories
-=============
-
 *Access Levels*    
 __Group:__ blogs     
 __Resource:__ blog_categories

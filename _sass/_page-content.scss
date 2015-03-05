@@ -1,0 +1,26 @@
+
+.page-content {
+	background-color: $content-background-colour;
+	padding-top: $base-spacing-unit;
+	padding-right: $base-spacing-unit;
+	padding-bottom: $base-spacing-unit * 2;
+	padding-left: $base-spacing-unit;
+	@extend %clearfix;
+}
+
+blockquote {
+	border: 1px solid #FFE05B;
+	background-color: #FFF6BF;
+	padding: 0px 10px;
+}
+
+.container ol,
+.container ul {
+    padding-left: $base-spacing-unit;
+}
+
+.wdk-tag {
+	display: block;
+	padding: 20px !important; // overriding the horrible prism.js css selector
+	margin-bottom: 20px;
+}

@@ -3,9 +3,6 @@ layout: default
 title: Orders
 ---
 
-Orders
-=============
-
 *Access Levels*    
 __Group:__ shop, order_managment     
 __Resource:__ orders

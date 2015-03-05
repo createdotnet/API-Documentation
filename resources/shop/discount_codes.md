@@ -3,9 +3,6 @@ layout: default
 title: Discount Codes
 ---
 
-Discount Codes
-=============
-
 *Access Levels*    
 __Group:__ shop  
 __Resource:__ discount_codes

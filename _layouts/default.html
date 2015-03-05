@@ -1,86 +1,22 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Create. API Documentation</title>
+{% include head.html %}
+{% include top-nav.html %}
 
-    <link rel="stylesheet" href="/API-Documentation/stylesheets/styles.css">
-    <link rel="stylesheet" href="/API-Documentation/stylesheets/pygment_trac.css">
-    <script src="/API-Documentation/javascripts/scale.fix.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1 class="header">Create. API</h1>
-        <ul>
-          <li><a href="/API-Documentation">Home</a></li>
-          <li><a href="/API-Documentation/introduction.html">Introduction</a></li>
-          <li>Resources
-            <ul>
-              <li>General
-                <ul>
-                  <li>Domains
-                    <ul>
-                      <li><a href="/API-Documentation/resources/general/domains/domain_names.html">Domain Names</a></li>
-                      <li><a href="/API-Documentation/resources/general/domains/dns.html">DNS</a></li>
-                      <li><a href="/API-Documentation/resources/general/domains/mail_alias.html">Mail Forwarding</a></li>
-                    </ul>
-                  </li>
-                  <li>Site Details
-                    <ul>
-                      <li><a href="/API-Documentation/resources/general/site_details/account_details.html">Account Details</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li>Content
-                <ul>
-                  <li>Blogs
-                    <ul>
-                      <li><a href="/API-Documentation/resources/content/blogs/blog_posts.html">Blog Posts</a></li>
-                      <li><a href="/API-Documentation/resources/content/blogs/blog_categories.html">Blog Categories</a></li>
-                      <li><a href="/API-Documentation/resources/content/blogs/blog_comments.html">Blog Comments</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="/API-Documentation/resources/content/enquires.html">Enquries</a></li>
-                  <li><a href="/API-Documentation/resources/content/guestbook.html">Guestbook</a></li>
-                  <li><a href="/API-Documentation/resources/content/pages.html">Pages</a></li>
-                </ul>
-              </li>
-              <li>Shop
-                <ul>
-                  <li>Order Management
-                    <ul>
-                      <li><a href="/API-Documentation/resources/shop/order_managment/orders.html">Orders</a></li>
-                      <li><a href="/API-Documentation/resources/shop/order_managment/order_products.html">Order Products</a></li>
-                    </ul>
-                  </li>
-                  <li>Products and Categories
-                    <ul>
-                      <li><a href="/API-Documentation/resources/shop/products_and_categories/products.html">Products</a></li>
-                      <li><a href="/API-Documentation/resources/shop/products_and_categories/categories.html">Categories</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="/API-Documentation/resources/shop/discount_codes.html">Discount Codes</a></li>
-                </ul>
-              </li>
-            </ul>
-        </li>
-        </ul>
-        <ul class="buttons">
-          <li><a class="buttons github" href="https://github.com/createdotnet/API-Documentation">View On GitHub</a></li>
-        </ul>
-      </header>
-      <section>
-        {{ content }}
-      </section>
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
-    
-  </body>
-</html>
+<div class="page-content">
+
+	{% include side-nav.html %}
+
+	<main>
+		<h1 class="">{{ page.title }}</h1>
+		{% if page.tag != nil %}
+			<code class="wdk-tag">{{ page.tag | xml_escape }} </code>
+		{% endif %}
+
+		{{ content }}
+
+		<p class="last-updated">Last Updated: {{ page.last-updated | date: "%-d %B %Y" }}</p>
+	</main>
+
+</div> <!--end container-->
+
+{% include footer.html %}
+{% include foot.html %}
