@@ -3,9 +3,6 @@ layout: default
 title: Mail Forwarding
 ---
 
-Mail Forwarding
-=============
-
 *Access Levels*    
 __Group:__ general, domains     
 __Resource:__ mail_alias

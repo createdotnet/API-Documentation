@@ -3,9 +3,6 @@ layout: default
 title: Account Details
 ---
 
-Account details
-=============
-
 *Access Levels*    
 __Group:__ general, site_details     
 __Resource:__ account_details

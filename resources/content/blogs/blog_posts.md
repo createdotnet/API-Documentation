@@ -3,9 +3,6 @@ layout: default
 title: Blog Posts
 ---
 
-Blog Posts
-=============
-
 *Access Levels*    
 __Group:__ blogs     
 __Resource:__ blogs

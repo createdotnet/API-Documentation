@@ -1,0 +1,63 @@
+
+
+// Side Navigation Bar
+
+
+.side-menu {
+	
+	float: left;
+	width: $side-menu-width;
+	border-right: 1px dotted $body-text-colour;
+	padding: 0px 5px 0px 10px;
+
+	@media (max-width: 670px) {
+		float: none;
+		width: 100%;
+		border: none;
+		padding: 0;
+		text-align: center;
+	}
+
+	ul {
+		padding-left: 10px;
+	}
+
+	a {
+		color: $charcoal;
+		text-decoration: none;
+		&:hover {
+			color: lighten($charcoal, 20%);
+		}
+	}
+
+	.active a {
+		font-weight: bold;
+	}
+
+	.nav__item {
+		margin-bottom: 10px;
+		font-size: 1.1em;
+		line-height: 1.4em;
+		list-style-type: none;
+	}
+	.nav__item__sub {
+		list-style-type: none;
+		font-size: .9em;
+		margin-left: 10px;
+		margin-bottom: 7px;
+	}
+
+
+}
+
+
+// @TODO: This shouldn't be here...
+main {
+	margin-left: $side-menu-width;
+	padding-left: $base-spacing-unit;
+	@media (max-width: 670px) {
+		margin-left: 0;
+		padding-left: 0;
+	}
+}
+

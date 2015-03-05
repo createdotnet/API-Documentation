@@ -3,9 +3,6 @@ layout: default
 title: Pages
 ---
 
-Pages
-=============
-
 *Access Levels*    
 __Group:__ content   
 __Resource:__ pages

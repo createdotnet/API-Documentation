@@ -1,3 +1,24 @@
-safe: true
-pygments: true
-auto: true
+baseurl:     "/API-Documentation"
+
+# Conversion
+markdown:    kramdown
+
+# Turn on recognition of 'Github Flavored Markdown'
+kramdown:
+  input: GFM
+
+# Backwards-compatibility
+relative_permalinks: false
+
+# Sass
+sass:
+    sass_dir: _sass
+    style: :compressed
+
+# collections:
+#   content:
+#     output: true
+#   general:
+#     output: true
+#   shop:
+#     output: true
