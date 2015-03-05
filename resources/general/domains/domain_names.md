@@ -3,9 +3,6 @@ layout: default
 title: Domain Names
 ---
 
-Domain names
-=============
-
 *Access Levels*    
 __Group:__ general, domains     
 __Resource:__ domain_names

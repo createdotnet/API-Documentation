@@ -3,9 +3,6 @@ layout: default
 title: Guestbook
 ---
 
-Guestbook
-=============
-
 *Access Levels*    
 __Group:__ content     
 __Resource:__ guestbook

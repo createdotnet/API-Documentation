@@ -3,9 +3,6 @@ layout: default
 title: Blog Comments
 ---
 
-Blog Comments
-=============
-
 *Access Levels*    
 __Group:__ blogs     
 __Resource:__ blog_comments
