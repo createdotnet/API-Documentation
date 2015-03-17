@@ -33,10 +33,3 @@ Please follow the guidelines below for raising issues;
 The Roadmap is broken into Milestones here; https://github.com/createdotnet/API-Documentation/milestones. 
 
 It aims to set out when certain functionality will appear. It reduces in clarity the further we go into the future, and is constantly being added to as we move forward but it should give you a good overview as to what is coming next, and what functionality we intend to work on in the future.
-
-
-## Developers
-
-Not all of this API is in production.
-
-We are following an RDD style of development, and have written the documentation before any code. If you've been invited to view this documentation, please have a read through and let me know if you see anything that's been missed or if something doesn't make sense.
