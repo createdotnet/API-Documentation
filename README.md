@@ -23,6 +23,7 @@ Got a question or a problem with the API? You can raise issues right here on Git
 Please follow the guidelines below for raising issues;
 
 * **Identify your Create account** so that we know which Create account you're using, please supply the domain name of the site. **DO NOT** share your API Keys or Usernames / Passwords here.
+* **Security** **DO NOT** post any sensitive information (order details, email addresses, phone numbers etc.)
 * **Check existing issues** for your issue. Duplicating an issue is slower for both parties so search through open and closed issues to see if what you’re running into has been addressed already.
 * **Be clear** about what your problem is: what was the expected outcome, what happened instead? Detail how someone else can recreate the problem.
 * **Link to demos** recreating the problem on things like JSFiddle or CodePen.
