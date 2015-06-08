@@ -5,9 +5,13 @@ title: Introduction
 
 # Introduction
 
-API access is over HTTPS and available from api.create.net. Our API currently only supports JSON. Authentication is handled with OAuth2
+* API access is over HTTPS
+* API end point: `https://api.create.net/v1/`
+* Currently only supports JSON
+* Authentication is handled with tokens
 
-The standard four HTTP verbs are used to access our resources:
+
+The standard four REST verbs are used to access our resources:
 
 *GET* - Use when requesting an existing resource
 
@@ -23,7 +27,7 @@ The standard four HTTP verbs are used to access our resources:
 Authentication tokens are connected to a site and must be sent with every api request as an HTTP Header called 'Token'.
 
 {% highlight php %}
-Token=<myhashgoeshere>
+Token=<mytokengoeshere>
 {% endhighlight %}
 
 ## About Request and Response Formats
@@ -38,6 +42,8 @@ Content-Type: application/json
 {% endhighlight %}
 
 ## Access Levels
+
+** Currently not implemented ** 
 
 Access to our resources is limited by user permissions. Resources are split into groups, you can request access to a whole group, or individual resources within a group. The minimum required access level is specified for each resource. The access levels are as follows:
 
