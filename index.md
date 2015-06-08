@@ -15,7 +15,7 @@ This is our beta API, which gives you access to the majority of our users resour
 
 The API has been developed in a Documentation Driven Development process, this means that we have documented the functionality before implementing it. This allows us to face any issues or changes before there's any code written. 
 
-[Get Started](introduction.html)
+[Get Started](get-started.html)
 
 ## Documentation
 
