@@ -49,7 +49,7 @@ Status: 200 OK
 {% endhighlight %}
 
 {% highlight javascript %}
-{ "products" :[ 
+[ 
 	{
 		"ID" : 898440,
 		"parent_category" : 123133,
@@ -68,7 +68,7 @@ Status: 200 OK
 		"trade_price" : "0.00",
 		"options": []
 	}
-]}
+]
 {% endhighlight %}
 
 Get a product
