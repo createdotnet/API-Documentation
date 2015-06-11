@@ -5,6 +5,9 @@ title: Get Started
 
 # Get Started
 
+See latest updates on the [Change Log](/API-Documentation/change-log.html).
+
+* Current API Version: `v0`
 * API access is over HTTPS
 * API end point: `https://api.create.net/v1/`
 * Currently only supports JSON
