@@ -110,7 +110,7 @@ Delete a stock record
 -------------
 
 {% highlight php %}
-DELETE 	https://api.create.net/products/:procuct_id/stock/:stock_record_id
+DELETE 	https://api.create.net/products/:product_id/stock/:stock_record_id
 {% endhighlight %}
 
 ### Response
