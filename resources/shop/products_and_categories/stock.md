@@ -9,6 +9,7 @@ Stock
 *Access Levels*    
 __Group:__ shop, products_and_categories   
 __Resource:__ stock
+__Version:__ v1
 
 List stock records for a product
 -------------------
