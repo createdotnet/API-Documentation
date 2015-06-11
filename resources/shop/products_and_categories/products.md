@@ -49,26 +49,28 @@ Status: 200 OK
 {% endhighlight %}
 
 {% highlight javascript %}
-[ 
-	{
-		"ID" : 898440,
-		"parent_category" : 123133,
-		"title" : "Retro T-Shirt",
-		"short_description" : "Quisque sed arcu quis nunc porttitor rutrum faucibus a nunc.",
-		"long_description" : "",
-		"price" : "25.99",
-		"sku" : "898440",
-		"weight" : "4.60",
-		"stock_number" : 121,
-		"title_tag" : "Retro T-Shirt",
-		"meta_keywords" : "Tshirt, retro, clothing",
-		"meta_description" : "A retro T-shirt",
-		"was_price" : "0.00",
-		"rrp" : "0.00",
-		"trade_price" : "0.00",
-		"options": []
-	}
-]
+{
+ products: [ 
+		{
+			"ID" : 898440,
+			"parent_category" : 123133,
+			"title" : "Retro T-Shirt",
+			"short_description" : "Quisque sed arcu quis nunc porttitor rutrum faucibus a nunc.",
+			"long_description" : "",
+			"price" : "25.99",
+			"sku" : "898440",
+			"weight" : "4.60",
+			"stock_number" : 121,
+			"title_tag" : "Retro T-Shirt",
+			"meta_keywords" : "Tshirt, retro, clothing",
+			"meta_description" : "A retro T-shirt",
+			"was_price" : "0.00",
+			"rrp" : "0.00",
+			"trade_price" : "0.00",
+			"options": []
+		}
+	]
+}
 {% endhighlight %}
 
 Get a product
@@ -86,7 +88,7 @@ Status: 200 OK
 
 {% highlight javascript %}
 {  
-    "product":{  
+    product: {  
         "ID":898440,
         "parent_category":123133,
         "title":"Retro T-Shirt",
