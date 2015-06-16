@@ -26,7 +26,9 @@ Status: 200 OK
 {% endhighlight %}
 
 {% highlight javascript %}
-"ok"
+{
+  "status": "ok"
+}
 {% endhighlight %}
 
 
