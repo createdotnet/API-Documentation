@@ -15,14 +15,12 @@ See latest updates on the [Change Log](/API-Documentation/change-log.html).
 
 
 The standard four REST verbs are used to access our resources:
-
-*GET* - Use when requesting an existing resource
-
-*POST* - Use when creating a new resource
-
-*PUT* - Use when updating an existing resource
-
-*DELETE* - Use when deleting a resource
+| Method   | Purpose |
+| -------- | ------- |
+| *GET*    | Use when requesting an existing resource |
+| *POST*   | Use when creating a new resource |
+| *PUT*    | Use when updating an existing resource |
+| *DELETE* | Use when deleting a resource |
 
 
 ## Authentication
