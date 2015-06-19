@@ -34,7 +34,7 @@ Authentication tokens are connected to a site and must be sent with every api re
 Token=<mytokengoeshere>
 {% endhighlight %}
 
-### Input (no token header)
+### Input with no token header
 
 {% highlight php %}
 GET 	https://api.create.net/test
