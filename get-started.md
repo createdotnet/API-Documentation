@@ -34,6 +34,24 @@ Authentication tokens are connected to a site and must be sent with every api re
 Token=<mytokengoeshere>
 {% endhighlight %}
 
+### Input (no token header)
+
+{% highlight php %}
+GET 	https://api.create.net/test
+{% endhighlight %}
+
+### Response
+
+{% highlight php %}
+Status: 401 No authorisation token
+{% endhighlight %}
+
+{% highlight javascript %}
+{
+  "error": "No authorisation token"
+}
+{% endhighlight %}
+
 ## About Request and Response Formats
 
 Requests and responses can be provided in JSON. Set the HTTP Accept header to specify the response format and the HTTP Content-Type header to specify the request format.
