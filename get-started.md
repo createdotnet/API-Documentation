@@ -15,6 +15,7 @@ See latest updates on the [Change Log](/API-Documentation/change-log.html).
 
 
 The standard four REST verbs are used to access our resources:
+
 | Method   | Purpose |
 | -------- | ------- |
 | *GET*    | Use when requesting an existing resource |
