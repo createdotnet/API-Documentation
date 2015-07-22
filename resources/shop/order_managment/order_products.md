@@ -47,7 +47,7 @@ Status: 200 OK
             name: "Test Product 2",
             options: [{
                 ID: 1023305,
-                name: "Colour",
+                title: "Colour",
                 items: [{
                     ID: 5039609,
                     title: "Blue",
