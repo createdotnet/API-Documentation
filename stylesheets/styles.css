@@ -238,11 +238,20 @@ h1.header {
 }
 
 
+header a {
+  color: grey;
+}
+
+header a:hover {
+  text-decoration: none;
+}
+
 h1.header, a.header, a.name, header a[href]{
   color: #fff;
 }
 
-a.header {
+
+a.header header a[href]:hover {
   text-decoration: underline;
 }
 
