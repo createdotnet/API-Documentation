@@ -251,7 +251,7 @@ h1.header, a.header, a.name, header a[href]{
 }
 
 
-a.header header a[href]:hover {
+a.header, header a[href]:hover {
   text-decoration: underline;
 }
 
