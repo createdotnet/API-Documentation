@@ -75,13 +75,13 @@ h4, h5, h6 {
   font-weight: 700;
 }
 
-a {
+a[href] {
   color:#C30000;
   font-weight:200;
   text-decoration:none;
 }
 
-a:hover {
+a[href]:hover {
   text-decoration: underline;
 }
 
