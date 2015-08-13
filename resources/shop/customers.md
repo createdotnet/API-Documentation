@@ -14,7 +14,7 @@ List all customers
 -------------------
 
 {% highlight php %}
-GET 	https://api.create.net/v1/customers
+GET 	https://api.create.net/customers
 {% endhighlight %}
 
 
@@ -41,7 +41,7 @@ Get a single orders
 -------------------------
 
 {% highlight php %}
-GET 	https://api.create.net/v1/customers/:id
+GET 	https://api.create.net/customers/:id
 {% endhighlight %}
 
 ### Response

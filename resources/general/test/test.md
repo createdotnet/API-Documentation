@@ -9,7 +9,7 @@ Stock
 *Access Levels*    
 __Group:__ general   
 __Resource:__ test   
-__Version:__ v1  
+__Version:__ 1  
 
 Test for authenticated connection to API
 -------------------
