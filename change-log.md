@@ -5,6 +5,10 @@ title: Change Log
 
 # Change Log
 
+### 13th August 2015
+* Changed how versioning works, version is now sent as an HTTP header "X-Version", [see docs](/API-Documentation/get-started.md).
+* Changed authentication token name to "X-Token" as not to conflict with official HTTP Headers.
+
 ### 23rd July 2015 
 * Added the Customers model
 * Updated documentation to not include non-live models

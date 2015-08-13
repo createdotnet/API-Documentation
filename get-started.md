@@ -9,9 +9,9 @@ See latest updates on the [Change Log](/API-Documentation/change-log.html).
 
 | Information ||
 | ----------- ||
-| Current API Version | `v1` |
+| Current API Version | `1` |
 | API Protocol | HTTPS | 
-| API end point | `https://api.create.net/v1/` |
+| API end point | `https://api.create.net/` |
 | Response method | JSON |
 | Authentication | Basic tokens |
 
@@ -24,6 +24,16 @@ The standard four REST verbs are used to access our resources:
 | *POST*   | Use when creating a new resource |
 | *PUT*    | Use when updating an existing resource |
 | *DELETE* | Use when deleting a resource |
+
+
+## Versioning
+Currently, without specifying a version, the API runs on an unstable unversioned alpha. Once everyone is off of this version, it will default to the 'current' version.
+
+To specify the version (current API version specified above), it should be sent with every request as an HTTP Header called 'X-Version'.
+
+{% highlight php %}
+X-Version=1
+{% endhighlight %}
 
 
 ## Authentication
