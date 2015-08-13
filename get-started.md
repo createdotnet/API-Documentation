@@ -28,10 +28,10 @@ The standard four REST verbs are used to access our resources:
 
 ## Authentication
 
-Authentication tokens are connected to a site and must be sent with every api request as an HTTP Header called 'Token'.
+Authentication tokens are connected to a site and must be sent with every api request as an HTTP Header called 'X-Token'.
 
 {% highlight php %}
-Token=<mytokengoeshere>
+X-Token=<mytokengoeshere>
 {% endhighlight %}
 
 ### Input with no token header
