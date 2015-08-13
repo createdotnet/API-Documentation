@@ -12,7 +12,7 @@ See latest updates on the [Change Log](/API-Documentation/change-log.html).
 | Current API Version | `1` |
 | API Protocol | HTTPS | 
 | API end point | `https://api.create.net/` |
-| Response method | JSON |
+| Response methods | JSON, JSONP |
 | Authentication | Basic tokens |
 
 
@@ -71,6 +71,15 @@ JSON
 {% highlight php %}
 Accept: application/json
 Content-Type: application/json
+{% endhighlight %}
+
+
+JSONP
+
+{% highlight php %}
+Accept: application/javascript
+X-JSONP-Callback: my_function_name
+Content-Type: application/javascript
 {% endhighlight %}
 
 ## Access Levels
