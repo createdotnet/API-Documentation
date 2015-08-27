@@ -31,9 +31,9 @@ The standard four REST verbs are used to access our resources:
 ### Testing
 You can easily get started testing the API using your Development API Token available within your Create account (Account > Developers & API)
 
-```
+{% highlight bash %}
 curl -i -H "X-Token: <development-api-token>" -H "X-Version: 1" https://api.create.net/test
-```
+{% highlight bash %}
 
 Development Tokens won't be able to be used in a production App however. You will need to create an [API App](#apps) and users will need to generate an Auth Token specifically for that App.
 
