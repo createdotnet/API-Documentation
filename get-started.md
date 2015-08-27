@@ -33,7 +33,7 @@ You can easily get started testing the API using your Development API Token avai
 
 {% highlight bash %}
 curl -i -H "X-Token: <development-api-token>" -H "X-Version: 1" https://api.create.net/test
-{% highlight bash %}
+{% endhighlight %}
 
 Development Tokens won't be able to be used in a production App however. You will need to create an [API App](#apps) and users will need to generate an Auth Token specifically for that App.
 
