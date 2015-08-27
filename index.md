@@ -15,13 +15,9 @@ This is our beta API, which gives you access to the majority of our users resour
 
 The API has been developed in a Documentation Driven Development process, this means that we have documented the functionality before implementing it. This allows us to face any issues or changes before there's any code written. 
 
-[Get Started](get-started.html)
+### [Get Started &raquo;](get-started.html)
 
 ## Documentation
-
-**Not all of the documented API is in production.**
-
-Please take note of the "Available Functionality" section which outlines what parts of the API are actually live. 
 
 If you've been invited to view this documentation, please have a read through and let us know if you see anything that's been missed or if something doesn't make sense.
 	

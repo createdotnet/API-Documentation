@@ -26,22 +26,46 @@ The standard four REST verbs are used to access our resources:
 | *DELETE* | Use when deleting a resource |
 
 
-## Versioning
-Currently, without specifying a version, the API runs on an unstable unversioned alpha. Once everyone is off of this version, it will default to the 'current' version.
+## Getting Started
 
-To specify the version (current API version specified above), it should be sent with every request as an HTTP Header called 'X-Version'.
+### Testing
+You can easily get started testing the API using your Development API Token available within your Create account (Account > Developers & API)
 
-{% highlight php %}
-X-Version=1
-{% endhighlight %}
+```
+curl -i -H "X-Token: <development-api-token>" -H "X-Version: 1" https://api.create.net/test
+```
 
+Development Tokens won't be able to be used in a production App however. You will need to create an [API App](#apps) and users will need to generate an Auth Token specifically for that App.
+
+
+## Apps
+Every request to the API must include your registered App Token in an HTTP Header 'X-AppToken'. Without this the API assumes that the Authentication Token is a Development token. 
+
+You can create a new API App from your Create account;
+
+1. Login to your Create account
+2. Go to the 'Account' area in the top menu
+3. Click on 'Developers & API'
+4. Click Create App
+
+Once you App has been created, you can generate an Auth Token by adding the App to the account's Connections.
 
 ## Authentication
 
-Authentication tokens are connected to a site and must be sent with every api request as an HTTP Header called 'X-Token'.
+Auth Tokens are linked to a single Create account and an API App and must be sent with every api request as an HTTP Header called 'X-Token'.
+
+You can generate a new Auth Token from your Create account;
+
+1. Login to your Create account
+2. Go to the 'Account' area in the top menu
+3. Click on the 'Connections' link.
+4. Click 'Add Account' and click on the required App
+
+You will now be provided with an Auth Token to be sent along side the App Token.
 
 {% highlight php %}
-X-Token=<mytokengoeshere>
+X-Token=<auth-token>
+X-AppToken=<app-token>
 {% endhighlight %}
 
 ### Input with no token header
@@ -61,6 +85,8 @@ Status: 401 No authorisation token
   "error": "No authorisation token"
 }
 {% endhighlight %}
+
+
 
 ## About Request and Response Formats
 
