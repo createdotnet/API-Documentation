@@ -39,7 +39,7 @@ Development Tokens won't be able to be used in a production App however. You wil
 
 
 ## Apps
-Every request to the API must include your registered App Token in an HTTP Header 'X-AppToken'. Without this the API assumes that the Authentication Token is a Development token. 
+Every request to the API must include your registered App Token in an HTTP Header 'X-AppToken'. Without this the API assumes that the Auth Token is a Development token. 
 
 You can create a new API App from your Create account;
 
@@ -48,18 +48,18 @@ You can create a new API App from your Create account;
 3. Click on 'Developers & API'
 4. Click Create App
 
-Once you App has been created, you can generate an Auth Token by adding the App to the account's Connections.
+Once you App has been created, you can generate an Auth Token by adding the App to the account's Connections. Continue reading for more information...
 
 ## Authentication
 
-Auth Tokens are linked to a single Create account and an API App and must be sent with every api request as an HTTP Header called 'X-Token'.
+Auth Tokens are linked to a single Create account and API App, and must be sent with every api request as an HTTP Header called 'X-Token'.
 
 You can generate a new Auth Token from your Create account;
 
 1. Login to your Create account
 2. Go to the 'Account' area in the top menu
 3. Click on the 'Connections' link.
-4. Click 'Add Account' and click on the required App
+4. Click 'Add Account' and click on the required API App
 
 You will now be provided with an Auth Token to be sent along side the App Token.
 
