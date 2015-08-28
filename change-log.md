@@ -5,8 +5,12 @@ title: Change Log
 
 # Change Log
 
+<!--### X September 2015
+* Implemented Apps and consequently updated authentication requirements
+* Added documentation for creating Apps-->
+
 ### 13th August 2015
-* Changed how versioning works, version is now sent as an HTTP header "X-Version", [see docs](/API-Documentation/get-started.md).
+* Changed how versioning works, version is now sent as an HTTP header "X-Version", [see docs](/API-Documentation/get-started.html).
 * Changed authentication token name to "X-Token" as not to conflict with official HTTP Headers.
 
 ### 23rd July 2015 
