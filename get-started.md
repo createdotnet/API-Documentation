@@ -31,7 +31,7 @@ The standard four REST verbs are used to access our resources:
 ### Request Access
 Due to the nature of the API the token generation tools are currently only available within the Create Application on request.
 
-You can request this access by emailing [api.create.net](mailto:api@create.net) with the username of your Create account.
+You can request this access by emailing [api@create.net](mailto:api@create.net) with the username of your Create account.
 
 ### Testing
 You can easily get started testing the API using your Development API Token available within your Create account (Account > Developers & API)
