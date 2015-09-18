@@ -121,7 +121,7 @@ Status: 200 OK
 ]}
 {% endhighlight %}
 
-Get a single orders
+Get a single order
 -------------------------
 
 {% highlight php %}
