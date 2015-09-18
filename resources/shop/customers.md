@@ -37,7 +37,7 @@ customers: [
 ]}
 {% endhighlight %}
 
-Get a single orders
+Get a single customer
 -------------------------
 
 {% highlight php %}
