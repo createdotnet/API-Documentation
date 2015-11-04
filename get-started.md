@@ -10,7 +10,7 @@ See latest updates on the [Change Log](/API-Documentation/change-log.html).
 | Information ||
 | ----------- ||
 | Current API Version | `1` |
-| API Protocol | HTTPS | 
+| API Protocol | HTTPS |
 | API end point | `https://api.create.net/` |
 | Response methods | JSON, JSONP |
 | Authentication | Basic tokens |
@@ -28,11 +28,6 @@ The standard four REST verbs are used to access our resources:
 
 ## Getting Started
 
-### Request Access
-Due to the nature of the API the token generation tools are currently only available within the Create Application on request.
-
-You can request this access by emailing [api@create.net](mailto:api@create.net) with the username of your Create account.
-
 ### Testing
 You can easily get started testing the API using your Development API Token available within your Create account (Account > Developers & API)
 
@@ -42,9 +37,12 @@ curl -i -H "X-Token: <development-api-token>" -H "X-Version: 1" https://api.crea
 
 Development Tokens won't be able to be used in a production App however. You will need to create an [API App](#apps) and users will need to generate an Auth Token specifically for that App.
 
+### Help Guides
+* [Guide for Create Users](https://www.create.net/support/424-api-information-for-customers.html)
+* [Guide for Developers](https://www.create.net/support/425-api-information-for-developers.html)
 
 ## Apps
-Every request to the API must include your registered App Token in an HTTP Header 'X-AppToken'. Without this the API assumes that the Auth Token is a Development token. 
+Every request to the API must include your registered App Token in an HTTP Header 'X-AppToken'. Without this the API assumes that the Auth Token is a Development token.
 
 You can create a new API App from your Create account;
 
@@ -97,7 +95,7 @@ Status: 401 No authorisation token
 
 Requests and responses can be provided in JSON. Set the HTTP Accept header to specify the response format and the HTTP Content-Type header to specify the request format.
 
-JSON 
+JSON
 
 {% highlight php %}
 Accept: application/json
@@ -115,7 +113,7 @@ Content-Type: application/javascript
 
 ## Access Levels
 
-** Currently not implemented ** 
+** Currently not implemented **
 
 Access to our resources is limited by user permissions. Resources are split into groups, you can request access to a whole group, or individual resources within a group. The minimum required access level is specified for each resource. The access levels are as follows:
 
@@ -170,7 +168,7 @@ Access to our resources is limited by user permissions. Resources are split into
 
 ## Pagination
 
-API requests that returns multiple items, such as listing orders, will be paginated (default to 25 items per page). In order to alter the number of records returned per page, a client can provide the per_page param (limited to 100 items per page). 
+API requests that returns multiple items, such as listing orders, will be paginated (default to 25 items per page). In order to alter the number of records returned per page, a client can provide the per_page param (limited to 100 items per page).
 
 To retrieve the next set of data, you can provide the last_id param. This would be the last ID of the previous page, or an ID to offset the request.
 

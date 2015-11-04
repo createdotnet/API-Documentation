@@ -11,18 +11,18 @@ title: Create API Documentation
 1. [Road Map](#road-map)
 
 ## Introduction
-This is our beta API, which gives you access to the majority of our users resources within the application. 
+This is our beta API, which gives you access to the majority of our users resources within the application.
 
-The API has been developed in a Documentation Driven Development process, this means that we have documented the functionality before implementing it. This allows us to face any issues or changes before there's any code written. 
+The API has been developed in a Documentation Driven Development process, this means that we have documented the functionality before implementing it. This allows us to face any issues or changes before there's any code written.
 
 ### [Get Started &raquo;](get-started.html)
 
 ## Documentation
 
 If you've been invited to view this documentation, please have a read through and let us know if you see anything that's been missed or if something doesn't make sense.
-	
+
 ## Raising Issues
-Got a question or a problem with the API? You can raise issues right [here](https://github.com/createdotnet/API-Documentation/issues) on Github and interact directly with the developers. 
+Got a question or a problem with the API? You can raise issues right [here](https://github.com/createdotnet/API-Documentation/issues) on Github and interact directly with the developers.
 
 Please follow the guidelines below for raising issues;
 
@@ -35,6 +35,6 @@ Please follow the guidelines below for raising issues;
 * **Paste error output** or logs in your issue or in a Gist. If pasting them in the issue, wrap it in three backticks: ``` so that it renders nicely.
 
 ## Roadmap
-The Roadmap is broken into Milestones here; https://github.com/createdotnet/API-Documentation/milestones. 
+The Roadmap is broken into Milestones here; https://github.com/createdotnet/API-Documentation/milestones.
 
 It aims to set out when certain functionality will appear. It reduces in clarity the further we go into the future, and is constantly being added to as we move forward but it should give you a good overview as to what is coming next, and what functionality we intend to work on in the future.
