@@ -10,6 +10,8 @@ Customers
 __Group:__ shop     
 __Resource:__ customers
 
+Please Note: This relates specifically to Shop Customers and not Website Users. This model includes the additional website user information.
+
 List all customers
 -------------------
 
@@ -28,11 +30,33 @@ Status: 200 OK
 {
 customers: [
 	{
-		ID: "123456",
-		username: "joe_bloggs",
-		email: "joe@bloggs.com",
-		active: "1",
-		date_created: "2015-01-01 11:12:01"
+	  "ID": 123456,
+	  "first_name": "John",
+	  "last_name": "Doe",
+	  "email": null,
+	  "user": {
+		"username": "johndoe",
+		"created_by": "user",
+		"date_created": "2015-02-01 12:30:00",
+		"email": "john@doe.com"
+	  },
+	  "notes": null,
+	  "addresses": [
+		{
+		  "ID": 111222,
+		  "first_name": "John",
+		  "last_name": "Doe",
+		  "address1": "1 New Street",
+		  "address2": "",
+		  "address3": "",
+		  "city": "Brighton",
+		  "county": "East Sussex",
+		  "country": "GB",
+		  "postcode": "BN2 123",
+		  "phone": "01234567891",
+		  "email": "john@doe.com"
+		}
+	  ]
 	}
 ]}
 {% endhighlight %}
@@ -53,11 +77,33 @@ Status: 200 OK
 {% highlight javascript %}
 {
 	customer: {
-		ID: "123456",
-		username: "joe_bloggs",
-		email: "joe@bloggs.com",
-		active: "1",
-		date_created: "2015-01-01 11:12:01"
+	  "ID": 123456,
+	  "first_name": "John",
+	  "last_name": "Doe",
+	  "email": null,
+	  "user": {
+		"username": "johndoe",
+		"created_by": "user",
+		"date_created": "2015-02-01 12:30:00",
+		"email": "john@doe.com"
+	  },
+	  "notes": null,
+	  "addresses": [
+		{
+		  "ID": 111222,
+		  "first_name": "John",
+		  "last_name": "Doe",
+		  "address1": "1 New Street",
+		  "address2": "",
+		  "address3": "",
+		  "city": "Brighton",
+		  "county": "East Sussex",
+		  "country": "GB",
+		  "postcode": "BN2 123",
+		  "phone": "01234567891",
+		  "email": "john@doe.com"
+		}
+	  ]
 	}
 }
 {% endhighlight %}
