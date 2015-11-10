@@ -5,6 +5,9 @@ title: Change Log
 
 # Change Log
 
+### 10th November 2015
+* Implemented the full Shop Customers model - [see docs](/API-Documentation/resources/shop/customers.html).
+
 ### 16th September 2015
 * Implemented Apps and consequently updated authentication requirements
 * Added documentation for creating Apps
