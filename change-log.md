@@ -6,6 +6,7 @@ title: Change Log
 # Change Log
 
 ### 10th November 2015
+* Added 'visible' field to Products model. 
 * Implemented the full Shop Customers model - [see docs](/API-Documentation/resources/shop/customers.html).
 
 ### 16th September 2015

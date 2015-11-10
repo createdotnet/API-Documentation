@@ -50,11 +50,12 @@ Status: 200 OK
 
 {% highlight javascript %}
 {
- products: [ 
+ products: [
 		{
 			"ID" : 898440,
 			"parent_category" : 123133,
 			"title" : "Retro T-Shirt",
+			"visible": true,
 			"short_description" : "Quisque sed arcu quis nunc porttitor rutrum faucibus a nunc.",
 			"long_description" : "",
 			"price" : "25.99",
@@ -92,6 +93,7 @@ Status: 200 OK
         "ID":898440,
         "parent_category":123133,
         "title":"Retro T-Shirt",
+		"visible": true,
         "short_description":"Quisque sed arcu quis nunc porttitor rutrum faucibus a nunc.",
         "long_description":"",
         "price":"25.99",
@@ -104,7 +106,7 @@ Status: 200 OK
         "was_price":"0.00",
         "rrp":"0.00",
         "trade_price":"0.00",
-        
+
         "options":[  
             {  
                 "ID":"137379",
@@ -188,6 +190,12 @@ POST 	https://api.create.net/products
 			<td>The product SKU</td>
 		</tr>
 		<tr>
+			<td>visible</td>
+			<td>BOOLEAN</td>
+			<td>Optional (default is true)</td>
+			<td>Whether the product is visible on the site or not</td>
+		</tr>
+		<tr>
 			<td>weight</td>
 			<td>string</td>
 			<td>Optional</td>
@@ -228,7 +236,7 @@ POST 	https://api.create.net/products
 			<td>INT</td>
 			<td>Optional</td>
 			<td>The product recommended retail price (RRP)</td>
-		</tr>	
+		</tr>
 		<tr>
 			<td>trade_price</td>
 			<td>INT</td>
@@ -246,7 +254,7 @@ Location: http://api.create.net/products/2455436
 {% endhighlight %}
 
 {% highlight javascript %}
-{ "product" : 
+{ "product" :
 	{
 		"ID" : 898440,
 		"parent_category" : 123133,
@@ -363,7 +371,7 @@ PUT 	https://api.create.net/products/:id
 			<td>INT</td>
 			<td>Optional</td>
 			<td>The product recommended retail price (RRP)</td>
-		</tr>	
+		</tr>
 		<tr>
 			<td>trade_price</td>
 			<td>INT</td>
