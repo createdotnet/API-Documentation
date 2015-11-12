@@ -111,6 +111,46 @@ X-JSONP-Callback: my_function_name
 Content-Type: application/javascript
 {% endhighlight %}
 
+
+## Sorting
+
+By default, requests returning multiple items are ordered chronologically in descending order.
+{% highlight json %}
+    [
+    {
+        id: 5
+    },
+    {
+        id: 4
+    },
+    {  
+        id: 3
+    }
+    ]
+{% endhighlight %}
+
+You can change the direction of sorting as well as which property is being used for sorting using the following parameters;
+
+| Parameter   | Possible Values | Default Value |
+| -------- | ------- | ------- |
+| sort_direction    | `ASC` or `DESC` | `DESC` |
+| sort_property    | See the specific model | `ID` |
+
+{% highlight php %}
+GET		/products?sortDire // Get records from 25 to 50
+{% endhighlight %}
+
+## Pagination
+
+API requests that returns multiple items, such as listing orders, will be paginated (default to 25 items per page). In order to alter the number of records returned per page, a client can provide the per_page parameter (limited to 100 items per page).
+
+To retrieve the next set of data, you can provide the last_id parameter. This would be the last ID of the previous page, or an ID to offset the request.
+
+{% highlight php %}
+GET		/orders?last_id=25&per_page=25 // Get records from 25 to 50
+{% endhighlight %}
+
+
 ## Access Levels
 
 ** Currently not implemented **
@@ -164,14 +204,4 @@ Access to our resources is limited by user permissions. Resources are split into
 	- shop_reports
 		- financial_reports  
 		- product_reports  
-{% endhighlight %}
-
-## Pagination
-
-API requests that returns multiple items, such as listing orders, will be paginated (default to 25 items per page). In order to alter the number of records returned per page, a client can provide the per_page param (limited to 100 items per page).
-
-To retrieve the next set of data, you can provide the last_id param. This would be the last ID of the previous page, or an ID to offset the request.
-
-{% highlight php %}
-GET		/orders?last_id=45546=5&per_page=50
 {% endhighlight %}
