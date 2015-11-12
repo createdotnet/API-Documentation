@@ -6,9 +6,9 @@ title: Products
 Products
 =============
 
-__Group:__ shop, products_and_categories   
+__Group:__ shop, products_and_categories
 __Resource:__ products
-__Sort Properties:__ ID, average_rating
+__Sort Properties:__ ID, average_rating 
 
 List all products
 -------------------
