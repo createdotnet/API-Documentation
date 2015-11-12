@@ -380,6 +380,7 @@ PUT 	https://api.create.net/products/:id
 		</tr>
 	</tbody>
 </table>
+
 ### Response
 
 {% highlight php %}
