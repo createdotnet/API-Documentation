@@ -5,8 +5,11 @@ title: Change Log
 
 # Change Log
 
+### 12th November 2015
+* Added documentation for sorting of records. 
+
 ### 10th November 2015
-* Added 'visible' field to Products model. 
+* Added 'visible' field to Products model.
 * Implemented the full Shop Customers model - [see docs](/API-Documentation/resources/shop/customers.html).
 
 ### 16th September 2015

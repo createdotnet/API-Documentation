@@ -116,17 +116,11 @@ Content-Type: application/javascript
 
 By default, requests returning multiple items are ordered chronologically in descending order.
 {% highlight json %}
-    [
-    {
-        id: 5
-    },
-    {
-        id: 4
-    },
-    {  
-        id: 3
-    }
-    ]
+[
+    { ID: 5 },
+    { ID: 4 },
+    { ID: 3 }
+]
 {% endhighlight %}
 
 You can change the direction of sorting as well as which property is being used for sorting using the following parameters;
@@ -137,7 +131,8 @@ You can change the direction of sorting as well as which property is being used 
 | sort_property    | See the specific model | `ID` |
 
 {% highlight php %}
-GET		/products?sortDire // Get records from 25 to 50
+// Order by average_rating to get the highest rated first
+GET		/products?sort_direction=desc&sort_property=average_rating
 {% endhighlight %}
 
 ## Pagination
@@ -147,7 +142,8 @@ API requests that returns multiple items, such as listing orders, will be pagina
 To retrieve the next set of data, you can provide the last_id parameter. This would be the last ID of the previous page, or an ID to offset the request.
 
 {% highlight php %}
-GET		/orders?last_id=25&per_page=25 // Get records from 25 to 50
+// Get records from 25 to 50
+GET		/orders?last_id=25&per_page=25
 {% endhighlight %}
 
 
