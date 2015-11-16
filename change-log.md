@@ -6,7 +6,7 @@ title: Change Log
 # Change Log
 
 ### 16th November 2015
-* Implement sort_property and sort_direction.
+* Implement sort_property and sort_direction - [see docs](/API-Documentation/get-started.html#sorting).
 * Add the average_rating property to Products model.
 
 ### 12th November 2015
