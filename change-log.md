@@ -5,11 +5,15 @@ title: Change Log
 
 # Change Log
 
+### 16th November 2015
+* Implement sort_property and sort_direction.
+* Add the average_rating property to Products model.
+
 ### 12th November 2015
-* Added documentation for sorting of records. 
+* Added documentation for sorting of records.
 
 ### 10th November 2015
-* Added 'visible' field to Products model.
+* Added 'visible' property to Products model.
 * Implemented the full Shop Customers model - [see docs](/API-Documentation/resources/shop/customers.html).
 
 ### 16th September 2015
