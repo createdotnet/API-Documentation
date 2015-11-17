@@ -139,7 +139,15 @@ GET		/products?sort_direction=desc&sort_property=average_rating
 
 API requests that returns multiple items, such as listing orders, will be paginated (default to 25 items per page). In order to alter the number of records returned per page, a client can provide the per_page parameter (limited to 100 items per page).
 
-To retrieve the next set of data, you can provide the last_id parameter. This would be the last ID of the previous page, or an ID to offset the request.
+To get the next page of data, you can provide the `page` parameter;
+
+{% highlight php %}
+// Get records from 25 to 50
+GET		/orders?page=2&per_page=25
+{% endhighlight %}
+
+
+If your sorting by the ID (which is default) you can optionally paginate using a specific ID by providing the `last_id` parameter. This would be the last ID of the previous page, or an ID to offset the request.
 
 {% highlight php %}
 // Get records from 25 to 50

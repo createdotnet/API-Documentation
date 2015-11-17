@@ -5,6 +5,9 @@ title: Change Log
 
 # Change Log
 
+### 17th November 2015
+* Implement normal pagination to go hand in hand with sort_property and sort_direction - [see docs](/API-Documentation/get-started.html#pagination)
+
 ### 16th November 2015
 * Implement sort_property and sort_direction - [see docs](/API-Documentation/get-started.html#sorting).
 * Add the average_rating property to Products model.
