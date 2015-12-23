@@ -61,7 +61,9 @@ Status: 200 OK
 			"price" : "25.99",
 			"sku" : "898440",
 			"weight" : "4.60",
+
 			"stock_number" : 121,
+			"stock_backorder" : 0,
 			"title_tag" : "Retro T-Shirt",
 			"meta_keywords" : "Tshirt, retro, clothing",
 			"meta_description" : "A retro T-shirt",
@@ -100,6 +102,7 @@ Status: 200 OK
         "sku":"898440",
         "weight":"4.60",
         "stock_number":121,
+		"stock_backorder" : 0,
         "title_tag":"Retro T-Shirt",
         "meta_keywords":"Tshirt, retro, clothing",
         "meta_description":"A retro T-shirt",
@@ -203,9 +206,15 @@ POST 	https://api.create.net/products
 		</tr>
 		<tr>
 			<td>stock_number</td>
-			<td>string</td>
+			<td>integer</td>
 			<td>Optional</td>
 			<td>Total product stock</td>
+		</tr>
+		<tr>
+			<td>stock_backorder</td>
+			<td>integer</td>
+			<td>Optional</td>
+			<td>The allow back order option of a product. 0 = "Default global behaviour", 1 = "Allow back ordering", 2 = "Don't allow back ordering"</td>
 		</tr>
 		<tr>
 			<td>title_tag</td>
