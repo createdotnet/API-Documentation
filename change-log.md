@@ -5,6 +5,10 @@ title: Change Log
 
 # Change Log
 
+### 23rd December 2015
+* Typecast Products.stock_number to integer
+* Implement stock_backorder into the Products model - [see docs](/API-Documentation/resources/shop/products_and_categories/products.html#Input-1)
+
 ### 17th November 2015
 * Implement normal pagination to go hand in hand with sort_property and sort_direction - [see docs](/API-Documentation/get-started.html#pagination)
 
