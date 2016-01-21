@@ -70,7 +70,9 @@ Status: 200 OK
 			"was_price" : "0.00",
 			"rrp" : "0.00",
 			"trade_price" : "0.00",
-			"options": []
+			"options": [],
+
+			"free_postage": false
 		}
 	]
 }
@@ -132,7 +134,9 @@ Status: 200 OK
                     }
                 ]
             }
-        ]
+        ],
+
+		"free_postage": false
     }
 }
 {% endhighlight %}
@@ -251,6 +255,12 @@ POST 	https://api.create.net/products
 			<td>INT</td>
 			<td>Optional</td>
 			<td>The product trade price</td>
+		</tr>
+		<tr>
+			<td>free_postage</td>
+			<td>BOOLEAN</td>
+			<td>Optional</td>
+			<td>If using Downloadables, this represents the free postage option, usually set to false.</td>
 		</tr>
 	</tbody>
 </table>
@@ -386,6 +396,12 @@ PUT 	https://api.create.net/products/:id
 			<td>INT</td>
 			<td>Optional</td>
 			<td>The product trade price</td>
+		</tr>
+		<tr>
+			<td>free_postage</td>
+			<td>BOOLEAN</td>
+			<td>Optional</td>
+			<td>If using Downloadables, this represents the free postage option, usually set to false.</td>
 		</tr>
 	</tbody>
 </table>

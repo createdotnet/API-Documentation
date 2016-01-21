@@ -5,6 +5,9 @@ title: Change Log
 
 # Change Log
 
+### 18th January 2016
+* Implement free_postage into the Products model - [see docs](/API-Documentation/resources/shop/products_and_categories/products.html#Input-1)
+
 ### 23rd December 2015
 * Typecast Products.stock_number to integer
 * Implement stock_backorder into the Products model - [see docs](/API-Documentation/resources/shop/products_and_categories/products.html#Input-1)
