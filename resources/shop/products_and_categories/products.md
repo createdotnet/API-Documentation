@@ -144,6 +144,8 @@ Status: 200 OK
 Create a product
 -------------
 
+Note: This endpoint is not yet available, but shows future functionality
+
 {% highlight php %}
 POST 	https://api.create.net/products
 {% endhighlight %}
@@ -297,6 +299,8 @@ Location: http://api.create.net/products/2455436
 Update a product
 -------------
 
+Note: This endpoint is not yet available, but shows future functionality
+
 {% highlight php %}
 PUT 	https://api.create.net/products/:id
 {% endhighlight %}
@@ -414,6 +418,8 @@ Status: 200 OK
 
 Delete a product
 -------------
+
+Note: This endpoint is not yet available, but shows future functionality
 
 {% highlight php %}
 DELETE 	https://api.create.net/products/:id
