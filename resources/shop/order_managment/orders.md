@@ -12,15 +12,25 @@ __Resource:__ orders
 
 ### Order statuses
 These endpoints use the following values to represent the status of an order:
+
  - `status` 1 - Pending
+ 
    - `sub_status` 1 - Waiting Payment
+   
  - `status` 2 - Processing
+ 
    - `sub_status` 1 - Picking
+   
    - `sub_status` 2 - Packaging
+   
    - `sub_status` 3 - Waiting Dispatch
+   
  - `status` 3 - Dispatched
+ 
  - `status` 4 - Refunded
+ 
  - `status` 5 - Cancelled
+ 
 
 List all orders
 -------------------
