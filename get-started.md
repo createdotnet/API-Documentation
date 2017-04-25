@@ -147,7 +147,7 @@ GET		/orders?page=2&per_page=25
 {% endhighlight %}
 
 
-If your sorting by the ID (which is default) you can optionally paginate using a specific ID by providing the `last_id` parameter. This would be the last ID of the previous page, or an ID to offset the request.
+If you are sorting by the ID (which is default) you can optionally paginate using a specific ID by providing the `last_id` parameter. This would be the last ID of the previous page, or an ID to offset the request.
 
 {% highlight php %}
 // Get records from 25 to 50
