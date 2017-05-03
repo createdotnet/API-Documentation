@@ -95,9 +95,9 @@ Status: 200 OK
 		"customer_details" : [
 			{
 				"ID" : 0,
-				"email" : "adam@create.net",
-				"first_name" : "Adam",
-				"last_name" : "Strawson",
+				"email" : "name@example.com",
+				"first_name" : "John",
+				"last_name" : "Doe",
 				"company" : "",
 				"address1" : "45 Topic Street",
 				"address2" : "",
@@ -106,13 +106,13 @@ Status: 200 OK
 				"county" : "East Sussex",
 				"postcode" : "BN1 7TY",
 				"country" : "United Kingdom"
-				"phone" : "01275 456545"
+				"phone" : "01234 567890"
 			}
 		],
 		"delivery_details" : [
 			{
-				"first_name" : "Adam",
-				"last_name" : "Strawson",
+				"first_name" : "John",
+				"last_name" : "Doe",
 				"company" : "",
 				"address1" : "45 Topic Street",
 				"address2" : "",
@@ -121,8 +121,8 @@ Status: 200 OK
 				"county" : "East Sussex",
 				"postcode" : "BN1 7TY",
 				"country" : "United Kingdom"
-				"phone" : "01275 456545",
-				"email" : "adam@create.net"
+				"phone" : "01234 567890",
+				"email" : "name@example.com"
 			}
 		],
 		"date_purchased" : "2012-10-02",
@@ -163,9 +163,9 @@ Status: 200 OK
 		"customer_details" : [
 			{
 				"ID" : 0,
-				"email" : "adam@create.net",
-				"first_name" : "Adam",
-				"last_name" : "Strawson",
+				"email" : "name@example.com",
+				"first_name" : "John",
+				"last_name" : "Doe",
 				"company" : "",
 				"address1" : "45 Topic Street",
 				"address2" : "",
@@ -174,13 +174,13 @@ Status: 200 OK
 				"county" : "East Sussex",
 				"postcode" : "BN1 7TY",
 				"country" : "United Kingdom"
-				"phone" : "01275 456545"
+				"phone" : "01234 567890"
 			}
 		],
 		"delivery_details" : [
 			{
-				"first_name" : "Adam",
-				"last_name" : "Strawson",
+				"first_name" : "John",
+				"last_name" : "Doe",
 				"company" : "",
 				"address1" : "45 Topic Street",
 				"address2" : "",
@@ -189,8 +189,8 @@ Status: 200 OK
 				"county" : "East Sussex",
 				"postcode" : "BN1 7TY",
 				"country" : "United Kingdom"
-				"phone" : "01275 456545",
-				"email" : "adam@create.net"
+				"phone" : "01234 567890",
+				"email" : "name@example.com"
 			}
 		],
 		"date_purchased" : "2012-10-02",
@@ -209,5 +209,73 @@ Status: 200 OK
 		"referrer" : "smithssweets.co.uk"
 	}
 }
+{% endhighlight %}
+
+Update an order
+-------------------------
+
+{% highlight php %}
+PUT 	https://api.create.net/orders/:id
+{% endhighlight %}
+
+### Input
+The request can either be sent as a form post or JSON. The structure is the same as a single order and all fields are optional
+
+{% highlight javascript %}
+{
+	"customer_details" : [
+		{
+			"ID" : 0,
+			"email" : "name@example.com",
+			"first_name" : "John",
+			"last_name" : "Doe",
+			"company" : "",
+			"address1" : "45 Road Street",
+			"address2" : "",
+			"address3" : "",
+			"city" : "Brighton",
+			"county" : "East Sussex",
+			"postcode" : "BN1 7TY",
+			"country" : "United Kingdom"
+			"phone" : "01234 567890"
+		}
+	],
+	"delivery_details" : [
+		{
+			"first_name" : "John",
+			"last_name" : "Doe",
+			"company" : "",
+			"address1" : "45 Road Street",
+			"address2" : "",
+			"address3" : "",
+			"city" : "Brighton",
+			"county" : "East Sussex",
+			"postcode" : "BN1 7TY",
+			"country" : "United Kingdom"
+			"phone" : "01234 567890",
+			"email" : "name@example.com"
+		}
+	],
+	"date_purchased" : "2012-10-02",
+	"order_total" : "25.99",
+	"order_currency" : "GBP",
+	"shipping_method" : "Standard Postage",
+	"shipping_total" : "2.98",
+	"tax_total" : "0.00",
+	"status" : 2,
+	"sub_status" : "",
+	"gateway" : "PayPal",
+	"gateway_transaction_id" : "3377373820382646",
+	"notes" : "",
+	"discount_amount" : "",
+	"discount_text" : "",
+	"referrer" : ""
+}
+{% endhighlight %}
+
+### Response
+
+{% highlight php %}
+Status: 200 OK
 {% endhighlight %}
 
