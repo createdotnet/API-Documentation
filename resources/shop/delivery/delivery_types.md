@@ -3,7 +3,7 @@ layout: default
 title: Delivery Zones
 ---
 
-Delivery Zones
+Delivery Types
 =============
 
 *Access Levels*    
