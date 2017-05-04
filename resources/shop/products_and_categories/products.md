@@ -135,6 +135,7 @@ Status: 200 OK
                 ]
             }
         ],
+	"option_based_stock_control": false,
 
 		"free_postage": false
     }
