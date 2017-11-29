@@ -66,9 +66,12 @@ You can generate a new Auth Token from your Create account;
 
 You will now be provided with an Auth Token to be sent along side the App Token.
 
+Requests must be sent with an `x-Version=1` header
+
 {% highlight php %}
 X-Token=<auth-token>
 X-AppToken=<app-token>
+X-Version=1
 {% endhighlight %}
 
 ### Input with no token header
