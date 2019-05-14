@@ -14,23 +14,23 @@ __Resource:__ orders
 These endpoints use the following values to represent the status of an order:
 
  - `status` 1 - Pending
- 
+
    - `sub_status` 1 - Waiting Payment
-   
+
  - `status` 2 - Processing
- 
+
    - `sub_status` 1 - Picking
-   
+
    - `sub_status` 2 - Packaging
-   
+
    - `sub_status` 3 - Waiting Dispatch
-   
+
  - `status` 3 - Dispatched
- 
+
  - `status` 4 - Refunded
- 
+
  - `status` 5 - Cancelled
- 
+
 
 List all orders
 -------------------
@@ -138,7 +138,8 @@ Status: 200 OK
 		"notes" : "",
 		"discount_amount" : "",
 		"discount_text" : "",
-		"referrer" : "smithssweets.co.uk"
+		"referrer" : "smithssweets.co.uk",
+    "opt_in" : true
 	}
 ]}
 {% endhighlight %}
@@ -206,7 +207,8 @@ Status: 200 OK
 		"notes" : "",
 		"discount_amount" : "",
 		"discount_text" : "",
-		"referrer" : "smithssweets.co.uk"
+		"referrer" : "smithssweets.co.uk",
+    "opt_in" : true
 	}
 }
 {% endhighlight %}
@@ -269,7 +271,7 @@ The request can either be sent as a form post or JSON. The structure is the same
 	"notes" : "",
 	"discount_amount" : "",
 	"discount_text" : "",
-	"referrer" : ""
+	"referrer" : "",
 }
 {% endhighlight %}
 
@@ -278,4 +280,3 @@ The request can either be sent as a form post or JSON. The structure is the same
 {% highlight php %}
 Status: 200 OK
 {% endhighlight %}
-
